@@ -9,7 +9,7 @@ if(isset($_GET['type']) && $_GET['type']!=''){
 	}
 }
 
-$sql="select * from infra_vulns order by 'Plugin ID' desc";
+$sql="select * from infra_vulns order by 'ID' desc";
 $res=mysqli_query($connection,$sql);
 ?>
 <div class="content">
@@ -26,7 +26,8 @@ $res=mysqli_query($connection,$sql);
 					  <table class="table ">
 						 <thead>
 							<tr>
-							   <th class="serial">Status</th>
+							   <th class="serial">ID</th>
+							   <th>Status</th>
 							   <th>Plugin ID</th>
 							   <th>Vulnerability</th>
 							   <th>Severity</th>
@@ -44,7 +45,8 @@ $res=mysqli_query($connection,$sql);
 							$i=1;
 							while($row=mysqli_fetch_assoc($res)){?>
 							<tr>
-							   <td class="serial"><?php echo $row['status']?></td>
+							   <td class="serial"><?php echo $row['id']?></td>
+							   <td><?php echo $row['status']?></td>
 							   <td><?php echo $row['plugin_id']?></td>
 							   <td><?php echo $row['vulnerability']?></td>
 							   <td><?php echo $row['severity']?></td>
@@ -57,11 +59,11 @@ $res=mysqli_query($connection,$sql);
 								<?php
 								echo "<span class='badge badge-edit'><a href='https://www.tenable.com/plugins/nessus/".$row['plugin_id']."'>Detail</a></span>";
 								echo "<span class='badge badge-edit'><a href='edit_infrastructure.php?id=$row[id]'>Edit</a></span>";
-								echo "<span class='badge badge-delete'><a href='delete_infrastructure.php?id=$row[id]'> Hapus </a></span>";
+								echo "<span class='badge badge-delete'><a href='delete_infrastructure.php?id=$row[id]' onClick=\"return confirm('Apakah anda yakin ingin menghapus data?');\"> Hapus </a></span>";
+							}
 								?>
 							   </td>
 							</tr>
-							<?php } ?>
 						 </tbody>
 					  </table>
 				   </div>
