@@ -18,7 +18,7 @@ $res=mysqli_query($connection,$sql);
 		  <div class="col-xl-12">
 			 <div class="card">
 				<div class="card-body">
-				   <h4 class="box-title">Vulnerabilities</h4>
+				   <h4 class="box-title">Infrastructure Vulnerabilities</h4>
 				   <button><a href="add_infrastructure.php">Add Data</a></button>
 				</div>
 				<div class="card-body--">

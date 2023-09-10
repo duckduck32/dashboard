@@ -26,7 +26,13 @@ require('sidebar.php');
                                     <option value="Low">Low</option>
                                 </select>
                             </tr>
-                        </div>    
+                        </div>   
+                        <div class="form-group">
+                            <tr>
+                                <label for="hostname" class="form-control-label">Hostname</label>
+                                <td><input type="text" class="form-control" name="hostname" id="" required></td>
+                            </tr>
+                        </div> 
                         <div class="form-group">
                             <tr>
                                 <label for="count" class=" form-control-label">Date Found</label>
@@ -62,6 +68,7 @@ if (isset($_POST['proses'])) {
     status = 'Open',
     vulnerability = '$_POST[vulnerability]',
     severity = '$_POST[severity]',
+    hostname = '$_POST[hostname]',
     date_found = '$_POST[date_found]',
     date_remediated = '0000-00-00'");
 
