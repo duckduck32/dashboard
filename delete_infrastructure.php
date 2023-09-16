@@ -2,7 +2,9 @@
 require('connection.inc.php');
 if(isset($_GET['id'])){
 	mysqli_query($connection, "delete from infra_vulns where id='$_GET[id]'");
-	echo "Data telah terhapus";
-	echo "<meta http-equiv=refresh content=1;URL='infrastructure.php'>";
+	echo "<script>
+    alert('Data berhasil dihapus');
+    window.location.href='infrastructure.php';
+    </script>";
 }
 ?>

@@ -64,17 +64,26 @@ require('sidebar.php');
 <?php
 
 if (isset($_POST['proses'])) {
-    mysqli_query($connection, "insert into app_vulns set
-    status = 'Open',
-    vulnerability = '$_POST[vulnerability]',
-    severity = '$_POST[severity]',
-    hostname = '$_POST[hostname]',
-    date_found = '$_POST[date_found]',
-    date_remediated = '0000-00-00'");
-
-
-    echo "Data telah berhasil ditambahkan";
-    echo "<meta http-equiv=refresh content=1;URL='application.php'>";
+    $current_date = date('Y-m-d');
+    $date_found = $_POST['date_found'];
+    if($date_found > $current_date){
+        echo "<script>
+        alert('Data tidak berhasil ditambahkan karena tanggal Date found melebihi tanggal hari ini');
+        window.location.href='add_application.php';
+        </script>";
+    }else{
+        mysqli_query($connection, "insert into app_vulns set
+        status = 'Open',
+        vulnerability = '$_POST[vulnerability]',
+        severity = '$_POST[severity]',
+        hostname = '$_POST[hostname]',
+        date_found = '$_POST[date_found]',
+        date_remediated = '0000-00-00'");
+        echo "<script>
+        alert('Data berhasil ditambahkan');
+        window.location.href='application.php';
+        </script>";
+    }
 }
 
 ?>

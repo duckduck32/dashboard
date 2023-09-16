@@ -92,35 +92,58 @@
 <?php
 
 if (isset($_POST['proses'])) {
-    mysqli_query($connection, "update open_ports set
-    status = '$_POST[status]',
-    open_port = '$_POST[open_port]',
-    priority = '$_POST[priority]',
-    hostname = '$_POST[hostname]',
-    ip = '$_POST[ip]',
-    date_found = '$_POST[date_found]',
-    date_remediated = '$_POST[date_remediated]'
-    where id = '$_GET[id]'");
-
-
-    echo "Data telah berhasil terupdate";
-    echo "<meta http-equiv=refresh content=1;URL='port.php'>";
+    $current_date = date('Y-m-d');
+    $date_found = $_POST['date_found'];
+    if($date_found > $current_date){
+        echo "<script>
+        alert('Data tidak berhasil diubah karena tanggal Date found melebihi tanggal hari ini');
+        window.location.href='port.php';
+        </script>";
+    }
+    else{
+        mysqli_query($connection, "update open_ports set
+        status = '$_POST[status]',
+        open_port = '$_POST[open_port]',
+        priority = '$_POST[priority]',
+        hostname = '$_POST[hostname]',
+        ip = '$_POST[ip]',
+        date_found = '$_POST[date_found]',
+        date_remediated = '$_POST[date_remediated]'
+        where id = '$_GET[id]'");
+        echo "<script>
+        alert('Data berhasil diubah');
+        window.location.href='port.php';
+        </script>";
+    }
+    
 }
 
 else if (isset($_POST['done'])) {
     $current_date = date('Y-m-d');
-    mysqli_query($connection, "update open_ports set
-    status = 'Close',
-    open_port = '$_POST[open_port]',
-    priority = '$_POST[priority]',
-    hostname = '$_POST[hostname]',
-    ip = '$_POST[ip]',
-    date_found = '$_POST[date_found]',
-    date_remediated = '$current_date'
-    where id = '$_GET[id]'");
-
-
-    echo "Case berhasil diclose";
-    echo "<meta http-equiv=refresh content=1;URL='port.php'>";
+    $date_found = $_POST['date_found'];
+    if($date_found > $current_date){
+        echo "<script>
+        alert('Data tidak berhasil diubah karena tanggal Date found melebihi tanggal hari ini');
+        window.location.href='port.php';
+        </script>";
+    }
+    else{
+        mysqli_query($connection, "update open_ports set
+        status = 'Close',
+        open_port = '$_POST[open_port]',
+        priority = '$_POST[priority]',
+        hostname = '$_POST[hostname]',
+        ip = '$_POST[ip]',
+        date_found = '$_POST[date_found]',
+        date_remediated = '$current_date'
+        where id = '$_GET[id]'");
+    
+    
+        echo "<script>
+        alert('Data berhasil diclose');
+        window.location.href='port.php';
+        </script>";
+    }
+    
 }
 ?>

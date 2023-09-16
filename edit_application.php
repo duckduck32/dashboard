@@ -88,33 +88,55 @@
 <?php
 
 if (isset($_POST['proses'])) {
-    mysqli_query($connection, "update app_vulns set
-    status = '$_POST[status]',
-    vulnerability = '$_POST[vulnerability]',
-    severity = '$_POST[severity]',
-    hostname = '$_POST[hostname]',
-    date_found = '$_POST[date_found]',
-    date_remediated = '$_POST[date_remediated]'
-    where id = '$_GET[id]'");
-
-
-    echo "Data telah berhasil terupdate";
-    echo "<meta http-equiv=refresh content=1;URL='application.php'>";
+    $current_date = date('Y-m-d');
+    $date_found = $_POST['date_found'];
+    if($date_found > $current_date){
+        echo "<script>
+        alert('Data tidak berhasil diubah karena tanggal Date found melebihi tanggal hari ini');
+        window.location.href='application.php';
+        </script>";
+    }
+    else{
+        mysqli_query($connection, "update app_vulns set
+        status = '$_POST[status]',
+        vulnerability = '$_POST[vulnerability]',
+        severity = '$_POST[severity]',
+        hostname = '$_POST[hostname]',
+        date_found = '$_POST[date_found]',
+        date_remediated = '$_POST[date_remediated]'
+        where id = '$_GET[id]'");
+        echo "<script>
+        alert('Data berhasil diubah');
+        window.location.href='application.php';
+        </script>";
+    }
+    
 }
 
 else if (isset($_POST['done'])) {
     $current_date = date('Y-m-d');
-    mysqli_query($connection, "update app_vulns set
-    status = 'Close',
-    vulnerability = '$_POST[vulnerability]',
-    severity = '$_POST[severity]',
-    hostname = '$_POST[hostname]',
-    date_found = '$_POST[date_found]',
-    date_remediated = '$current_date'
-    where id = '$_GET[id]'");
-
-
-    echo "Case berhasil diclose";
-    echo "<meta http-equiv=refresh content=1;URL='application.php'>";
+    $date_found = $_POST['date_found'];
+    if($date_found > $current_date){
+        echo "<script>
+        alert('Data tidak berhasil diubah karena tanggal melebihi tanggal hari ini');
+        window.location.href='application.php';
+        </script>";
+        
+    }
+    else{
+        mysqli_query($connection, "update app_vulns set
+        status = 'Close',
+        vulnerability = '$_POST[vulnerability]',
+        severity = '$_POST[severity]',
+        hostname = '$_POST[hostname]',
+        date_found = '$_POST[date_found]',
+        date_remediated = '$current_date'
+        where id = '$_GET[id]'");
+        echo "<script>
+        alert('Data berhasil diclose');
+        window.location.href='application.php';
+        </script>";
+    }
+    
 }
 ?>

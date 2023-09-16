@@ -73,18 +73,29 @@ require('sidebar.php');
 <?php
 
 if (isset($_POST['proses'])) {
-    mysqli_query($connection, "insert into open_ports set
-    status = 'Open',
-    open_port = '$_POST[open_port]',
-    priority = '$_POST[priority]',
-    hostname = '$_POST[hostname]',
-    ip = '$_POST[ip]',
-    date_found = '$_POST[date_found]',
-    date_remediated = '0000-00-00'");
-
-
-    echo "Data telah berhasil ditambahkan";
-    echo "<meta http-equiv=refresh content=1;URL='port.php'>";
+    $current_date = date('Y-m-d');
+    $date_found = $_POST['date_found'];
+    if($date_found > $current_date){
+        echo "<script>
+        alert('Data tidak berhasil ditambahkan karena tanggal Date found melebihi tanggal hari ini');
+        window.location.href='add_port.php';
+        </script>";
+    }
+    else{
+        mysqli_query($connection, "insert into open_ports set
+        status = 'Open',
+        open_port = '$_POST[open_port]',
+        priority = '$_POST[priority]',
+        hostname = '$_POST[hostname]',
+        ip = '$_POST[ip]',
+        date_found = '$_POST[date_found]',
+        date_remediated = '0000-00-00'");
+        echo "<script>
+        alert('Data berhasil ditambahkan');
+        window.location.href='port.php';
+        </script>";
+    }
+    
 }
 
 ?>

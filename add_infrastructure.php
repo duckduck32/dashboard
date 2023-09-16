@@ -87,20 +87,31 @@ require('sidebar.php');
 <?php
 
 if (isset($_POST['proses'])) {
-    mysqli_query($connection, "insert into infra_vulns set
-    status = 'Open',
-    plugin_id = '$_POST[plugin_id]',
-    vulnerability = '$_POST[vulnerability]',
-    severity = '$_POST[severity]',
-    hostname = '$_POST[hostname]',
-    ip = '$_POST[ip]',
-    count = '$_POST[count]',
-    date_found = '$_POST[date_found]',
-    date_remediated = '0000-00-00'");
-
-
-    echo "Data telah berhasil ditambahkan";
-    echo "<meta http-equiv=refresh content=1;URL='infrastructure.php'>";
+    $current_date = date('Y-m-d');
+    $date_found = $_POST['date_found'];
+    if($date_found > $current_date){
+        echo "<script>
+        alert('Data tidak berhasil ditambahkan karena tanggal Date found melebihi tanggal hari ini');
+        window.location.href='add_infrastructure.php';
+        </script>";
+    }
+    else{
+        mysqli_query($connection, "insert into infra_vulns set
+        status = 'Open',
+        plugin_id = '$_POST[plugin_id]',
+        vulnerability = '$_POST[vulnerability]',
+        severity = '$_POST[severity]',
+        hostname = '$_POST[hostname]',
+        ip = '$_POST[ip]',
+        count = '$_POST[count]',
+        date_found = '$_POST[date_found]',
+        date_remediated = '0000-00-00'");
+        echo "<script>
+        alert('Data berhasil ditambahkan');
+        window.location.href='infrastructure.php';
+        </script>";
+    }
+    
 }
 
 ?>

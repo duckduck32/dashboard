@@ -7,8 +7,8 @@ $dataPoints = array(
 	array("y" => 169709, "label" => "Iran"),
 );
 
-$link=mysqli_connect("localhost","root","","vmdash_users");
-mysqli_select_db($link,"vmdash_users");
+$link=mysqli_connect("localhost","root","","vulnerability_management");
+mysqli_select_db($link,"vulnerability_management");
 
 $test=array ();
 
