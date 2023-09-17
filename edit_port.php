@@ -144,6 +144,7 @@ else if (isset($_POST['done'])) {
         date_found = '$_POST[date_found]',
         date_remediated = '$current_date',
         assign_to = '$_POST[assign_to]'
+
         where id = '$_GET[id]'");
     
     

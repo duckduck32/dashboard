@@ -15,8 +15,7 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Simple Sidebar - Start Bootstrap Template</title>
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <title></title>
         <link href="assets/css/style.css" rel="stylesheet" />
     </head>
     <body>
@@ -27,7 +26,6 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
                 <div class="sidebar-heading border-bottom bg-light">WELCOME [<?php echo $_SESSION['ADMIN_USERNAME']?>]</div>
                 <div class="list-group list-group-flush">
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.php">Dashboard</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Scheduling</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="infrastructure.php">Infrastructure</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="application.php">Application</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="port.php">Port</a>
@@ -40,9 +38,5 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
                 </div>
             </div>
     </aside>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
     </body>
 </html>

@@ -114,9 +114,16 @@
 if (isset($_POST['proses'])) {
     $current_date = date('Y-m-d');
     $date_found = $_POST['date_found'];
+    $date_remediated = $_POST['date_remediated'];
     if($date_found > $current_date){
         echo "<script>
         alert('Data tidak berhasil diubah karena tanggal Date found melebihi tanggal hari ini');
+        window.location.href='infrastructure.php';
+        </script>";
+    }
+    if($date_remediated > $current_date){
+        echo "<script>
+        alert('Data tidak berhasil diubah karena tanggal Date Remediated melebihi tanggal hari ini');
         window.location.href='infrastructure.php';
         </script>";
     }

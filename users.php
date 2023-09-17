@@ -31,8 +31,8 @@ $res=mysqli_query($connection,$sql);
 		  <div class="col-xl-12">
 			 <div class="card">
 				<div class="card-body">
-				   <h4 class="box-title">VENDOR MANAGEMENT </h4>
-				   <h4 class="box-link"><a href="manage_vendor_management.php">ADD VENDOR</a> </h4>
+				   <h4 class="box-title">User Management</h4>
+				   <h4 class="box-link"><a href="manage_vendor_management.php">ADD USERS</a> </h4>
 				</div>
 				<div class="card-body--">
 				   <div class="table-stats order-table ov-h">
