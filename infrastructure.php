@@ -21,7 +21,7 @@ $sort_order = isset($_GET['order']) && strtolower($_GET['order']) == 'desc' ? 'D
 if ($result = $connection->query('SELECT * FROM infra_vulns ORDER BY ' .  $column . ' ' . $sort_order)) {
 	$up_or_down = str_replace(array('ASC','DESC'), array('up','down'), $sort_order); 
 	$asc_or_desc = $sort_order == 'ASC' ? 'desc' : 'asc';
-	$add_class = ' class="highlight"';
+	$add_class = '';
 
 ?>
 <div class="content">

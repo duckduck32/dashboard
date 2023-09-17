@@ -78,7 +78,7 @@
                         <div class="form-group">
                             <tr>
                                 <label for="assign_to" class=" form-control-label">Assigned To</label>
-                                <td><input type="text" name="assign_to" class="form-control" value="<?php echo $data['assign_to']; ?>"></td>
+                                <td><input type="text" name="assign_to" class="form-control" value="<?php echo $data['assigned_to']; ?>"></td>
                             </tr>
                         </div>
                         <div class="form-group">
