@@ -9,8 +9,20 @@ if(isset($_GET['type']) && $_GET['type']!=''){
 	}
 }
 
-$sql="select * from infra_vulns order by 'Plugin ID' desc";
+$sql="select * from infra_vulns order by 'ID' desc";
 $res=mysqli_query($connection,$sql);
+
+$columns = array('id','status','vulnerability','severity','hostname','IP','count','date_found','date_remediated');
+
+$column = isset($_GET['column']) && in_array($_GET['column'], $columns) ? $_GET['column'] : $columns[0];
+
+$sort_order = isset($_GET['order']) && strtolower($_GET['order']) == 'desc' ? 'DESC' : 'ASC';
+
+if ($result = $connection->query('SELECT * FROM infra_vulns ORDER BY ' .  $column . ' ' . $sort_order)) {
+	$up_or_down = str_replace(array('ASC','DESC'), array('up','down'), $sort_order); 
+	$asc_or_desc = $sort_order == 'ASC' ? 'desc' : 'asc';
+	$add_class = ' class="highlight"';
+
 ?>
 <div class="content">
 	<div class="orders">
@@ -18,7 +30,7 @@ $res=mysqli_query($connection,$sql);
 		  <div class="col-xl-12">
 			 <div class="card">
 				<div class="card-body">
-				   <h4 class="box-title">Vulnerabilities</h4>
+				   <h4 class="box-title">Infrastructure Vulnerabilities</h4>
 				   <button><a href="add_infrastructure.php">Add Data</a></button>
 				</div>
 				<div class="card-body--">
@@ -26,42 +38,43 @@ $res=mysqli_query($connection,$sql);
 					  <table class="table ">
 						 <thead>
 							<tr>
-							   <th class="serial">Status</th>
-							   <th>Plugin ID</th>
-							   <th>Vulnerability</th>
-							   <th>Severity</th>
-							   <th>Hostname</th>
-						       <th>IP</th>
-							   <th>Count</th>
-							   <th>Date Found</th>
-							   <th>Date Remediated</th>
-							   <th>Assigned To</th>
+							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">ID<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
+							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">Status<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
+							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">Vulnerability<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
+							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">Severity<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
+							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">Hostname<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
+						       <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">IP<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
+							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">Count<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
+							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">Date Found<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
+							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">Date Remediated<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
+							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">Assigned To<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
 							   <th></th>
 							</tr>
 						 </thead>
 						 <tbody>
 							<?php 
 							$i=1;
-							while($row=mysqli_fetch_assoc($res)){?>
+							while($row=$result->fetch_assoc()):?>
 							<tr>
-							   <td class="serial"><?php echo $row['status']?></td>
-							   <td><?php echo $row['plugin_id']?></td>
-							   <td><?php echo $row['vulnerability']?></td>
-							   <td><?php echo $row['severity']?></td>
-							   <td><?php echo $row['hostname']?></td>
-							   <td><?php echo $row['ip']?></td>
-							   <td><?php echo $row['count']?></td>
-							   <td><?php echo $row['date_found']?></td>
-							   <td><?php echo $row['date_remediated']?></td>
+							   <td><?php echo $column == 'id' ? $add_class : ''; ?><?php echo $row['id']; ?></td>
+							   <td><?php echo $column == 'status' ? $add_class : ''; ?><?php echo $row['status']; ?></td>
+							   <td><?php echo $column == 'vulnerability' ? $add_class : ''; ?><?php echo $row['vulnerability']; ?></td>
+							   <td><?php echo $column == 'severity' ? $add_class : ''; ?><?php echo $row['severity']; ?></td>
+							   <td><?php echo $column == 'hostname' ? $add_class : ''; ?><?php echo $row['hostname']; ?></td>
+							   <td><?php echo $column == 'ip' ? $add_class : ''; ?><?php echo $row['ip']; ?>
+							   <td><?php echo $column == 'count' ? $add_class : ''; ?><?php echo $row['count']; ?></td>
+							   <td><?php echo $column == 'date_found' ? $add_class : ''; ?><?php echo $row['date_found']; ?></td>
+							   <td><?php echo $column == 'date_remediated' ? $add_class : ''; ?><?php echo $row['date_remediated']; ?></td>
+							   <td><?php echo $column == 'assigned_to' ? $add_class : ''; ?><?php echo $row['assigned_to']; ?></td>
 							   <td>
 								<?php
 								echo "<span class='badge badge-edit'><a href='https://www.tenable.com/plugins/nessus/".$row['plugin_id']."'>Detail</a></span>";
 								echo "<span class='badge badge-edit'><a href='edit_infrastructure.php?id=$row[id]'>Edit</a></span>";
-								echo "<span class='badge badge-delete'><a href='delete_infrastructure.php?id=$row[id]'> Hapus </a></span>";
+								echo "<span class='badge badge-delete'><a href='delete_infrastructure.php?id=$row[id]' onClick=\"return confirm('Apakah anda yakin ingin menghapus data?');\"> Hapus </a></span>";
 								?>
 							   </td>
 							</tr>
-							<?php } ?>
+							<?php endwhile; ?>
 						 </tbody>
 					  </table>
 				   </div>
@@ -71,3 +84,7 @@ $res=mysqli_query($connection,$sql);
 	   </div>
 	</div>
 </div>
+<?php
+$result->free();
+						}
+						?>

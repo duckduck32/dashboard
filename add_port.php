@@ -7,29 +7,21 @@ require('sidebar.php');
         <div class="row">
             <div class="col-lg-12">
             <div class="card">
-                <div class="card-header"> <strong>ADD INFRASTRUCTURE VULNERABIILITY</strong> <small></small>
+                <div class="card-header"> <strong>ADD PORT VULNERABIILITY</strong> <small></small>
                 <form action="" method="post">
                     <div class="card-body card-block">
                         <div class="form-group">
                             <tr>
-                                <label for="plugin_id" class="form-control-label">Plugin ID</label>
-                                <td><input type="number" name="plugin_id" class="form-control" placeholder="Plugin ID" required></td>
+                                <label for="open_port" class="form-control-label">Open Port</label>
+                                <td><input type="number" name="open_port" class="form-control" placeholder="Open Port" required></td>
                             </tr>
                         </div>
                         <div class="form-group">
                             <tr>
-                                <label for="vulnerability" class="form-control-label">Vulnerability</label>
-                                <td><input type="text" name="vulnerability" class="form-control" placeholder="Vulnerability" required></td>
-                            </tr>
-                        </div>
-                        <div class="form-group">
-                            <tr>
-                                <label for="severity" class="form-control-label">Severity</label>
-                                <select id="severity" name="severity" class="form-control">
-                                    <option value="Critical">Critical</option>
-                                    <option value="High">High</option>
-                                    <option value="Medium">Medium</option>
-                                    <option value="Low">Low</option>
+                                <label for="priority" class="form-control-label">Priority</label>
+                                <select id="priority" name="priority" class="form-control">
+                                    <option value="Emergency">Emergency</option>
+                                    <option value="Normal">Normal</option>
                                 </select>
                             </tr>
                         </div>    
@@ -47,12 +39,6 @@ require('sidebar.php');
                         </div>
                         <div class="form-group">
                             <tr>
-                                <label for="count" class=" form-control-label">Count</label>
-                                <td><input type="number" name="count" class="form-control" id="" required></td>
-                            </tr>
-                        </div>
-                        <div class="form-group">
-                            <tr>
                                 <label for="count" class=" form-control-label">Date Found</label>
                                 <td><input type="date" name="date_found" class="form-control" id="" required></td>
                             </tr>
@@ -66,7 +52,7 @@ require('sidebar.php');
                         <div class="form-group">
                             <tr>
                                 <td></td>
-                                <td><button class="form-control"><a href="infrastructure.php">Back</a></button></td>
+                                <td><button class="form-control"><a href="port.php">Back</a></button></td>
                             </tr>
                         </div>
                             
@@ -92,23 +78,21 @@ if (isset($_POST['proses'])) {
     if($date_found > $current_date){
         echo "<script>
         alert('Data tidak berhasil ditambahkan karena tanggal Date found melebihi tanggal hari ini');
-        window.location.href='add_infrastructure.php';
+        window.location.href='add_port.php';
         </script>";
     }
     else{
-        mysqli_query($connection, "insert into infra_vulns set
+        mysqli_query($connection, "insert into open_ports set
         status = 'Open',
-        plugin_id = '$_POST[plugin_id]',
-        vulnerability = '$_POST[vulnerability]',
-        severity = '$_POST[severity]',
+        open_port = '$_POST[open_port]',
+        priority = '$_POST[priority]',
         hostname = '$_POST[hostname]',
         ip = '$_POST[ip]',
-        count = '$_POST[count]',
         date_found = '$_POST[date_found]',
         date_remediated = '0000-00-00'");
         echo "<script>
         alert('Data berhasil ditambahkan');
-        window.location.href='infrastructure.php';
+        window.location.href='port.php';
         </script>";
     }
     

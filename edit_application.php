@@ -1,7 +1,7 @@
 
 <?php
     require('sidebar.php');
-    $sql = mysqli_query($connection, "select * from infra_vulns where id='$_GET[id]'");
+    $sql = mysqli_query($connection, "select * from app_vulns where id='$_GET[id]'");
     $data=mysqli_fetch_array($sql);
 ?>
 
@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-lg-12">
             <div class="card">
-                <div class="card-header"> <strong>EDIT INFRASTRUCTURE VULNERABIILITY</strong> <small></small>
+                <div class="card-header"> <strong>EDIT APPLICATION VULNERABIILITY</strong> <small></small>
                 <form action="" method="post">
                     <div class="card-body card-block">
                         <div class="form-group">
@@ -22,12 +22,6 @@
                                 </select>
                             </tr>
                         </div> 
-                        <div class="form-group">
-                            <tr>
-                                <label for="plugin_id" class="form-control-label">Plugin ID</label>
-                                <td><input type="number" name="plugin_id" class="form-control" value="<?php echo $data['plugin_id']; ?>"></td>
-                            </tr>
-                        </div>
                         <div class="form-group">
                             <tr>
                                 <label for="vulnerability" class="form-control-label">Vulnerability</label>
@@ -49,18 +43,6 @@
                             <tr>
                                 <label for="hostname" class="form-control-label">Hostname</label>
                                 <td><input type="text" class="form-control" name="hostname" value="<?php echo $data['hostname']; ?>"></td>
-                            </tr>
-                        </div>
-                        <div class="form-group">
-                            <tr>
-                                <label for="ip" class="form-control-label">IP</label>
-                                <td><input type="text" name="ip" class="form-control" value="<?php echo $data['ip']; ?>"></td>
-                            </tr>
-                        </div>
-                        <div class="form-group">
-                            <tr>
-                                <label for="count" class=" form-control-label">Count</label>
-                                <td><input type="number" name="count" class="form-control" value="<?php echo $data['count']; ?>"></td>
                             </tr>
                         </div>
                         <div class="form-group">
@@ -90,7 +72,7 @@
                         <div class="form-group">
                             <tr>
                                 <td></td>
-                                <td><input type="button" name="back" value="Back" class="form-control" id="" onclick="window.location.href='infrastructure.php';"></td>
+                                <td><input type="button" name="back" value="Back" class="form-control" id="" onclick="window.location.href='application.php';"></td>
                             </tr>
                         </div>
                             
@@ -108,34 +90,24 @@
 if (isset($_POST['proses'])) {
     $current_date = date('Y-m-d');
     $date_found = $_POST['date_found'];
-    $date_remediated = $_POST['date_remediated'];
     if($date_found > $current_date){
         echo "<script>
         alert('Data tidak berhasil diubah karena tanggal Date found melebihi tanggal hari ini');
-        window.location.href='infrastructure.php';
-        </script>";
-    }
-    if($date_remediated > $current_date){
-        echo "<script>
-        alert('Data tidak berhasil diubah karena tanggal Date Remediated melebihi tanggal hari ini');
-        window.location.href='infrastructure.php';
+        window.location.href='application.php';
         </script>";
     }
     else{
-        mysqli_query($connection, "update infra_vulns set
+        mysqli_query($connection, "update app_vulns set
         status = '$_POST[status]',
-        plugin_id = '$_POST[plugin_id]',
         vulnerability = '$_POST[vulnerability]',
         severity = '$_POST[severity]',
         hostname = '$_POST[hostname]',
-        ip = '$_POST[ip]',
-        count = '$_POST[count]',
         date_found = '$_POST[date_found]',
         date_remediated = '$_POST[date_remediated]'
         where id = '$_GET[id]'");
         echo "<script>
         alert('Data berhasil diubah');
-        window.location.href='infrastructure.php';
+        window.location.href='application.php';
         </script>";
     }
     
@@ -146,27 +118,25 @@ else if (isset($_POST['done'])) {
     $date_found = $_POST['date_found'];
     if($date_found > $current_date){
         echo "<script>
-        alert('Data tidak berhasil diubah karena tanggal Date found melebihi tanggal hari ini');
-        window.location.href='infrastructure.php';
+        alert('Data tidak berhasil diubah karena tanggal melebihi tanggal hari ini');
+        window.location.href='application.php';
         </script>";
+        
     }
     else{
-        mysqli_query($connection, "update infra_vulns set
+        mysqli_query($connection, "update app_vulns set
         status = 'Close',
-        plugin_id = '$_POST[plugin_id]',
         vulnerability = '$_POST[vulnerability]',
         severity = '$_POST[severity]',
         hostname = '$_POST[hostname]',
-        ip = '$_POST[ip]',
-        count = '0',
         date_found = '$_POST[date_found]',
         date_remediated = '$current_date'
         where id = '$_GET[id]'");
         echo "<script>
         alert('Data berhasil diclose');
-        window.location.href='infrastructure.php';
+        window.location.href='application.php';
         </script>";
     }
-   
+    
 }
 ?>

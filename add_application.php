@@ -7,15 +7,9 @@ require('sidebar.php');
         <div class="row">
             <div class="col-lg-12">
             <div class="card">
-                <div class="card-header"> <strong>ADD INFRASTRUCTURE VULNERABIILITY</strong> <small></small>
+                <div class="card-header"> <strong>ADD APPLICATION VULNERABIILITY</strong> <small></small>
                 <form action="" method="post">
                     <div class="card-body card-block">
-                        <div class="form-group">
-                            <tr>
-                                <label for="plugin_id" class="form-control-label">Plugin ID</label>
-                                <td><input type="number" name="plugin_id" class="form-control" placeholder="Plugin ID" required></td>
-                            </tr>
-                        </div>
                         <div class="form-group">
                             <tr>
                                 <label for="vulnerability" class="form-control-label">Vulnerability</label>
@@ -32,25 +26,13 @@ require('sidebar.php');
                                     <option value="Low">Low</option>
                                 </select>
                             </tr>
-                        </div>    
+                        </div>   
                         <div class="form-group">
                             <tr>
                                 <label for="hostname" class="form-control-label">Hostname</label>
                                 <td><input type="text" class="form-control" name="hostname" id="" required></td>
                             </tr>
-                        </div>
-                        <div class="form-group">
-                            <tr>
-                                <label for="ip" class="form-control-label">IP</label>
-                                <td><input type="text" name="ip" class="form-control" id="" required></td>
-                            </tr>
-                        </div>
-                        <div class="form-group">
-                            <tr>
-                                <label for="count" class=" form-control-label">Count</label>
-                                <td><input type="number" name="count" class="form-control" id="" required></td>
-                            </tr>
-                        </div>
+                        </div> 
                         <div class="form-group">
                             <tr>
                                 <label for="count" class=" form-control-label">Date Found</label>
@@ -66,7 +48,7 @@ require('sidebar.php');
                         <div class="form-group">
                             <tr>
                                 <td></td>
-                                <td><button class="form-control"><a href="infrastructure.php">Back</a></button></td>
+                                <td><button class="form-control"><a href="application.php">Back</a></button></td>
                             </tr>
                         </div>
                             
@@ -79,11 +61,6 @@ require('sidebar.php');
     </div>
 </div>
             
-
-
-
-
-
 <?php
 
 if (isset($_POST['proses'])) {
@@ -92,26 +69,21 @@ if (isset($_POST['proses'])) {
     if($date_found > $current_date){
         echo "<script>
         alert('Data tidak berhasil ditambahkan karena tanggal Date found melebihi tanggal hari ini');
-        window.location.href='add_infrastructure.php';
+        window.location.href='add_application.php';
         </script>";
-    }
-    else{
-        mysqli_query($connection, "insert into infra_vulns set
+    }else{
+        mysqli_query($connection, "insert into app_vulns set
         status = 'Open',
-        plugin_id = '$_POST[plugin_id]',
         vulnerability = '$_POST[vulnerability]',
         severity = '$_POST[severity]',
         hostname = '$_POST[hostname]',
-        ip = '$_POST[ip]',
-        count = '$_POST[count]',
         date_found = '$_POST[date_found]',
         date_remediated = '0000-00-00'");
         echo "<script>
         alert('Data berhasil ditambahkan');
-        window.location.href='infrastructure.php';
+        window.location.href='application.php';
         </script>";
     }
-    
 }
 
 ?>
