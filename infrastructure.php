@@ -70,6 +70,7 @@ if ($result = $connection->query('SELECT * FROM infra_vulns ORDER BY ' .  $colum
 								<?php
 								echo "<span class='badge badge-edit'><a href='https://www.tenable.com/plugins/nessus/".$row['plugin_id']."'>Detail</a></span>";
 								echo "<span class='badge badge-edit'><a href='edit_infrastructure.php?id=$row[id]'>Edit</a></span>";
+								echo "<span class='badge badge-edit'><a href='vulnerabilitystatus_infra.php?id=$row[id]'>Status</a></span>";
 								echo "<span class='badge badge-delete'><a href='delete_infrastructure.php?id=$row[id]' onClick=\"return confirm('Apakah anda yakin ingin menghapus data?');\"> Hapus </a></span>";
 								?>
 							   </td>
