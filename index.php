@@ -1,6 +1,5 @@
 <?php
 require('sidebar.php');
-
 ?>
 <!DOCTYPE HTML>
 <html>

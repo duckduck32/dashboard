@@ -51,14 +51,20 @@
                         </div>
                         <div class="form-group">
                             <tr>
-                                <label for="count" class=" form-control-label">Date Found</label>
+                                <label for="date_found" class=" form-control-label">Date Found</label>
                                 <td><input type="date" name="date_found" class="form-control" value="<?php echo $data['date_found']; ?>"></td>
                             </tr>
                         </div>
                         <div class="form-group">
                             <tr>
-                                <label for="count" class=" form-control-label">Date Remediated</label>
+                                <label for="date_remediated" class=" form-control-label">Date Remediated</label>
                                 <td><input type="date" name="date_remediated" class="form-control" value="<?php echo $data['date_remediated']; ?>"></td>
+                            </tr>
+                        </div>
+                        <div class="form-group">
+                            <tr>
+                                <label for="assign_to" class=" form-control-label">Assigned To</label>
+                                <td><input type="text" name="assign_to" class="form-control" value="<?php echo $data['assign_to']; ?>"></td>
                             </tr>
                         </div>
                         <div class="form-group">
@@ -108,7 +114,8 @@ if (isset($_POST['proses'])) {
         hostname = '$_POST[hostname]',
         ip = '$_POST[ip]',
         date_found = '$_POST[date_found]',
-        date_remediated = '$_POST[date_remediated]'
+        date_remediated = '$_POST[date_remediated]',
+        assign_to = '$_POST[assign_to]'
         where id = '$_GET[id]'");
         echo "<script>
         alert('Data berhasil diubah');
@@ -135,7 +142,9 @@ else if (isset($_POST['done'])) {
         hostname = '$_POST[hostname]',
         ip = '$_POST[ip]',
         date_found = '$_POST[date_found]',
-        date_remediated = '$current_date'
+        date_remediated = '$current_date',
+        assign_to = '$_POST[assign_to]'
+
         where id = '$_GET[id]'");
     
     

@@ -53,8 +53,14 @@ require('sidebar.php');
                         </div>
                         <div class="form-group">
                             <tr>
-                                <label for="count" class=" form-control-label">Date Found</label>
+                                <label for="date_found" class=" form-control-label">Date Found</label>
                                 <td><input type="date" name="date_found" class="form-control" id="" required></td>
+                            </tr>
+                        </div>
+                        <div class="form-group">
+                            <tr>
+                                <label for="assign_to" class=" form-control-label">Assigned To</label>
+                                <td><input type="text" name="assign_to" class="form-control" id="" required></td>
                             </tr>
                         </div>
                         <div class="form-group">
@@ -78,12 +84,7 @@ require('sidebar.php');
         </div>
     </div>
 </div>
-            
-
-
-
-
-
+        
 <?php
 
 if (isset($_POST['proses'])) {
@@ -105,7 +106,8 @@ if (isset($_POST['proses'])) {
         ip = '$_POST[ip]',
         count = '$_POST[count]',
         date_found = '$_POST[date_found]',
-        date_remediated = '0000-00-00'");
+        date_remediated = '0000-00-00',
+        assign_to = '$_POST[assign_to]'");  
         echo "<script>
         alert('Data berhasil ditambahkan');
         window.location.href='infrastructure.php';
