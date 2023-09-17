@@ -55,6 +55,7 @@ $res=mysqli_query($connection,$sql);
 							   <td><?php echo $row['count']?></td>
 							   <td><?php echo $row['date_found']?></td>
 							   <td><?php echo $row['date_remediated']?></td>
+							   <td><?php echo $row['assign_to']?></td>
 							   <td>
 								<?php
 								echo "<span class='badge badge-edit'><a href='https://www.tenable.com/plugins/nessus/".$row['plugin_id']."'>Detail</a></span>";
