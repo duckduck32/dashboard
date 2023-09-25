@@ -19,7 +19,9 @@ $res=mysqli_query($connection,$sql);
 			 <div class="card">
 				<div class="card-body">
 				   <h4 class="box-title">Port Vulnerabilities</h4>
+				   <?php if($_SESSION['ADMIN_TEAM']=="sec"){?>
 				   <button><a href="add_port.php">Add Data</a></button>
+				   <?php } ?>
 				</div>
 				<div class="card-body--">
 				   <div class="table-stats order-table ov-h">

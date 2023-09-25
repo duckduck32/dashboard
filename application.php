@@ -19,7 +19,9 @@ $res=mysqli_query($connection,$sql);
 			 <div class="card">
 				<div class="card-body">
 				   <h4 class="box-title">Application Vulnerabilities</h4>
+				   <?php if($_SESSION['ADMIN_TEAM']=="sec"){?>
 				   <button><a href="add_application.php">Add Data</a></button>
+				   <?php } ?>
 				</div>
 				<div class="card-body--">
 				   <div class="table-stats order-table ov-h">
@@ -31,6 +33,7 @@ $res=mysqli_query($connection,$sql);
 							   <th>Vulnerability</th>
 							   <th>Severity</th>
 							   <th>Hostname</th>
+							   <th>Count</th>
 							   <th>Date Found</th>
 							   <th>Date Remediated</th>
 							   <th>Assigned To</th>
@@ -46,9 +49,10 @@ $res=mysqli_query($connection,$sql);
 							   <td><?php echo $row['vulnerability']?></td>
 							   <td><?php echo $row['severity']?></td>
 							   <td><?php echo $row['hostname']?></td>
+							   <td><?php echo $row['count']?></td>
 							   <td><?php echo $row['date_found']?></td>
 							   <td><?php echo $row['date_remediated']?></td>
-							   <td><?php echo $row['assign_to']?></td>
+							   <td><?php echo $row['assigned_to']?></td>
 							   <td>
 								<?php
 								echo "<span class='badge badge-edit'><a href='edit_application.php?id=$row[id]'>Edit</a></span>";
