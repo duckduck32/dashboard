@@ -21,7 +21,7 @@ $sort_order = isset($_GET['order']) && strtolower($_GET['order']) == 'desc' ? 'D
 if ($result = $connection->query('SELECT * FROM infra_vulns ORDER BY ' .  $column . ' ' . $sort_order)) {
 	$up_or_down = str_replace(array('ASC','DESC'), array('up','down'), $sort_order); 
 	$asc_or_desc = $sort_order == 'ASC' ? 'desc' : 'asc';
-	$add_class = ' class="highlight"';
+	$add_class = '';
 
 ?>
 <div class="content">
@@ -32,6 +32,7 @@ if ($result = $connection->query('SELECT * FROM infra_vulns ORDER BY ' .  $colum
 				<div class="card-body">
 				   <h4 class="box-title">Infrastructure Vulnerabilities</h4>
 				   <button><a href="add_infrastructure.php">Add Data</a></button>
+				   <button><a href="reporting_infra.php">Export Data</a></button>
 				</div>
 				<div class="card-body--">
 				   <div class="table-stats order-table ov-h">
@@ -70,6 +71,7 @@ if ($result = $connection->query('SELECT * FROM infra_vulns ORDER BY ' .  $colum
 								<?php
 								echo "<span class='badge badge-edit'><a href='https://www.tenable.com/plugins/nessus/".$row['plugin_id']."'>Detail</a></span>";
 								echo "<span class='badge badge-edit'><a href='edit_infrastructure.php?id=$row[id]'>Edit</a></span>";
+								echo "<span class='badge badge-edit'><a href='vulnerabilitystatus_infra.php?id=$row[id]'>Status</a></span>";
 								echo "<span class='badge badge-delete'><a href='delete_infrastructure.php?id=$row[id]' onClick=\"return confirm('Apakah anda yakin ingin menghapus data?');\"> Hapus </a></span>";
 								?>
 							   </td>

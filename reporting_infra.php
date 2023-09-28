@@ -2,19 +2,31 @@
 require('fpdf186/fpdf.php');
 require('connection.inc.php');
 
-class PDF extends FPDF{
-    function Header(){
-        $this->SetFont('Arial','B',15);
-        $this->Cell(100,10,'this is header');
+
+class PDF extends FPDF {
+    // Page header
+    function Header() {
+        // Set font and font size for the header
+        $this->SetFont('Arial', 'B', 12);
+
+        // Title
+        $this->Cell(0, 10, 'Infrastructure Reports', 0, 1, 'C');
     }
-    function Footer(){
-        $this->SetFont('Arial','B',15);
-        $this->Cell(100,10,'this is footer');
+
+    // Page footer
+    function Footer() {
+        // Position at 1.5 cm from the bottom
+        $this->SetY(-15);
+
+        // Set font and font size for the footer
+        $this->SetFont('Arial', '', 8);
+
+        // Page number
+        $this->Cell(0, 10, 'Page ' . $this->PageNo(), 0, 0, 'C');
     }
 }
 
-
-$pdf = new FPDF('p', 'mm', 'A4');
+$pdf = new PDF('p', 'mm', 'A4');
 $pdf->addPage();
 $pdf->SetFont('Arial','B',14);
 
@@ -47,42 +59,121 @@ if ($resultLow){
 }
 
 
-$pdf->setLeftMargin(75);
-$pdf->Cell(35,5,'Severity',1,0,'C');
+
+$pdf->Cell(150,5,'Severity',1,0,'C');
 $pdf->Cell(30,5,'Count',1,1,'C');
-$pdf->Cell(35,5,'Critical',1,0,'C');
+$pdf->SetFont('Arial','',10);
+$pdf->Cell(150,5,'Critical',1,0,'C');
 $pdf->Cell(30,5,$totalCritical,1,1,'C');
-$pdf->Cell(35,5,'High',1,0,'C');
+$pdf->Cell(150,5,'High',1,0,'C');
 $pdf->Cell(30,5,$totalHigh,1,1,'C');
-$pdf->Cell(35,5,'Medium',1,0,'C');
+$pdf->Cell(150,5,'Medium',1,0,'C');
 $pdf->Cell(30,5,$totalMedium,1,1,'C');
-$pdf->Cell(35,5,'Low',1,0,'C');
+$pdf->Cell(150,5,'Low',1,0,'C');
 $pdf->Cell(30,5,$totalLow,1,1,'C');
 
-/*
-$query=mysqli_query($connection,"select * from infra_vulns");
-while($data=mysqli_fetch_array($query)){
-    $pdf->SetFont('Arial','',6);
-    $pdf->Cell(5,5,$data['id'],1,0,'LR');
-    $pdf->Cell(10,5,$data['status'],1,0);
-    $pdf->Cell(15,5,$data['plugin_id'],1,0);
-    if($pdf->GetStringWidth($data['vulnerability'])>65){
-        $pdf->SetFont('Arial','',3);
-        $pdf->Cell(32,5,$data['vulnerability'],1,0);
-        $pdf->SetFont('Arial','',6);
-    }
-    else{
-        $pdf->Cell(32,5,$data['vulnerability'],1,0);
-    }
-    $pdf->Cell(12,5,$data['severity'],1,0);
-    $pdf->Cell(22,5,$data['hostname'],1,0);
-    $pdf->Cell(22,5,$data['ip'],1,0);
-    $pdf->Cell(10,5,$data['count'],1,0);
-    $pdf->Cell(22,5,$data['date_found'],1,0);
-    $pdf->Cell(22,5,$data['date_remediated'],1,0);
-    $pdf->Cell(15,5,$data['assigned_to'],1,0);
-    $pdf->Cell(10,5,$data['status'],1,1);
-*/
+$chartX=10;
+$chartY=50;
+
+$chartWidth=150;
+$chartHeight=100;
+
+$chartTopPadding=20;
+$chartLeftPadding=10;
+$chartBottomPadding=20;
+$chartRightPadding=5;
+
+$chartBoxX=$chartX+$chartLeftPadding;
+$chartBoxY=$chartY+$chartTopPadding;
+$chartBoxWidth=$chartWidth-$chartLeftPadding-$chartRightPadding;
+$chartBoxHeight=$chartHeight-$chartTopPadding-$chartBottomPadding;
+
+$barWidth=20;
+
+$data=Array(
+    'Critical'=>[
+        'color'=>[255,0,0],
+        'value'=>$totalCritical
+    ],
+    'High'=>[
+        'color'=>[255,100,0],
+        'value'=>$totalHigh
+    ],
+    'Medium'=>[
+        'color'=>[255,175,0],
+        'value'=>$totalMedium
+    ],
+    'Low'=>[
+        'color'=>[255,255,0],
+        'value'=>$totalLow
+    ]
+    );
+
+$dataMax=0;
+foreach($data as $item){
+    if($item['value']>$dataMax)$dataMax=$item['value'];
+}
+$dataStep=50;
+$pdf->SetFont('Arial','',9);
+$pdf->SetLineWidth(0,2);
+$pdf->SetDrawColor(0);
+
+$pdf->Rect($chartX,$chartY,$chartWidth,$chartHeight);
+
+$pdf->Line(
+    $chartBoxX,
+    $chartBoxY,
+    $chartBoxX,
+    $chartBoxY+$chartBoxHeight
+);
+
+$pdf->Line(
+    $chartBoxX-1,
+    $chartBoxY+$chartBoxHeight,
+    $chartBoxX+$chartBoxWidth,
+    $chartBoxY+$chartBoxHeight
+);
+
+$yAxisUnits=$chartBoxHeight / $dataMax;
+
+for ($i=0;$i<=$dataMax;$i+=$dataStep){
+    $yAxisPos=$chartBoxY + ($yAxisUnits * $i);
+    $pdf->Line(
+        $chartBoxX-1,
+        $yAxisPos,
+        $chartBoxX,
+        $yAxisPos
+    );
+    //posisi "-" di y
+    $pdf->SetXy($chartBoxX - $chartLeftPadding, $yAxisPos-2);
+    //tulisan sesuai "-"
+    $pdf->Cell($chartLeftPadding-4,5,$dataMax-$i,0);
+}
+
+$pdf->SetXy($chartBoxX,$chartBoxY+$chartBoxHeight);
+
+$xLabelWidth=$chartBoxWidth/count($data);
+
+$barXPos=0;
+foreach($data as $itemName=>$item){
+    $pdf->Cell($xLabelWidth,4,$itemName,0,0,'C');
+
+    $pdf->SetFillColor($item['color'][0],$item['color'][1],$item['color'][2]);
+    $barHeight=$yAxisUnits * $item['value'];
+
+    $barX=($xLabelWidth/2)+($xLabelWidth*$barXPos);
+    $barX=$barX-($barWidth/2);
+    $barX=$barX+$chartBoxX;
+
+    $barY=$chartBoxHeight-$barHeight;
+    $barY=$barY+$chartBoxY;
+
+    $pdf->Rect($barX,$barY,$barWidth,$barHeight,'DF');
+
+    $barXPos++;
+}
+
+
 
 $pdf->Output();
 ?>
