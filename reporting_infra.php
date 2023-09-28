@@ -7,10 +7,10 @@ class PDF extends FPDF {
     // Page header
     function Header() {
         // Set font and font size for the header
-        $this->SetFont('Arial', 'B', 12);
+        $this->SetFont('Arial', 'I', 8);
 
         // Title
-        $this->Cell(0, 10, 'Infrastructure Reports', 0, 1, 'C');
+        $this->Cell(0, 10, 'Confidential - This documents is limited and only for Asuransi Astra', 0, 1, 'R');
     }
 
     // Page footer
@@ -27,8 +27,68 @@ class PDF extends FPDF {
 }
 
 $pdf = new PDF('p', 'mm', 'A4');
+//halaman 1
+$pdf->addPage();
+$pdf->SetFont('Arial','B',20);
+
+$current_date_up = date('M Y');
+$current_date_down = date('d M, Y');
+$pdf->SetLeftMargin(90);
+$pdf->Cell(40,20,"Monthly Report Vulnerability Assessment",0,1,'C');
+$pdf->Cell(40,20,"Infrastructure",0,1,'C');
+$pdf->Cell(40,20,$current_date_up,0,1,'C');
+
+$pdf->Image('images/astra.png',65,110,100);
+$pdf->Cell(40,120,"",0,1,'C');
+
+$pdf->Cell(40,20,"IT Security",0,1,'C');
+$pdf->Cell(40,30,"Date Issued:",0,1,'C');
+$pdf->Cell(40,0,$current_date_down,0,0,'C');
+$pdf->SetLeftMargin(10);
+//halaman 2
+$pdf->addPage();
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Cell(40,20,"Confidentiality Notice",0,1,'L');
+
+$pdf->SetFont('Arial','',12);
+$pdf->Cell(40,5,"Laporan ini berisikan informasi sensitif dan rahasia. Tindakan pencegahan harus diambil untuk",0,1,'L');
+$pdf->Cell(40,5,"melindungi kerahasiaan informasi dalam dokumen ini. Publikasi laporan ini dapat meningkatkan",0,1,'L');
+$pdf->Cell(40,5,"efisiensi dan management dari Vulnerability Assessment dalam lingkungan Asuransi Astra. IT",0,1,'L');
+$pdf->Cell(40,5,"Security hanya bertanggung jawab dalam melakukan analisa dan pemberian rekomendasi.",0,1,'L');
+$pdf->Cell(40,5,"terhadap tindakan lanjut terkait proses remediasi",0,1,'L');
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Cell(40,20,"Disclaimer",0,1,'L');
+
+$pdf->SetFont('Arial','',12);
+$pdf->Cell(40,5,"Perhatian, bahwa hasil dalam laporan ini merupakan temuan berdasarkan scanning langsung",0,1,'L');
+$pdf->Cell(40,5,"dari Vulnerability Assessment yang dilakukan oleh Tim Security. Scanning Infrastruktur",0,1,'L');
+$pdf->Cell(40,5,"dijalankan sebanyak 1 kali dalam sebulan dan Open Port Scanning dilakukan sebanyak 2 kali",0,1,'L');
+$pdf->Cell(40,5,"dalam sebulan dan laporan ini hanya berisikan bukti-bukti temuan terkait Vulnerability",0,1,'L');
+$pdf->Cell(40,5,"Assessment yang belum sesuai dengan best practice dari analisis tim IT Security.",0,1,'L');
+
+$pdf->SetFont('Arial','B',16);
+$pdf->Cell(40,20,"Executive Summary",0,1,'L');
+
+$pdf->SetFont('Arial','',12);
+$pdf->Cell(40,5,"IT Security melakukan scanning terhadap semua aset-aset Infrastruktur yang dimiliki oleh",0,1,'L');
+$pdf->Cell(40,5,"Asuransi Astra. Dalam dokumen ini terdapat beberapa temuan yang menyatakan aset-aset",0,1,'L');
+$pdf->Cell(40,5,"Asuransi Astra masih belum efisien dan belum sesuai dengan best practice dimana bisa",0,1,'L');
+$pdf->Cell(40,5,"menimbulkan celah keamanan dari sisi user access. Untuk setiap temuan juga sudah diberikan",0,1,'L');
+$pdf->Cell(40,5,"rekomendasi yang bisa dilakukan untuk meremediasi rules-rules tersebut.",0,1,'L');
+
+$pdf->Cell(140,50,"Pelaksana",0,0,'L');
+$pdf->Cell(40,50,"Pemeriksa",0,1,'R');
+
+$pdf->Cell(140,50,"IT Security",0,0,'L');
+$pdf->Cell(40,50,"Manager",0,1,'R');
+
+//halaman 3
 $pdf->addPage();
 $pdf->SetFont('Arial','B',14);
+
+$pdf->Cell(40,10,"Infrastructure Table Reports",0,1);
 
 $queryCritical = "SELECT SUM(count) AS total_count FROM infra_vulns WHERE severity = 'Critical'";
 $resultCritical = $connection->query($queryCritical);
@@ -72,8 +132,9 @@ $pdf->Cell(30,5,$totalMedium,1,1,'C');
 $pdf->Cell(150,5,'Low',1,0,'C');
 $pdf->Cell(30,5,$totalLow,1,1,'C');
 
-$chartX=10;
-$chartY=50;
+
+$chartX=30;
+$chartY=70;
 
 $chartWidth=150;
 $chartHeight=100;
