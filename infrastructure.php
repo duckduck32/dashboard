@@ -32,7 +32,6 @@ if ($result = $connection->query('SELECT * FROM infra_vulns ORDER BY ' .  $colum
 				<div class="card-body">
 				   <h4 class="box-title">Infrastructure Vulnerabilities</h4>
 				   <button><a href="add_infrastructure.php">Add Data</a></button>
-				   <button><a href="reporting_infra.php">Export Data</a></button>
 				</div>
 				<div class="card-body--">
 				   <div class="table-stats order-table ov-h">

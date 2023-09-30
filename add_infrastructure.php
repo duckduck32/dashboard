@@ -59,8 +59,8 @@ require('sidebar.php');
                         </div>
                         <div class="form-group">
                             <tr>
-                                <label for="assign_to" class=" form-control-label">Assigned To</label>
-                                <td><input type="text" name="assign_to" class="form-control" id="" required></td>
+                                <label for="assigned_to" class=" form-control-label">Assigned To</label>
+                                <td><input type="text" name="assigned_to" class="form-control" id=""></td>
                             </tr>
                         </div>
                         <div class="form-group">
@@ -107,7 +107,7 @@ if (isset($_POST['proses'])) {
         count = '$_POST[count]',
         date_found = '$_POST[date_found]',
         date_remediated = '0000-00-00',
-        assign_to = '$_POST[assign_to]'");  
+        assigned_to = '$_POST[assigned_to]'");  
         echo "<script>
         alert('Data berhasil ditambahkan');
         window.location.href='infrastructure.php';

@@ -48,7 +48,7 @@ $res=mysqli_query($connection,$sql);
 							   <td><?php echo $row['hostname']?></td>
 							   <td><?php echo $row['date_found']?></td>
 							   <td><?php echo $row['date_remediated']?></td>
-							   <td><?php echo $row['assign_to']?></td>
+							   <td><?php echo $row['assigned_to']?></td>
 							   <td>
 								<?php
 								echo "<span class='badge badge-edit'><a href='edit_application.php?id=$row[id]'>Edit</a></span>";
