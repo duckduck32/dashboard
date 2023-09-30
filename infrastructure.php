@@ -33,6 +33,7 @@ if ($result = $connection->query('SELECT * FROM infra_vulns ORDER BY ' .  $colum
 				   <h4 class="box-title">Infrastructure Vulnerabilities</h4>
 				   <?php if($_SESSION['ADMIN_TEAM']=="sec"){?>
 				   <button><a href="add_infrastructure.php">Add Data</a></button>
+				   <button><a href="reporting_infra.php">Export Data</a></button>
 				   <?php } ?>
 				</div>
 				<div class="card-body--">
