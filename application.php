@@ -32,7 +32,7 @@ $res=mysqli_query($connection,$sql);
 							   <th>Status</th>
 							   <th>Vulnerability</th>
 							   <th>Severity</th>
-							   <th>Hostname</th>
+							   <th>Domain</th>
 							   <th>Count</th>
 							   <th>Date Found</th>
 							   <th>Date Remediated</th>
@@ -48,7 +48,7 @@ $res=mysqli_query($connection,$sql);
 							   <td><?php echo $row['status']?></td>
 							   <td><?php echo $row['vulnerability']?></td>
 							   <td><?php echo $row['severity']?></td>
-							   <td><?php echo $row['hostname']?></td>
+							   <td><?php echo $row['domain']?></td>
 							   <td><?php echo $row['count']?></td>
 							   <td><?php echo $row['date_found']?></td>
 							   <td><?php echo $row['date_remediated']?></td>

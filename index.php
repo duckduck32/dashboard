@@ -42,11 +42,23 @@ $dataPoints2 = array(
     array("label"=> "Low", "y"=> $sumLowApp_value)
 );
 
-    $dataPoints3 = array(
-        array("x"=> 10, "y"=> 41),
-        array("x"=> 30, "y"=> 50),
-        array("x"=> 50, "y"=> 41)
-    );
+$sumHighApp_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE severity = 'High'");
+$row = $sumHighApp_result->fetch_assoc();
+$sumHighApp_value = (string)$row['SUM(count)'];
+     
+$sumMediApp_result = mysqli_query($connection, "SELECT SUM(count) FROM app_vulns WHERE severity = 'Medium'");
+$row = $sumMediApp_result->fetch_assoc();
+$sumMediApp_value = (string)$row['SUM(count)'];
+     
+$sumLowApp_result = mysqli_query($connection, "SELECT SUM(count) FROM app_vulns WHERE severity = 'Low'");
+$row = $sumLowApp_result->fetch_assoc();
+$sumLowApp_value = (string)$row['SUM(count)'];
+
+$dataPoints3 = array(
+    array("label"=> "High", "y"=> $sumHighApp_value),
+    array("label"=> "Medium", "y"=> $sumMediApp_value),
+    array("label"=> "Low", "y"=> $sumLowApp_value)
+);
 
     $dataPoints4 = array(
         array("x"=> 10, "y"=> 41),

@@ -28,8 +28,7 @@ $res=mysqli_query($connection,$sql);
 					  <table class="table ">
 						 <thead>
 							<tr>
-							   <th class="serial">ID</th>
-							   <th>Status</th>
+							   <th class="serial">Status</th>
 							   <th>Open Port</th>
 							   <th>Priority</th>
 							   <th>Hostname</th>
@@ -45,15 +44,14 @@ $res=mysqli_query($connection,$sql);
 							$i=1;
 							while($row=mysqli_fetch_assoc($res)){?>
 							<tr>
-							   <td class="serial"><?php echo $row['id']?></td>
-							   <td><?php echo $row['status']?></td>
+							   <td class="serial"><?php echo $row['status']?></td>
 							   <td><?php echo $row['open_port']?></td>
 							   <td><?php echo $row['priority']?></td>
 							   <td><?php echo $row['hostname']?></td>
 							   <td><?php echo $row['ip']?></td>
 							   <td><?php echo $row['date_found']?></td>
 							   <td><?php echo $row['date_remediated']?></td>
-							   <td><?php echo $row['assign_to']?></td>
+							   <td><?php echo $row['assigned_to']?></td>
 							   <td>
 								<?php
 								echo "<span class='badge badge-edit'><a href='edit_port.php?id=$row[id]'>Edit</a></span>";
