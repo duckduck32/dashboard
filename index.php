@@ -1,5 +1,6 @@
 <?php
 require('sidebar.php');
+// require('connection.inc.php');
 
 $sumCritInfra_result = mysqli_query($connection, "SELECT SUM(count) FROM infra_vulns WHERE severity = 'Critical'");
 $row = $sumCritInfra_result->fetch_assoc();
@@ -42,22 +43,107 @@ $dataPoints2 = array(
     array("label"=> "Low", "y"=> $sumLowApp_value)
 );
 
-$sumHighApp_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE severity = 'High'");
-$row = $sumHighApp_result->fetch_assoc();
-$sumHighApp_value = (string)$row['SUM(count)'];
+$sumFTPdata_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 20");
+$row = $sumFTPdata_result->fetch_assoc();
+$sumFTP_data = (string)$row['SUM(count)'];
      
-$sumMediApp_result = mysqli_query($connection, "SELECT SUM(count) FROM app_vulns WHERE severity = 'Medium'");
-$row = $sumMediApp_result->fetch_assoc();
-$sumMediApp_value = (string)$row['SUM(count)'];
+$sumFTP_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 21");
+$row = $sumFTP_result->fetch_assoc();
+$sumFTP = (string)$row['SUM(count)'];
      
-$sumLowApp_result = mysqli_query($connection, "SELECT SUM(count) FROM app_vulns WHERE severity = 'Low'");
-$row = $sumLowApp_result->fetch_assoc();
-$sumLowApp_value = (string)$row['SUM(count)'];
+$sumSSH_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 22");
+$row = $sumSSH_result->fetch_assoc();
+$sumSSH = (string)$row['SUM(count)'];
+
+$sumTelnet_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 23");
+$row = $sumTelnet_result->fetch_assoc();
+$sumTelnet = (string)$row['SUM(count)'];
+     
+$sumSMTP_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port IN (25, 426)");
+$row = $sumSMTP_result->fetch_assoc();
+$sumSMTP = (string)$row['SUM(count)'];
+     
+$sumHTTP_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 80");
+$row = $sumHTTP_result->fetch_assoc();
+$sumHTTP = (string)$row['SUM(count)'];
+
+$sumNTP_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 123");
+$row = $sumNTP_result->fetch_assoc();
+$sumNTP = (string)$row['SUM(count)'];
+     
+$sumNetbiosns_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 137");
+$row = $sumNetbiosns_result->fetch_assoc();
+$sumNetbios_ns = (string)$row['SUM(count)'];
+     
+$sumNetbiosdgm_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 138");
+$row = $sumNetbiosdgm_result->fetch_assoc();
+$sumNetbios_dgm = (string)$row['SUM(count)'];
+
+$sumNetbiosssn_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 139");
+$row = $sumNetbiosssn_result->fetch_assoc();
+$sumNetbios_ssn = (string)$row['SUM(count)'];
+     
+$sumSNMP_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port IN (161, 162)");
+$row = $sumSNMP_result->fetch_assoc();
+$sumSNMP = (string)$row['SUM(count)'];
+     
+$sumSMB_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 445");
+$row = $sumSMB_result->fetch_assoc();
+$sumSMB = (string)$row['SUM(count)'];
+
+$sumhttpalt_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port IN (591, 8008, 8080)");
+$row = $sumhttpalt_result->fetch_assoc();
+$sumHttp_alt = (string)$row['SUM(count)'];
+     
+$sumNTPclient_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 1023");
+$row = $sumNTPclient_result->fetch_assoc();
+$sumNTP_client = (string)$row['SUM(count)'];
+     
+$sumMSsqls_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port IN (1433, 1434)");
+$row = $sumMSsqls_result->fetch_assoc();
+$sumMSsqls = (string)$row['SUM(count)'];
+
+$sumOracle_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port IN (1521, 1832)");
+$row = $sumOracle_result->fetch_assoc();
+$sumOracle = (string)$row['SUM(count)'];
+     
+$sumMysql_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 3306");
+$row = $sumMysql_result->fetch_assoc();
+$sumMysql = (string)$row['SUM(count)'];
+     
+$sumRDP_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 3389");
+$row = $sumRDP_result->fetch_assoc();
+$sumRDP = (string)$row['SUM(count)'];
+
+$sumPostgresql_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 5432");
+$row = $sumPostgresql_result->fetch_assoc();
+$sumPostgreSQL = (string)$row['SUM(count)'];
+     
+$sumVNC_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 5800");
+$row = $sumVNC_result->fetch_assoc();
+$sumVNC = (string)$row['SUM(count)'];
 
 $dataPoints3 = array(
-    array("label"=> "High", "y"=> $sumHighApp_value),
-    array("label"=> "Medium", "y"=> $sumMediApp_value),
-    array("label"=> "Low", "y"=> $sumLowApp_value)
+    array("label"=> "FTP Data", "y"=> $sumFTP_data),
+    array("label"=> "FTP", "y"=> $sumFTP),
+    array("label"=> "SSH", "y"=> $sumSSH),
+    array("label"=> "Telnet", "y"=> $sumTelnet),
+    array("label"=> "SMTP", "y"=> $sumSMTP),
+    array("label"=> "HTTP", "y"=> $sumHTTP),
+    array("label"=> "NTP", "y"=> $sumNTP),
+    array("label"=> "Netbios-ns", "y"=> $sumNetbios_ns),
+    array("label"=> "Netbios-dgm", "y"=> $sumNetbios_dgm),
+    array("label"=> "Netbios-ssn", "y"=> $sumNetbios_ssn),
+    array("label"=> "SNMP", "y"=> $sumSNMP),
+    array("label"=> "SMB", "y"=> $sumSMB),
+    array("label"=> "HTTP-alt", "y"=> $sumHttp_alt),
+    array("label"=> "NTP-client", "y"=> $sumNTP_client),
+    array("label"=> "MS-SQL-S", "y"=> $sumMSsqls),
+    array("label"=> "Oracle", "y"=> $sumOracle),
+    array("label"=> "MySQL", "y"=> $sumMysql),
+    array("label"=> "RDP", "y"=> $sumRDP),
+    array("label"=> "PostgreSQL", "y"=> $sumPostgreSQL),
+    array("label"=> "VNC", "y"=> $sumVNC)
 );
 
     $dataPoints4 = array(
@@ -118,7 +204,7 @@ $dataPoints3 = array(
          exportEnabled: true,
          theme: "light1", // "light1", "light2", "dark1", "dark2"
          title:{
-             text: "Simple Column Chart with Index Labels"
+             text: "Open Ports Summary"
          },
          axisY:{
              includeZero: true
