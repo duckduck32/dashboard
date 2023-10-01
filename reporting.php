@@ -35,7 +35,7 @@ $current_date_up = date('M Y');
 $current_date_down = date('d M, Y');
 $pdf->SetLeftMargin(90);
 $pdf->Cell(40,20,"Monthly Report Vulnerability Assessment",0,1,'C');
-$pdf->Cell(40,20,"Infrastructure",0,1,'C');
+$pdf->Cell(40,20,"Infrastructure, Application, Port, & Failed Scans",0,1,'C');
 $pdf->Cell(40,20,$current_date_up,0,1,'C');
 
 $pdf->Image('images/astra.png',65,110,100);
@@ -240,7 +240,7 @@ foreach($data as $itemName=>$item){
 $pdf->addPage();
 $pdf->SetFont('Arial','B',18);
 
-$pdf->Cell(40,10,"Infrastructure Reports",0,1);
+$pdf->Cell(40,10,"Application Reports",0,1);
 
 $pdf->SetFont('Arial','B',14);
 
@@ -388,7 +388,256 @@ foreach($data as $itemName=>$item){
     $barXPos++;
 }
 
+//halaman 5
+$pdf->addPage();
+$pdf->SetFont('Arial','B',18);
 
+$pdf->Cell(40,10,"Port Reports",0,1);
+
+$pdf->SetFont('Arial','B',14);
+
+$queryEmergency = "SELECT count(*) AS total_count FROM open_ports WHERE priority = 'Emergency'";
+$resultEmergency = $connection->query($queryEmergency);
+if ($resultEmergency){
+    $row = $resultEmergency->fetch_assoc();
+    $totalEmergency= $row['total_count'];
+}
+
+$queryNormal = "SELECT count(*) AS total_count FROM open_ports WHERE priority = 'Normal'";
+$resultNormal = $connection->query($queryNormal);
+if ($resultNormal){
+    $row = $resultNormal->fetch_assoc();
+    $totalNormal= $row['total_count'];
+}
+
+$pdf->Cell(150,5,'Priority',1,0,'C');
+$pdf->Cell(30,5,'Count',1,1,'C');
+$pdf->SetFont('Arial','',10);
+$pdf->Cell(150,5,'Emergency',1,0,'C');
+$pdf->Cell(30,5,$totalEmergency,1,1,'C');
+$pdf->Cell(150,5,'Normal',1,0,'C');
+$pdf->Cell(30,5,$totalNormal,1,1,'C');
+
+
+$chartX=30;
+$chartY=70;
+
+$chartWidth=150;
+$chartHeight=100;
+
+$chartTopPadding=20;
+$chartLeftPadding=10;
+$chartBottomPadding=20;
+$chartRightPadding=5;
+
+$chartBoxX=$chartX+$chartLeftPadding;
+$chartBoxY=$chartY+$chartTopPadding;
+$chartBoxWidth=$chartWidth-$chartLeftPadding-$chartRightPadding;
+$chartBoxHeight=$chartHeight-$chartTopPadding-$chartBottomPadding;
+
+$barWidth=20;
+
+$data=Array(
+    'Emergency'=>[
+        'color'=>[255,0,0],
+        'value'=>$totalEmergency
+    ],
+    'Normal'=>[
+        'color'=>[255,255,0],
+        'value'=>$totalNormal
+    ]
+    );
+
+$dataMax=0;
+$dataMax = max($totalEmergency, $totalNormal);
+$dataStep=50;
+$pdf->SetFont('Arial','',9);
+$pdf->SetLineWidth(0,2);
+$pdf->SetDrawColor(0);
+
+$pdf->Rect($chartX,$chartY,$chartWidth,$chartHeight);
+
+$pdf->Line(
+    $chartBoxX,
+    $chartBoxY,
+    $chartBoxX,
+    $chartBoxY+$chartBoxHeight
+);
+
+$pdf->Line(
+    $chartBoxX-1,
+    $chartBoxY+$chartBoxHeight,
+    $chartBoxX+$chartBoxWidth,
+    $chartBoxY+$chartBoxHeight
+);
+
+$yAxisUnits=$chartBoxHeight / $dataMax;
+
+for ($i=0;$i<=$dataMax;$i+=$dataStep){
+    $yAxisPos=$chartBoxY + ($yAxisUnits * $i);
+    $pdf->Line(
+        $chartBoxX-1,
+        $yAxisPos,
+        $chartBoxX,
+        $yAxisPos
+    );
+    //posisi "-" di y
+    $pdf->SetXy($chartBoxX - $chartLeftPadding, $yAxisPos-2);
+    //tulisan sesuai "-"
+    $pdf->Cell($chartLeftPadding-4,5,$dataMax-$i,0);
+}
+
+$pdf->SetXy($chartBoxX,$chartBoxY+$chartBoxHeight);
+
+$xLabelWidth=$chartBoxWidth/count($data);
+
+$barXPos=0;
+foreach($data as $itemName=>$item){
+    $pdf->Cell($xLabelWidth,8,$itemName,0,0,'C');
+
+    $pdf->SetFillColor($item['color'][0],$item['color'][1],$item['color'][2]);
+    if ($itemName === 'Emergency') {
+        $barHeight = $yAxisUnits * $totalEmergency;
+    } elseif ($itemName === 'Normal') {
+        $barHeight = $yAxisUnits * $totalNormal;
+    }
+
+    $barX=($xLabelWidth/2)+($xLabelWidth*$barXPos);
+    $barX=$barX-($barWidth/2);
+    $barX=$barX+$chartBoxX;
+
+    $barY=$chartBoxHeight-$barHeight;
+    $barY=$barY+$chartBoxY;
+
+    $pdf->Rect($barX,$barY,$barWidth,$barHeight,'DF');
+
+    $barXPos++;
+}
+
+//halaman 6
+$pdf->addPage();
+$pdf->SetFont('Arial','B',18);
+
+$pdf->Cell(40,10,"Failed Scans Reports",0,1);
+
+$pdf->SetFont('Arial','B',14);
+
+$queryCompleted = "SELECT count(*) AS total_count FROM failed_scans WHERE status_chart = 'Completed'";
+$resultCompleted = $connection->query($queryCompleted);
+if ($resultCompleted){
+    $row = $resultCompleted->fetch_assoc();
+    $totalCompleted= $row['total_count'];
+}
+
+$queryFailed = "SELECT count(*) AS total_count FROM failed_scans WHERE status_chart = 'Failed'";
+$resultFailed = $connection->query($queryFailed);
+if ($resultFailed){
+    $row = $resultFailed->fetch_assoc();
+    $totalFailed= $row['total_count'];
+}
+
+$pdf->Cell(150,5,'Status',1,0,'C');
+$pdf->Cell(30,5,'Count',1,1,'C');
+$pdf->SetFont('Arial','',10);
+$pdf->Cell(150,5,'Emergency',1,0,'C');
+$pdf->Cell(30,5,$totalCompleted,1,1,'C');
+$pdf->Cell(150,5,'Normal',1,0,'C');
+$pdf->Cell(30,5,$totalFailed,1,1,'C');
+
+
+$chartX=30;
+$chartY=70;
+
+$chartWidth=150;
+$chartHeight=100;
+
+$chartTopPadding=20;
+$chartLeftPadding=10;
+$chartBottomPadding=20;
+$chartRightPadding=5;
+
+$chartBoxX=$chartX+$chartLeftPadding;
+$chartBoxY=$chartY+$chartTopPadding;
+$chartBoxWidth=$chartWidth-$chartLeftPadding-$chartRightPadding;
+$chartBoxHeight=$chartHeight-$chartTopPadding-$chartBottomPadding;
+
+$barWidth=20;
+
+$data=Array(
+    'Completed'=>[
+        'color'=>[47,255,0],
+        'value'=>$totalEmergency
+    ],
+    'Failed'=>[
+        'color'=>[255,0,0],
+        'value'=>$totalNormal
+    ]
+    );
+
+$dataMax = max($totalCompleted, $totalFailed);
+$dataStep=50;
+$pdf->SetFont('Arial','',9);
+$pdf->SetLineWidth(0,2);
+$pdf->SetDrawColor(0);
+
+$pdf->Rect($chartX,$chartY,$chartWidth,$chartHeight);
+
+$pdf->Line(
+    $chartBoxX,
+    $chartBoxY,
+    $chartBoxX,
+    $chartBoxY+$chartBoxHeight
+);
+
+$pdf->Line(
+    $chartBoxX-1,
+    $chartBoxY+$chartBoxHeight,
+    $chartBoxX+$chartBoxWidth,
+    $chartBoxY+$chartBoxHeight
+);
+
+$yAxisUnits=$chartBoxHeight / $dataMax;
+
+for ($i=0;$i<=$dataMax;$i+=$dataStep){
+    $yAxisPos=$chartBoxY + ($yAxisUnits * $i);
+    $pdf->Line(
+        $chartBoxX-1,
+        $yAxisPos,
+        $chartBoxX,
+        $yAxisPos
+    );
+    //posisi "-" di y
+    $pdf->SetXy($chartBoxX - $chartLeftPadding, $yAxisPos-2);
+    //tulisan sesuai "-"
+    $pdf->Cell($chartLeftPadding-4,5,$dataMax-$i,0);
+}
+
+$pdf->SetXy($chartBoxX,$chartBoxY+$chartBoxHeight);
+
+$xLabelWidth=$chartBoxWidth/count($data);
+
+$barXPos=0;
+foreach($data as $itemName=>$item){
+    $pdf->Cell($xLabelWidth,8,$itemName,0,0,'C');
+
+    $pdf->SetFillColor($item['color'][0],$item['color'][1],$item['color'][2]);
+    if ($itemName === 'Completed') {
+        $barHeight = $yAxisUnits * $totalCompleted;
+    } elseif ($itemName === 'Failed') {
+        $barHeight = $yAxisUnits * $totalFailed;
+    }
+
+    $barX=($xLabelWidth/2)+($xLabelWidth*$barXPos);
+    $barX=$barX-($barWidth/2);
+    $barX=$barX+$chartBoxX;
+
+    $barY=$chartBoxHeight-$barHeight;
+    $barY=$barY+$chartBoxY;
+
+    $pdf->Rect($barX,$barY,$barWidth,$barHeight,'DF');
+
+    $barXPos++;
+}
 
 $pdf->Output();
 ?>
