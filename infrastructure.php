@@ -20,6 +20,12 @@ $res=mysqli_query($connection,$sql);
 				<div class="card-body">
 				   <h4 class="box-title">Vulnerabilities</h4>
 				   <button><a href="add_infrastructure.php">Add Data</a></button>
+<<<<<<< Updated upstream
+=======
+				   <button><a href="ADD_infra_batch.php">Add Batch</a></button>
+				   <button><a href="reporting_infra.php">Export Data</a></button>
+				   <?php } ?>
+>>>>>>> Stashed changes
 				</div>
 				<div class="card-body--">
 				   <div class="table-stats order-table ov-h">
@@ -56,8 +62,14 @@ $res=mysqli_query($connection,$sql);
 							   <td>
 								<?php
 								echo "<span class='badge badge-edit'><a href='https://www.tenable.com/plugins/nessus/".$row['plugin_id']."'>Detail</a></span>";
+<<<<<<< Updated upstream
 								echo "<span class='badge badge-edit'><a href='edit_infrastructure.php?id=$row[id]'>Edit</a></span>";
 								echo "<span class='badge badge-delete'><a href='delete_infrastructure.php?id=$row[id]'> Hapus </a></span>";
+=======
+								echo "<span class='badge badge-edit'><a href='EDIT_infrastructure.php?id=$row[id]'>Edit</a></span>";
+								echo "<span class='badge badge-edit'><a href='STATUS_infra.php?id=$row[id]'>Status</a></span>";
+								echo "<span class='badge badge-delete'><a href='DELETE_infrastructure.php?id=$row[id]' onClick=\"return confirm('Apakah anda yakin ingin menghapus data?');\"> Hapus </a></span>";
+>>>>>>> Stashed changes
 								?>
 							   </td>
 							</tr>
