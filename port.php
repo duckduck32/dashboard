@@ -50,8 +50,14 @@ $res=mysqli_query($connection,$sql);
 							   <td><?php echo $row['date_remediated']?></td>
 							   <td>
 								<?php
+<<<<<<< Updated upstream
 								echo "<span class='badge badge-edit'><a href='edit_infrastructure.php?id=$row[id]'>Edit</a></span>";
 								echo "<span class='badge badge-delete'><a href='?id=$row[id]'> Hapus </a></span>";
+=======
+								echo "<span class='badge badge-edit'><a href='edit_port.php?id=$row[id]'>Edit</a></span>";
+								echo "<span class='badge badge-edit'><a href='STATUS_port.php?id=$row[id]'>Status</a></span>";
+								echo "<span class='badge badge-delete'><a href='delete_port.php?id=$row[id]' onClick=\"return confirm('Apakah anda yakin ingin menghapus data?');\"> Hapus </a></span>";
+>>>>>>> Stashed changes
 								?>
 							   </td>
 							</tr>

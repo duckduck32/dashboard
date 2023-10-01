@@ -31,8 +31,15 @@ $res=mysqli_query($connection,$sql);
 		  <div class="col-xl-12">
 			 <div class="card">
 				<div class="card-body">
+<<<<<<< Updated upstream
 				   <h4 class="box-title">VENDOR MANAGEMENT </h4>
 				   <h4 class="box-link"><a href="manage_vendor_management.php">ADD VENDOR</a> </h4>
+=======
+				   <h4 class="box-title">User Management</h4>
+				   <?php if($_SESSION['ADMIN_TEAM']=="sec"){?>
+				   <button><a href="add_users.php">Add Users</a></button>
+				   <?php } ?>
+>>>>>>> Stashed changes
 				</div>
 				<div class="card-body--">
 				   <div class="table-stats order-table ov-h">
