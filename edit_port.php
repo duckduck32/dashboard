@@ -63,8 +63,8 @@
                         </div>
                         <div class="form-group">
                             <tr>
-                                <label for="assign_to" class=" form-control-label">Assigned To</label>
-                                <td><input type="text" name="assign_to" class="form-control" value="<?php echo $data['assign_to']; ?>"></td>
+                                <label for="assigned_to" class=" form-control-label">Assigned To</label>
+                                <td><input type="text" name="assigned_to" class="form-control" value="<?php echo $data['assigned_to']; ?>"></td>
                             </tr>
                         </div>
                         <div class="form-group">
@@ -115,7 +115,7 @@ if (isset($_POST['proses'])) {
         ip = '$_POST[ip]',
         date_found = '$_POST[date_found]',
         date_remediated = '$_POST[date_remediated]',
-        assign_to = '$_POST[assign_to]'
+        assigned_to = '$_POST[assigned_to]'
         where id = '$_GET[id]'");
         echo "<script>
         alert('Data berhasil diubah');
@@ -143,7 +143,7 @@ else if (isset($_POST['done'])) {
         ip = '$_POST[ip]',
         date_found = '$_POST[date_found]',
         date_remediated = '$current_date',
-        assign_to = '$_POST[assign_to]'
+        assigned_to = '$_POST[assigned_to]'
 
         where id = '$_GET[id]'");
     

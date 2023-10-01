@@ -2,6 +2,8 @@
 // Check if the form was submitted
 if (isset($_POST["submit"])) {
     $target_dir = "assets/uploads/"; // Directory where the uploaded file will be stored
+    $current_date = date('Y-m-d');
+    echo $current_date;
     $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
     $uploadOk = 1;
     $fileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -34,7 +36,7 @@ if (isset($_POST["submit"])) {
 
             // Read and process CSV data
             while (($data = fgetcsv($file)) !== false) {
-                $sql = "INSERT INTO infra_vulns (status, plugin_id, vulnerability, severity, hostname, ip, count, date_found) VALUES ('Open', '$data[0]', '$data[1]', '$data[2]', '$data[3]', '$data[4]', '$data[5]', '$data[6]')";
+                $sql = "INSERT INTO app_vulns (status, vulnerability, severity, domain, path, count, date_found) VALUES ('Open', '$data[0]', '$data[1]', '$data[2]', '$data[3]', 1, '$current_date')";
 
                 if ($conn->query($sql) === true) {
                     echo "Record inserted successfully.";
@@ -47,6 +49,9 @@ if (isset($_POST["submit"])) {
             $conn->close();
             fclose($file);
         }
+        echo "<script>
+        window.location.href='application.php';
+        </script>";
     }
 }
 ?>

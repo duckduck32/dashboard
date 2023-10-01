@@ -14,7 +14,7 @@ $res=mysqli_query($connection,$sql);
 				<div class="card-body">
 				   <h4 class="box-title">User Management</h4>
 				   <?php if($_SESSION['ADMIN_TEAM']=="sec"){?>
-				   <button><a href="add_to_database/add_users.php">Add Users</a></button>
+				   <button><a href="add_users.php">Add Users</a></button>
 				   <?php } ?>
 				</div>
 				<div class="card-body--">

@@ -146,10 +146,17 @@ $dataPoints3 = array(
     array("label"=> "VNC", "y"=> $sumVNC)
 );
 
+$sumAsetFailed_result = mysqli_query($connection, "SELECT SUM(count) FROM failed_scans WHERE status_chart = 'Failed'");
+$row = $sumAsetFailed_result->fetch_assoc();
+$sumAsetFailed = (string)$row['SUM(count)'];
+
+$sumAsetCompleted_result = mysqli_query($connection, "SELECT SUM(count) FROM failed_scans WHERE status_chart = 'Completed'");
+$row = $sumAsetCompleted_result->fetch_assoc();
+$sumAsetCompleted = (string)$row['SUM(count)'];
+
     $dataPoints4 = array(
-        array("x"=> 10, "y"=> 41),
-        array("x"=> 30, "y"=> 50),
-        array("x"=> 50, "y"=> 41)
+        array("label"=> "Failed", "y"=> $sumAsetFailed),
+        array("label"=> "Completed", "y"=> $sumAsetCompleted)
     );
          
      ?>
@@ -211,7 +218,7 @@ $dataPoints3 = array(
          },
          data: [{
              type: "column", //change type to bar, line, area, pie, etc
-             //indexLabel: "{y}", //Shows y value on all Data Points
+             indexLabel: "{y}", //Shows y value on all Data Points
              indexLabelFontColor: "#5A5757",
              indexLabelPlacement: "outside",   
              dataPoints: <?php echo json_encode($dataPoints3, JSON_NUMERIC_CHECK); ?>
@@ -224,14 +231,14 @@ $dataPoints3 = array(
          exportEnabled: true,
          theme: "light1", // "light1", "light2", "dark1", "dark2"
          title:{
-             text: "Simple Column Chart with Index Labels"
+             text: "Asset Scanning Summary"
          },
          axisY:{
              includeZero: true
          },
          data: [{
              type: "column", //change type to bar, line, area, pie, etc
-             //indexLabel: "{y}", //Shows y value on all Data Points
+             indexLabel: "{y}", //Shows y value on all Data Points
              indexLabelFontColor: "#5A5757",
              indexLabelPlacement: "outside",   
              dataPoints: <?php echo json_encode($dataPoints4, JSON_NUMERIC_CHECK); ?>

@@ -29,8 +29,8 @@ require('sidebar.php');
                         </div>    
                         <div class="form-group">
                             <tr>
-                                <label for="hostname" class="form-control-label">Hostname</label>
-                                <td><input type="text" class="form-control" name="hostname" id="" required></td>
+                                <label for="domain" class="form-control-label">Domain</label>
+                                <td><input type="text" class="form-control" name="domain" id="" required></td>
                             </tr>
                         </div>
                         <div class="form-group">
@@ -89,7 +89,7 @@ if (isset($_POST['proses'])) {
         status = 'Open',
         vulnerability = '$_POST[vulnerability]',
         severity = '$_POST[severity]',
-        hostname = '$_POST[hostname]',
+        domain = '$_POST[domain]',
         count = '$_POST[count]',
         date_found = '$_POST[date_found]',
         date_remediated = '0000-00-00',

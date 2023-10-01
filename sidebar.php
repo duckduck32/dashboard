@@ -29,7 +29,7 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="infrastructure.php">Infrastructure</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="application.php">Application</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="port.php">Port</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="failed_scans.php">Failed Scans</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="failed_scans.php">Assets Scanned</a>
                     <?php if($_SESSION['ADMIN_ROLE']!="user"){?>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="users.php">Users</a>
 				    <?php } ?>

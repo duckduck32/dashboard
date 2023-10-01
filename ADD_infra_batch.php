@@ -7,8 +7,8 @@ require('sidebar.php');
         <div class="row">
             <div class="col-lg-12">
             <div class="card">
-                <div class="card-header"> <strong>ADD PORT VULNERABIILITY</strong> <small></small>
-                <form action="upload_ports.php" method="post" enctype="multipart/form-data">
+                <div class="card-header"> <strong>ADD INFRA VULNERABIILITY</strong> <small></small>
+                <form action="UPLOAD_infra.php" method="post" enctype="multipart/form-data">
                     <div class="card-body card-block">
                         <div class="form-group">
                             <tr>
@@ -17,7 +17,7 @@ require('sidebar.php');
                                 <input type="submit" value="Upload CSV" name="submit">
                             </tr>
                             <tr>
-                                <td><button class="form-control" style="margin-top:10vh;"><a href="port.php">Back</a></button></td>
+                                <td><button class="form-control" style="margin-top:10vh;"><a href="infrastructure.php">Back</a></button></td>
                             </tr>
                         </div>
                     </div>
