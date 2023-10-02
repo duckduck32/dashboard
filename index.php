@@ -195,6 +195,7 @@ $sumAsetCompleted = (string)$row['SUM(count)'];
      </head>
      <body>
         <div class="content">
+        <button><a href="reporting.php">Export Data</a></button>
             <div class="row" id="container">
             <div id="chartContainer" style="height: 370px; width: 90%; margin: 50pt;"></div>
             <div id="chartContainer2" style="height: 370px; width: 90%; margin: 50pt"></div>

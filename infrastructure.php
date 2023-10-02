@@ -23,7 +23,6 @@ $res=mysqli_query($connection,$sql);
 <<<<<<< Updated upstream
 =======
 				   <button><a href="ADD_infra_batch.php">Add Batch</a></button>
-				   <button><a href="reporting_infra.php">Export Data</a></button>
 				   <?php } ?>
 >>>>>>> Stashed changes
 				</div>
