@@ -15,10 +15,10 @@
                     <div class="card-body card-block">
                         <div class="form-group">
                             <tr>
-                                <label for="status" class="form-control-label">Open</label>
+                                <label for="status" class="form-control-label">Status</label>
                                 <select id="status" name="status" class="form-control">
-                                    <option value="open">Open</option>
-                                    <option value="close">Close</option>
+                                    <option value="Open">Open</option>
+                                    <option value="Close">Close</option>
                                 </select>
                             </tr>
                         </div> 
@@ -41,8 +41,14 @@
                         </div>    
                         <div class="form-group">
                             <tr>
-                                <label for="hostname" class="form-control-label">Hostname</label>
-                                <td><input type="text" class="form-control" name="hostname" value="<?php echo $data['hostname']; ?>"></td>
+                                <label for="domain" class="form-control-label">Domain</label>
+                                <td><input type="text" class="form-control" name="domain" value="<?php echo $data['domain']; ?>"></td>
+                            </tr>
+                        </div>
+                        <div class="form-group">
+                            <tr>
+                                <label for="path" class="form-control-label">Path</label>
+                                <td><input type="text" class="form-control" name="path" value="<?php echo $data['path']; ?>"></td>
                             </tr>
                         </div>
                         <div class="form-group">
@@ -59,8 +65,8 @@
                         </div>
                         <div class="form-group">
                             <tr>
-                                <label for="assign_to" class=" form-control-label">Assigned To</label>
-                                <td><input type="text" name="assign_to" class="form-control" value="<?php echo $data['assign_to']; ?>"></td>
+                                <label for="assigned_to" class=" form-control-label">Assigned To</label>
+                                <td><input type="text" name="assigned_to" class="form-control" value="<?php echo $data['assigned_to']; ?>"></td>
                             </tr>
                         </div>
                         <div class="form-group">
@@ -107,10 +113,11 @@ if (isset($_POST['proses'])) {
         status = '$_POST[status]',
         vulnerability = '$_POST[vulnerability]',
         severity = '$_POST[severity]',
-        hostname = '$_POST[hostname]',
+        domain = '$_POST[domain]',
+        path = '$_POST[path]',
         date_found = '$_POST[date_found]',
         date_remediated = '$_POST[date_remediated]',
-        assign_to = '$_POST[assign_to]'
+        assigned_to = '$_POST[assigned_to]'
         where id = '$_GET[id]'");
         echo "<script>
         alert('Data berhasil diubah');
@@ -135,10 +142,11 @@ else if (isset($_POST['done'])) {
         status = 'Close',
         vulnerability = '$_POST[vulnerability]',
         severity = '$_POST[severity]',
-        hostname = '$_POST[hostname]',
+        domain = '$_POST[domain]',
+        path = '$_POST[path]',
         date_found = '$_POST[date_found]',
         date_remediated = '$current_date',
-        assign_to = '$_POST[assign_to]'
+        assigned_to = '$_POST[assigned_to]'
         where id = '$_GET[id]'");
         echo "<script>
         alert('Data berhasil diclose');

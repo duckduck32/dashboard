@@ -1,0 +1,1261 @@
+SQL injection,High,https://itrecruitment.asuransiastra.com,/forget/sending/
+SQL injection,High,http://www.asuransiastra.com,/wp-admin/admin-ajax.php/
+TLS certificate,Medium,https://meddoctor.asuransiastra.com,/
+TLS certificate,Medium,https://salvage.asuransiastra.com,/
+TLS certificate,Medium,https://www.gardamarine.com,/
+TLS certificate,Medium,https://db-repositoryscenario-qc.asuransiastra.com,/
+TLS certificate,Medium,https://repositoryscenario-qc.asuransiastra.com,/
+TLS certificate,Medium,https://www.asuransiastra.com,/
+TLS certificate,Medium,https://a2is-opex.aab.asuransi.astra.co.id,/
+TLS certificate,Medium,https://a2issd.aab.asuransi.astra.co.id,/
+TLS certificate,Medium,https://aab-antrian.aab.asuransi.astra.co.id,/
+TLS certificate,Medium,https://aab-helpdesk.aab.asuransi.astra.co.id,/
+TLS certificate,Medium,https://k-port.aab.asuransi.astra.co.id,/
+TLS certificate,Medium,https://b2bpermatava.beyond.asuransi.astra.co.id,/
+TLS certificate,Medium,https://product.beyond.asuransi.astra.co.id,/
+TLS certificate,Medium,https://a2-hris.aab.asuransi.astra.co.id,/
+SQL injection,High,http://econsulcms.asuransiastra.com,/
+Web cache poisoning,High,https://econsulcms.asuransiastra.com,/
+TLS cookie without secure flag set,Medium,https://a2isworkshop.asuransiastra.com,/ClaimProcess/
+TLS cookie without secure flag set,Medium,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/
+TLS cookie without secure flag set,Medium,https://qremployee.asuransiastra.com,/
+Session token in URL,Medium,https://db-repositoryscenario-qc.asuransiastra.com,/
+TLS cookie without secure flag set,Medium,https://itrecruitment.asuransiastra.com,/
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/Retail/API/root/signin
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/Retail/CSS/a2is-1.10.1.5.min.css
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/Retail/Scripts/a2is-1.16.1.3.min.js
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/Retail/UI/Root/home.cshtml
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/retail
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://a2isworkshop.asuransiastra.com,/
+Strict transport security not enforced,Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess
+Password field with autocomplete enabled,Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/gardaakses
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://gardamedikaakses.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/GlobalAPI/
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://gen5-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://gen5-qc.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://a2isworkshop-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://a2isworkshop-qc.asuransiastra.com,/
+Password field with autocomplete enabled,Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/
+Unencrypted communications,Low,http://gen5-qc.asuransiastra.com,/
+Unencrypted communications,Low,http://gen5-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://gen5-qc.asuransiastra.com,/financeapp
+Strict transport security not enforced,Low,https://gen5-qc.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://salvage-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://gardamedikaakses-qc1.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://hometr.beyond.asuransi.astra.co.id,/
+Unencrypted communications,Low,http://generaltr.beyond.asuransi.astra.co.id,/
+Unencrypted communications,Low,http://phonefollowuptr.beyond.asuransi.astra.co.id,/
+Unencrypted communications,Low,http://reporttr.beyond.asuransi.astra.co.id,/
+Unencrypted communications,Low,http://surveytr.beyond.asuransi.astra.co.id,/
+Unencrypted communications,Low,http://policytr.beyond.asuransi.astra.co.id,/
+Unencrypted communications,Low,http://architect.asuransiastra.com,/
+Strict transport security not enforced,Low,https://architect.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://gardamobileotosurvey.asuransiastra.com,/
+Strict transport security not enforced,Low,https://gardamobileotosurvey.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://askdoctor.asuransiastra.com,/
+Password submitted using GET method,Low,https://askdoctor.asuransiastra.com,/Home/Login
+Password field with autocomplete enabled,Low,https://askdoctor.asuransiastra.com,/Home/Login
+Strict transport security not enforced,Low,https://askdoctorcms.asuransiastra.com,/
+Password submitted using GET method,Low,https://askdoctorcms.asuransiastra.com,/
+Password submitted using GET method,Low,https://askdoctorcms.asuransiastra.com,/Home
+Password field with autocomplete enabled,Low,https://askdoctorcms.asuransiastra.com,/
+Password field with autocomplete enabled,Low,https://askdoctorcms.asuransiastra.com,/Home
+Strict transport security not enforced,Low,https://askdoctormiddleware.asuransiastra.com,/
+Strict transport security not enforced,Low,https://askdoctormiddleware.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://b2b.asuransiastra.com,/
+Strict transport security not enforced,Low,https://b2b.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://crakses.asuransiastra.com,/
+Strict transport security not enforced,Low,https://crakses.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://econsul.asuransiastra.com,/
+Strict transport security not enforced,Low,https://econsul.asuransiastra.com,/
+Password submitted using GET method,Low,https://econsul.asuransiastra.com,/Home/Login
+Password field with autocomplete enabled,Low,https://econsul.asuransiastra.com,/Home/Login
+Strict transport security not enforced,Low,https://econsulcms.asuransiastra.com,/
+Strict transport security not enforced,Low,https://econsulcms.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://econsulmiddleware.asuransiastra.com,/
+Strict transport security not enforced,Low,https://econsulmiddleware.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://gardamedikaakses.asuransiastra.com,/
+Unencrypted communications,Low,http://gardamedika.asuransiastra.com,/
+Strict transport security not enforced,Low,https://gardamedika.asuransiastra.com,/
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/Retail/API/root/signin
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/Retail/CSS/a2is-1.10.1.5.min.css
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/Retail/Scripts/a2is-1.16.1.3.min.js
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/Retail/UI/Root/home.cshtml
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/retail
+Strict transport security not enforced,Low,https://gen5.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://giias.asuransiastra.com,/
+Unencrypted communications,Low,http://globalapi.asuransiastra.com,/
+Strict transport security not enforced,Low,https://globalapi.asuransiastra.com,/
+Strict transport security not enforced,Low,https://gomitra.asuransiastra.com,/
+Password submitted using GET method,Low,https://gomitra.asuransiastra.com,/GomitraMVC
+Password submitted using GET method,Low,https://gomitra.asuransiastra.com,/GomitraMVC/ruangmitra/Login
+Password field with autocomplete enabled,Low,https://gomitra.asuransiastra.com,/GomitraMVC
+Password field with autocomplete enabled,Low,https://gomitra.asuransiastra.com,/GomitraMVC/ruangmitra/Login
+Unencrypted communications,Low,http://m-a2isworkshop.asuransiastra.com,/
+Strict transport security not enforced,Low,https://m-a2isworkshop.asuransiastra.com,/
+Unencrypted communications,Low,http://marineapi.asuransiastra.com,/
+Strict transport security not enforced,Low,https://marineapi.asuransiastra.com,/
+Strict transport security not enforced,Low,https://marineapi.asuransiastra.com,/Global.asax
+Strict transport security not enforced,Low,https://marineapi.asuransiastra.com,/Web.config
+Strict transport security not enforced,Low,https://marineapi.asuransiastra.com,/bin/
+Strict transport security not enforced,Low,https://marineapi.asuransiastra.com,/packages.config
+Strict transport security not enforced,Low,https://meddoctor.asuransiastra.com,/
+Strict transport security not enforced,Low,https://meddoctor.asuransiastra.com,/service-worker.js
+Strict transport security not enforced,Low,https://meddoctor.asuransiastra.com,/static/css/main.0eda6192.chunk.css
+Strict transport security not enforced,Low,https://meddoctor.asuransiastra.com,/static/js/7.1432c538.chunk.js
+Strict transport security not enforced,Low,https://meddoctor.asuransiastra.com,/static/js/main.d30a0264.chunk.js
+Strict transport security not enforced,Low,https://publicapi.asuransiastra.com,/
+Strict transport security not enforced,Low,https://publicapi.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://qremployee.asuransiastra.com,/
+Strict transport security not enforced,Low,https://qremployee.asuransiastra.com,/Content/Site.css
+Strict transport security not enforced,Low,https://qremployee.asuransiastra.com,/DXR.axd
+Strict transport security not enforced,Low,https://qremployee.asuransiastra.com,/LoginPage.aspx
+Strict transport security not enforced,Low,https://qremployee.asuransiastra.com,/robots.txt
+Password field with autocomplete enabled,Low,https://qremployee.asuransiastra.com,/LoginPage.aspx
+Strict transport security not enforced,Low,https://quotation.asuransiastra.com,/
+Strict transport security not enforced,Low,https://quotation.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://gardaqsystem.asuransiastra.com,/
+Strict transport security not enforced,Low,https://gardaqsystem.asuransiastra.com,/
+Strict transport security not enforced,Low,https://jenkinsdeployer-dev.asuransiastra.com,/
+Password field with autocomplete enabled,Low,https://jenkinsdeployer-dev.asuransiastra.com,/login
+Password field with autocomplete enabled,Low,https://jenkinsdeployer-dev.asuransiastra.com,/loginError
+Unencrypted communications,Low,http://gardamobile.asuransiastra.com,/
+Unencrypted communications,Low,http://gardamobileotosales.asuransiastra.com,/
+Strict transport security not enforced,Low,https://apps-monitoring.asuransiastra.com,/final
+Strict transport security not enforced,Low,https://apps-monitoring.asuransiastra.com,/final/servlet/com.eg.LoginHelperServlet
+Strict transport security not enforced,Low,https://aabmail.asuransiastra.com,/
+Strict transport security not enforced,Low,https://a2isworkshop.asuransiastra.com,/
+Strict transport security not enforced,Low,https://a2isworkshop.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://a2isworkshop-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://a2isworkshop-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://a2isworkshop-qc.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://m-a2isworkshop-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://m-a2isworkshop-qc.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://askdoctorcms-qc.asuransiastra.com,/
+Password submitted using GET method,Low,https://askdoctorcms-qc.asuransiastra.com,/
+Password submitted using GET method,Low,https://askdoctorcms-qc.asuransiastra.com,/Home
+Password field with autocomplete enabled,Low,https://askdoctorcms-qc.asuransiastra.com,/
+Password field with autocomplete enabled,Low,https://askdoctorcms-qc.asuransiastra.com,/Home
+Unencrypted communications,Low,http://askdoctormiddleware-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://askdoctormiddleware-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://askdoctormiddleware-qc.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://askdoctor-qc.asuransiastra.com,/
+Password submitted using GET method,Low,https://askdoctor-qc.asuransiastra.com,/Home/Login
+Password field with autocomplete enabled,Low,https://askdoctor-qc.asuransiastra.com,/Home/Login
+Strict transport security not enforced,Low,https://b2b-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://b2b-qc.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://chatbotapi-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://chatbotapi-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://chatbotapi-qc.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://cisadane-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://cisadane-qc.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://crakses-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://crakses-qc.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://gardamedika-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://gardamedika-qc.asuransiastra.com,/
+Unencrypted communications,Low,http://gen5-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://gen5-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://giias-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://giias-qc.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://globalapi-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://globalapi-qc.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://gomitra-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://gomitra-qc.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://medcarereactapp-dev.asuransiastra.com,/
+Strict transport security not enforced,Low,https://medcarereactapp-qc.asuransiastra.com,/
+Unencrypted communications,Low,http://publicapi-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://publicapi-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://quotation-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://quotation-qc.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://gardamobilecrakses.asuransiastra.com,/
+Strict transport security not enforced,Low,https://gardamobilecrakses.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://gardamobilegeneric.asuransiastra.com,/
+Strict transport security not enforced,Low,https://gardamobilegeneric.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://gardamobileotosurvey-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://a2issd.asuransiastra.com,/
+Cross-site scripting (reflected),Low,https://a2issd.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://jenkinsdeployer-qc.asuransiastra.com,/
+Password field with autocomplete enabled,Low,https://jenkinsdeployer-qc.asuransiastra.com,/login
+Password field with autocomplete enabled,Low,https://jenkinsdeployer-qc.asuransiastra.com,/loginError
+Unencrypted communications,Low,http://mail.asuransiastra.com,/
+Unencrypted communications,Low,http://autodiscover.asuransiastra.com,/
+Strict transport security not enforced,Low,https://autodiscover.asuransiastra.com,/
+Strict transport security not enforced,Low,https://autodiscover.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://gardaoto.com,/
+Strict transport security not enforced,Low,https://gardaoto.com,/
+Strict transport security not enforced,Low,https://gardaoto.com,/index.php
+Unencrypted communications,Low,http://www-qc.gardaoto.com,/
+Strict transport security not enforced,Low,https://garda-healthtech.gardaoto.com,/
+Strict transport security not enforced,Low,https://garda-healthtech.gardaoto.com,/static/css/main.fd1cfecd.chunk.css
+Strict transport security not enforced,Low,https://garda-healthtech.gardaoto.com,/static/js/16.2dccd844.chunk.js
+Strict transport security not enforced,Low,https://garda-healthtech.gardaoto.com,/static/js/main.66fcd904.chunk.js
+Strict transport security not enforced,Low,https://gardamotor.gardaoto.com,/
+Strict transport security not enforced,Low,https://publicapi.gardaoto.com,/robots.txt
+Strict transport security not enforced,Low,https://chatbot-qc.gardaoto.com,/
+Strict transport security not enforced,Low,https://chatbot-qc.gardaoto.com,/robots.txt
+Strict transport security not enforced,Low,https://garda-healthtech-qc.gardaoto.com,/
+Strict transport security not enforced,Low,https://garda-healthtech-qc.gardaoto.com,/static/css/main.fd1cfecd.chunk.css
+Strict transport security not enforced,Low,https://garda-healthtech-qc.gardaoto.com,/static/js/0.0c9830c5.chunk.js
+Strict transport security not enforced,Low,https://garda-healthtech-qc.gardaoto.com,/static/js/16.2dccd844.chunk.js
+Strict transport security not enforced,Low,https://garda-healthtech-qc.gardaoto.com,/static/js/5.3fca3bc9.chunk.js
+Strict transport security not enforced,Low,https://garda-healthtech-qc.gardaoto.com,/static/js/main.57f59286.chunk.js
+Strict transport security not enforced,Low,https://gardamall-qc.gardaoto.com,/
+Strict transport security not enforced,Low,https://gardamall-qc.gardaoto.com,/robots.txt
+Strict transport security not enforced,Low,https://gardamotor-qc.gardaoto.com,/
+Strict transport security not enforced,Low,https://publicapi-dev-ext.gardaoto.com,/
+Strict transport security not enforced,Low,https://publicapi-dev-ext.gardaoto.com,/robots.txt
+Strict transport security not enforced,Low,https://otosalesgen5.gardaoto.com,/
+Strict transport security not enforced,Low,https://otosalesgen5.gardaoto.com,/robots.txt
+Strict transport security not enforced,Low,https://paymentapi.gardaoto.com,/
+Strict transport security not enforced,Low,https://paymentapi.gardaoto.com,/robots.txt
+Strict transport security not enforced,Low,https://otosalesgen5-qc.gardaoto.com,/
+Strict transport security not enforced,Low,https://otosalesgen5-qc.gardaoto.com,/robots.txt
+Strict transport security not enforced,Low,https://otosales-qc.gardaoto.com,/
+Strict transport security not enforced,Low,https://otosales-qc.gardaoto.com,/robots.txt
+Strict transport security not enforced,Low,https://publicapi-qc.gardaoto.com,/
+Strict transport security not enforced,Low,https://publicapi-qc.gardaoto.com,/robots.txt
+Strict transport security not enforced,Low,https://chatbotmiddleware.gardaoto.com,/
+Strict transport security not enforced,Low,https://chatbotmiddleware.gardaoto.com,/robots.txt
+Strict transport security not enforced,Low,https://chat.gardaoto.com,/
+Password submitted using GET method,Low,https://chat.gardaoto.com,/Home/Login
+Password field with autocomplete enabled,Low,https://chat.gardaoto.com,/Home/Login
+Strict transport security not enforced,Low,https://internalapi-dev.gardaoto.com,/
+Strict transport security not enforced,Low,https://internalapi-dev.gardaoto.com,/robots.txt
+Strict transport security not enforced,Low,https://publicapi-dev.gardaoto.com,/
+Strict transport security not enforced,Low,https://publicapi-dev.gardaoto.com,/robots.txt
+Unencrypted communications,Low,http://www.gomitra.com,/
+Strict transport security not enforced,Low,https://www.gomitra.com,/wp-sitemap-posts-avada_faq-1.xml
+Strict transport security not enforced,Low,https://www.gomitra.com,/wp-sitemap-posts-page-1.xml
+Strict transport security not enforced,Low,https://www.gomitra.com,/wp-sitemap-taxonomies-category-1.xml
+Strict transport security not enforced,Low,https://www.gomitra.com,/wp-sitemap-taxonomies-post_tag-1.xml
+Unencrypted communications,Low,http://queuingsvc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://queuingsvc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://www.gardamarine.com,/
+Password submitted using GET method,Low,https://www.gardaoto.com,/login/
+Password field with autocomplete enabled,Low,https://www.gardaoto.com,/garda-edu/quotation/
+Password field with autocomplete enabled,Low,https://www.gardaoto.com,/garda-me/quotation/
+Password field with autocomplete enabled,Low,https://www.gardaoto.com,/login/
+Strict transport security not enforced,Low,https://otosales-centos-qc.gardaoto.com,/
+Strict transport security not enforced,Low,https://otosales-centos-qc.gardaoto.com,/forgotpassword
+Unencrypted communications,Low,http://xoom.asuransiastra.com,/
+Strict transport security not enforced,Low,https://xoom.asuransiastra.com,/
+Strict transport security not enforced,Low,https://db-repositoryscenario-qc.asuransiastra.com,/
+Password field with autocomplete enabled,Low,https://db-repositoryscenario-qc.asuransiastra.com,/
+Password field with autocomplete enabled,Low,https://db-repositoryscenario-qc.asuransiastra.com,/index.php
+Strict transport security not enforced,Low,https://repositoryscenario-qc.asuransiastra.com,/
+Password field with autocomplete enabled,Low,https://repositoryscenario-qc.asuransiastra.com,/login
+Unencrypted communications,Low,http://www.asuransiastra.com,/
+Unencrypted communications,Low,http://a2is-opex.aab.asuransi.astra.co.id,/
+Strict transport security not enforced,Low,https://a2is-opex.aab.asuransi.astra.co.id,/
+Password field with autocomplete enabled,Low,https://a2is-opex.aab.asuransi.astra.co.id,/
+Strict transport security not enforced,Low,https://a2issd.aab.asuransi.astra.co.id,/
+Strict transport security not enforced,Low,https://a2issd.aab.asuransi.astra.co.id,/pages/UI.php
+Strict transport security not enforced,Low,https://a2issd.aab.asuransi.astra.co.id,/robots.txt
+Cross-site scripting (reflected),Low,https://a2issd.aab.asuransi.astra.co.id,/robots.txt
+Strict transport security not enforced,Low,https://a2is-wallboard2.asuransiastra.com,/wallboard/
+Strict transport security not enforced,Low,https://a2is-wallboard2.asuransiastra.com,/wallboard/css
+Strict transport security not enforced,Low,https://a2is-wallboard2.asuransiastra.com,/wallboard/js
+Strict transport security not enforced,Low,https://a2is-wallboard2.asuransiastra.com,/wallboard/view3
+Unencrypted communications,Low,http://aab-antrian.aab.asuransi.astra.co.id,/
+Strict transport security not enforced,Low,https://aab-antrian.aab.asuransi.astra.co.id,/robots.txt
+Strict transport security not enforced,Low,https://aab-helpdesk.aab.asuransi.astra.co.id,/
+Strict transport security not enforced,Low,https://aab-helpdesk.aab.asuransi.astra.co.id,/robots.txt
+Unencrypted communications,Low,http://k-port.aab.asuransi.astra.co.id,/
+Strict transport security not enforced,Low,https://k-port.aab.asuransi.astra.co.id,/
+Strict transport security not enforced,Low,https://k-port.aab.asuransi.astra.co.id,/robots.txt
+Unencrypted communications,Low,http://b2bpermatava.beyond.asuransi.astra.co.id,/
+Strict transport security not enforced,Low,https://b2bpermatava.beyond.asuransi.astra.co.id,/
+Strict transport security not enforced,Low,https://b2bpermatava.beyond.asuransi.astra.co.id,/robots.txt
+Unencrypted communications,Low,http://k2server.beyond.asuransi.astra.co.id,/
+Unencrypted communications,Low,http://product.beyond.asuransi.astra.co.id,/
+Strict transport security not enforced,Low,https://product.beyond.asuransi.astra.co.id,/
+Strict transport security not enforced,Low,https://otosales.gardaoto.com,/
+Strict transport security not enforced,Low,https://otosales.gardaoto.com,/forgotpassword
+Unencrypted communications,Low,http://gardaoto.gardaoto.com,/
+Strict transport security not enforced,Low,https://gardaoto.gardaoto.com,/
+Strict transport security not enforced,Low,https://gardaoto.gardaoto.com,/robots.txt
+Unencrypted communications,Low,http://a2-hris.aab.asuransi.astra.co.id,/
+Strict transport security not enforced,Low,https://a2-hris.aab.asuransi.astra.co.id,/
+Unencrypted communications,Low,http://a2is-zabbix.asuransiastra.com,/
+Unencrypted communications,Low,http://172.16.94.180,/
+Strict transport security not enforced,Low,https://otosales.gardaoto.com,/
+Strict transport security not enforced,Low,https://otosales.gardaoto.com,/robots.txt
+Unencrypted communications,Low,http://a2-deskcentral.asuransiastra.com:8383,/
+Unencrypted communications,Low,http://www-qc.gardaoto.com,/
+Unencrypted communications,Low,http://gen5-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://gen5-qc.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://b2b-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://b2b-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://b2b-comm.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://claim-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://claim-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://claim-comm.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://delivery-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://delivery-comm.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://finance-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://finance-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://finance-comm.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://general-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://general-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://general-comm.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://home-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://home-comm.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://phonefollowup-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://phonefollowup-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://phonefollowup-comm.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://policy-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://policy-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://policy-comm.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://report-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://report-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://report-comm.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://survey-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://survey-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://survey-comm.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://b2b-comm-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://b2b-comm-qc.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://claim-comm-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://claim-comm-qc.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://delivery-comm-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://delivery-comm-qc.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://finance-comm-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://finance-comm-qc.asuransiastra.com,/
+Strict transport security not enforced,Low,https://finance-comm-qc.asuransiastra.com,/robots.txt
+Unencrypted communications,Low,http://product-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://product-comm.asuransiastra.com,/
+Strict transport security not enforced,Low,https://product-comm.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://itrecruitment.asuransiastra.com,/
+Strict transport security not enforced,Low,https://itrecruitment.asuransiastra.com,/auth
+Strict transport security not enforced,Low,https://itrecruitment.asuransiastra.com,/dir/lib/jquery/jquery.min.js
+Strict transport security not enforced,Low,https://itrecruitment.asuransiastra.com,/forget/
+Strict transport security not enforced,Low,https://itrecruitment.asuransiastra.com,/forget/sending/
+Strict transport security not enforced,Low,https://itrecruitment.asuransiastra.com,/register
+Strict transport security not enforced,Low,https://itrecruitment.asuransiastra.com,/register/
+Strict transport security not enforced,Low,https://itrecruitment.asuransiastra.com,/robots.txt
+Strict transport security not enforced,Low,https://a2is-vms.asuransiastra.com,/assets/css/main/app.css
+Strict transport security not enforced,Low,https://a2is-vms.asuransiastra.com,/assets/css/pages/auth.css
+Strict transport security not enforced,Low,https://a2is-vms.asuransiastra.com,/robots.txt
+Password field with autocomplete enabled,Low,https://a2is-vms.asuransiastra.com,/login
+Cross-site request forgery,Medium,https://gen5.asuransiastra.com,/Retail/API/root/signin
+Cross-site request forgery,Medium,https://gen5.asuransiastra.com,/UAM/API/root/signin
+Cross-site request forgery,Medium,https://gen5.asuransiastra.com,/Health/API/root/signin
+Cross-site request forgery,Medium,https://gardamedikaakses.asuransiastra.com,/GardaAkses/API/root/signin
+Cross-site request forgery,Medium,https://gardamedikaakses-qc1.asuransiastra.com,/GardaAkses/API/root/signin
+Cross-site request forgery,Medium,https://gen5.asuransiastra.com,/Health/API/root/signin
+Cross-site request forgery,Medium,https://gen5.asuransiastra.com,/Retail/API/root/signin
+Cross-site request forgery,Medium,https://gomitra.asuransiastra.com,/GomitraMVC/ruangmitra/infomitra/
+Cross-site request forgery,Medium,https://m-a2isworkshop.asuransiastra.com,/Workshop/API/root/signin
+HTTP request smuggling,Medium,http://gardamobile.asuransiastra.com,/
+HTTP request smuggling,Medium,http://gardamobileotosales.asuransiastra.com,/
+Cross-site request forgery,Medium,https://apps-monitoring.asuransiastra.com,/final/logout
+Cross-site request forgery,Medium,https://apps-monitoring.asuransiastra.com,/final/scripts/LoginApp/data/EgLoginService.jsp
+Cross-site request forgery,Medium,https://apps-monitoring.asuransiastra.com,/final/scripts/LoginApp/data/EgValidateJson.jsp
+Cross-site request forgery,Medium,https://apps-monitoring.asuransiastra.com,/final/servlet/com.egurkha.LoginServlet
+HTTP request smuggling,Medium,http://gardamobileotosurvey-qc.asuransiastra.com,/
+HTTP request smuggling,Medium,http://gardamobileotosurvey-qc.asuransiastra.com,/robots.txt
+HTTP request smuggling,Medium,http://mail.asuransiastra.com,/
+HTTP request smuggling,Medium,https://www.asuransiastra.com,/
+HTTP request smuggling,Medium,https://www.asuransiastra.com,/blog/apa-itu-tower-crane-jenis-cara-kerja-dan-bagian-bagiannya/
+HTTP request smuggling,Medium,https://www.asuransiastra.com,/blog/begini-cara-menyisihkan-uang-untuk-bayar-asuransi-dari-gajimu/
+HTTP request smuggling,Medium,https://www.asuransiastra.com,/blog/cara-memilih-produk-asuransi-yang-tepat-untuk-kamu-keluarga/
+HTTP request smuggling,Medium,https://www.asuransiastra.com,/career/apply
+HTTP request smuggling,Medium,https://www.asuransiastra.com,/wp-includes/js/wp-emoji-release.min.js
+Link manipulation (DOM-based),Low,https://askdoctor.asuransiastra.com,/Home/Login
+Link manipulation (DOM-based),Low,https://askdoctor.asuransiastra.com,/lib/jquery/dist/jquery.js
+Link manipulation (DOM-based),Low,https://askdoctorcms.asuransiastra.com,/
+Link manipulation (DOM-based),Low,https://askdoctorcms.asuransiastra.com,/Home
+Link manipulation (DOM-based),Low,https://askdoctorcms.asuransiastra.com,/lib/jquery/dist/jquery.js
+Link manipulation (DOM-based),Low,https://econsul.asuransiastra.com,/Home/Login
+Link manipulation (DOM-based),Low,https://econsul.asuransiastra.com,/lib/jquery/dist/jquery.js
+Client-side HTTP parameter pollution (reflected),Low,http://quotation.asuransiastra.com,/
+Client-side HTTP parameter pollution (reflected),Low,http://quotation.asuransiastra.com,/robots.txt
+Client-side HTTP parameter pollution (reflected),Low,http://jenkinsdeployer-dev.asuransiastra.com,/robots.txt
+Cookie manipulation (DOM-based),Low,https://aabmail.asuransiastra.com,/owa/auth/logon.aspx
+Cookie manipulation (DOM-based),Low,https://aabmail.asuransiastra.com,/owa/auth/logon.aspx
+Cookie manipulation (DOM-based),Low,https://aabmail.asuransiastra.com,/owa/auth/logon.aspx
+Client-side HTTP parameter pollution (reflected),Low,https://aabmail.asuransiastra.com,/owa/auth/15.1.2507/themes/resources/favicon.ico
+Client-side HTTP parameter pollution (reflected),Low,https://aabmail.asuransiastra.com,/owa/auth/logon.aspx
+Client-side HTTP parameter pollution (reflected),Low,https://aabmail.asuransiastra.com,/owa/robots.txt
+Link manipulation (DOM-based),Low,https://askdoctorcms-qc.asuransiastra.com,/
+Link manipulation (DOM-based),Low,https://askdoctorcms-qc.asuransiastra.com,/Home
+Link manipulation (DOM-based),Low,https://askdoctorcms-qc.asuransiastra.com,/lib/jquery/dist/jquery.js
+Link manipulation (DOM-based),Low,https://askdoctor-qc.asuransiastra.com,/Home/Login
+Link manipulation (DOM-based),Low,https://askdoctor-qc.asuransiastra.com,/lib/jquery/dist/jquery.js
+Client-side HTTP parameter pollution (reflected),Low,http://quotation-qc.asuransiastra.com,/robots.txt
+Client-side HTTP parameter pollution (reflected),Low,http://jenkinsdeployer-qc.asuransiastra.com,/robots.txt
+Client-side HTTP parameter pollution (reflected),Low,http://otosalesgen5-qc.gardaoto.com,/robots.txt
+Link manipulation (DOM-based),Low,https://chat.gardaoto.com,/Home/Login
+Link manipulation (DOM-based),Low,https://chat.gardaoto.com,/lib/jquery/dist/jquery.js
+Cookie without HttpOnly flag set,Low,https://www.gardaoto.com,/
+Client-side HTTP parameter pollution (reflected),Low,https://www.gardaoto.com,/author/digital-channel-administrator/
+Client-side HTTP parameter pollution (reflected),Low,https://www.gardaoto.com,/blog
+Client-side HTTP parameter pollution (reflected),Low,https://www.gardaoto.com,/blog/
+Link manipulation (DOM-based),Low,https://db-repositoryscenario-qc.asuransiastra.com,/doc/html/index.html
+Link manipulation (DOM-based),Low,https://db-repositoryscenario-qc.asuransiastra.com,/doc/html/index.html
+Cookie without HttpOnly flag set,Low,https://repositoryscenario-qc.asuransiastra.com,/
+Cookie without HttpOnly flag set,Low,https://repositoryscenario-qc.asuransiastra.com,/login
+Cookie without HttpOnly flag set,Low,https://repositoryscenario-qc.asuransiastra.com,/loginProcess
+Client-side JSON injection (DOM-based),Low,https://www.asuransiastra.com,/career-draft/apply/
+Client-side JSON injection (DOM-based),Low,https://www.asuransiastra.com,/career-draft/apply/
+Client-side JSON injection (DOM-based),Low,https://www.asuransiastra.com,/career-draft/apply/
+Cookie without HttpOnly flag set,Low,http://www.asuransiastra.com,/wp-admin/
+Cookie without HttpOnly flag set,Low,http://www.asuransiastra.com,/wp-admin/admin-ajax.php
+Cookie without HttpOnly flag set,Low,http://www.asuransiastra.com,/wp-admin/admin-ajax.php/
+Cookie without HttpOnly flag set,Low,https://www.asuransiastra.com,/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/author/administrator/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/author/administrator/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/author/administrator/page/3/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/author/administrator/page/3/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/award/mampu-berikan-layanan-terbaik-melalui-beragam-fitur-garda-medika-dari-asuransi-astra-raih-marketeers-omni-brands-of-the-year-2023/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/award/mampu-berikan-layanan-terbaik-melalui-beragam-fitur-garda-medika-dari-asuransi-astra-raih-marketeers-omni-brands-of-the-year-2023/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/begini-cara-menyisihkan-uang-untuk-bayar-asuransi-dari-gajimu/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/begini-cara-menyisihkan-uang-untuk-bayar-asuransi-dari-gajimu/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/fungsi-asuransi-secara-primer-sekunder-dan-khusus/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/fungsi-asuransi-secara-primer-sekunder-dan-khusus/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/ini-dia-asuransi-terbaik-di-indonesia-asuransi-astra/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/ini-dia-asuransi-terbaik-di-indonesia-asuransi-astra/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/inilah-perusahaan-asuransi-terbaik-di-indonesia/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/inilah-perusahaan-asuransi-terbaik-di-indonesia/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/jenis-jenis-asuransi-yang-ditawarkan-oleh-asuransi-astra/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/jenis-jenis-asuransi-yang-ditawarkan-oleh-asuransi-astra/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/ketahui-apa-itu-premi-asuransi-jenis-dan-fungsinya/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/ketahui-apa-itu-premi-asuransi-jenis-dan-fungsinya/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/keuntungan-memiliki-asuransi-untuk-jaminan-hari-tua/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/keuntungan-memiliki-asuransi-untuk-jaminan-hari-tua/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/mengenal-concrete-vibrator-sebagai-alat-cor-beton/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/mengenal-concrete-vibrator-sebagai-alat-cor-beton/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/mengenal-polis-asuransi-beserta-fungsi-dan-contohnya/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/mengenal-polis-asuransi-beserta-fungsi-dan-contohnya/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/motor-grader-adalah-alat-berat-untuk-meratakan-tanah/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/motor-grader-adalah-alat-berat-untuk-meratakan-tanah/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/pahami-apa-itu-asuransi-fungsi-dan-jenis-jenisnya/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/pahami-apa-itu-asuransi-fungsi-dan-jenis-jenisnya/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/pentingnya-memiliki-asuransi-rangka-kapal/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/pentingnya-memiliki-asuransi-rangka-kapal/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/perbedaan-asuransi-umum-dengan-asuransi-syariah/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/perbedaan-asuransi-umum-dengan-asuransi-syariah/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/punya-sepeda-motor-yuk-ketahui-cara-memilih-asuransi-motor/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/punya-sepeda-motor-yuk-ketahui-cara-memilih-asuransi-motor/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/syarat-dan-biaya-perpanjangan-stnk-motor-secara-lengkap/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/blog/syarat-dan-biaya-perpanjangan-stnk-motor-secara-lengkap/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/career-draft/apply/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/career-draft/apply/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/career-draft/karir/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/career-draft/karir/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/commercial-insurance/fire-property-insurance/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/commercial-insurance/fire-property-insurance/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/commercial/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/commercial/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/commercial/asuransi-alat-berat/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/commercial/asuransi-alat-berat/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/commercial/asuransi-kendaraan-bermotor/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/commercial/asuransi-kendaraan-bermotor/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/commercial/asuransi-rangka-kapal/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/commercial/asuransi-rangka-kapal/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/corporate/awards/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/corporate/awards/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/corporate/milestone/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/corporate/milestone/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/event/asuransi-astra-bersama-ngelesin-berikan-literasi-keuangan-untuk-perempuan-pelaku-umkm/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/event/asuransi-astra-bersama-ngelesin-berikan-literasi-keuangan-untuk-perempuan-pelaku-umkm/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/event/asuransi-astra-gemakan-semua-perempuanbermakna-dengan-sejuta-keistimewaannya/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/event/asuransi-astra-gemakan-semua-perempuanbermakna-dengan-sejuta-keistimewaannya/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/event/kita-perempuanbermakna-asuransi-astra-bersama-ajinomoto-berikan-literasi-keuangan-dan-kesehatan-bagi-para-ibu/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/event/kita-perempuanbermakna-asuransi-astra-bersama-ajinomoto-berikan-literasi-keuangan-dan-kesehatan-bagi-para-ibu/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/event/perkuat-sinergi-bersama-komunitas-mobil-garda-oto-tingkatkan-kesadaran-aman-berkendara-dan-anugerahkan-garda-oto-car-community-award/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/event/perkuat-sinergi-bersama-komunitas-mobil-garda-oto-tingkatkan-kesadaran-aman-berkendara-dan-anugerahkan-garda-oto-car-community-award/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/feature/asuransi-astra-berhasil-raih-sertifikasi-iso-270012013-terkait-sistem-manajemen-keamanan-informasi/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/feature/asuransi-astra-berhasil-raih-sertifikasi-iso-270012013-terkait-sistem-manajemen-keamanan-informasi/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/feature/banjir-bebas-panik-garda-oto-siap-layani-pelanggan-24-jam/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/feature/banjir-bebas-panik-garda-oto-siap-layani-pelanggan-24-jam/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/feature/garda-oto-siap-melindungi-mobil-anda-dari-huru-hara/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/feature/garda-oto-siap-melindungi-mobil-anda-dari-huru-hara/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/feature/mudik-asik-naik-mobil-bersama-si-kecil/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/feature/mudik-asik-naik-mobil-bersama-si-kecil/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/feature/mudik-happy-dan-bebas-khawatir-bersama-happyone-id/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/feature/mudik-happy-dan-bebas-khawatir-bersama-happyone-id/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/feature/tips-berkendara-aman-dan-nyaman-di-jalan-tol/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/feature/tips-berkendara-aman-dan-nyaman-di-jalan-tol/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/feature/waspada-muatan-berlebih-mobil-saat-mudik-lebaran/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/feature/waspada-muatan-berlebih-mobil-saat-mudik-lebaran/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/form-proposal-online/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/form-proposal-online/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/garda-oto/get-quote/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/garda-oto/get-quote/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/health/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/health/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/health/gardamedika/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/health/gardamedika/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/job-openings/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/job-openings/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/asuransi-astra-berhasil-raih-marcomm-corcomm-dream-team-2023/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/asuransi-astra-berhasil-raih-marcomm-corcomm-dream-team-2023/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/bagaimana-sejarah-asuransi-di-indonesia-hingga-saat-ini/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/bagaimana-sejarah-asuransi-di-indonesia-hingga-saat-ini/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/bangkit-bersama-tinggalkan-tragedi-asuransi-astra-bersama-kemensos-salurkan-dana-pendidikan-kepada-anak-korban-tragedi-kanjuruhan/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/bangkit-bersama-tinggalkan-tragedi-asuransi-astra-bersama-kemensos-salurkan-dana-pendidikan-kepada-anak-korban-tragedi-kanjuruhan/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/berhasil-wujudkan-aspirasi-berkelanjutan-dengan-menyelaraskan-kebutuhan-masyarakat-asuransi-astra-berhasil-raih-penghargaan-di-top-csr-awards-2023/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/berhasil-wujudkan-aspirasi-berkelanjutan-dengan-menyelaraskan-kebutuhan-masyarakat-asuransi-astra-berhasil-raih-penghargaan-di-top-csr-awards-2023/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/kelola-emosi-saat-roadtrip/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/kelola-emosi-saat-roadtrip/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/kendaraan-kelebihan-muatan/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/kendaraan-kelebihan-muatan/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/klaim-kecelakaan-mobil-terbalik/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/klaim-kecelakaan-mobil-terbalik/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/mudik-tenang-hati-senang-tips-bugar-berkendara-saat-mudik-lebaran/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/mudik-tenang-hati-senang-tips-bugar-berkendara-saat-mudik-lebaran/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/otocare-5-0-garda-mallberagam-kebutuhan-otomotif-satu-solusi/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/otocare-5-0-garda-mallberagam-kebutuhan-otomotif-satu-solusi/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/pemeriksaan-kendaraan-pasca-road-trip/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/pemeriksaan-kendaraan-pasca-road-trip/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/pominfo-berkendara-aman-menghadapi-arus-balik-mudik/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/pominfo-berkendara-aman-menghadapi-arus-balik-mudik/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/pominfo-persiapan-mudik-lebaran/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/pominfo-persiapan-mudik-lebaran/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/pominfo-stop-berkendara-apabila-merasakan-3-hal-ini/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/pominfo-stop-berkendara-apabila-merasakan-3-hal-ini/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/prosedur-klaim-asuransi-commercial/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/prosedur-klaim-asuransi-commercial/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/prosedur-klaim-garda-oto/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/prosedur-klaim-garda-oto/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/prosedur-penutupan-polis-asuransi-garda-oto/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/prosedur-penutupan-polis-asuransi-garda-oto/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/teknik-eco-driving/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/teknik-eco-driving/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/tentang-asuransi-syariah/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/tentang-asuransi-syariah/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/tipe-proteksi/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/tipe-proteksi/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/tips-menghindari-mobil-terbakar/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/tips-menghindari-mobil-terbakar/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/laporankeberlanjutan/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/laporankeberlanjutan/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/network/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/network/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/award/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/award/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/blog/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/blog/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/blog/page/2/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/blog/page/2/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/event/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/event/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/event/page/2/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/event/page/2/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/feature/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/feature/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/knowledge-post/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/knowledge-post/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/knowledge-post/page/2/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/news/knowledge-post/page/2/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/prosedur-pengaduan-pelanggan/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/prosedur-pengaduan-pelanggan/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/retail/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/retail/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/retail/garda-motor/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/retail/garda-motor/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/retail/mikro/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/retail/mikro/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/service/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/service/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/service/garda-mobile/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/service/garda-mobile/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/service/garda-mobile/medcare/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/service/garda-mobile/medcare/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/service/garda-mobile/mygarda/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/service/garda-mobile/mygarda/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/service/garda-siaga/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/service/garda-siaga/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/syariah/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/syariah/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/vacancy/account-manager/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/vacancy/account-manager/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/vacancy/account-officer-balikpapan/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/vacancy/account-officer-balikpapan/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/vacancy/mitra-garda-oto-all-branch/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/vacancy/mitra-garda-oto-all-branch/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/vacancy/risk-management-staff/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/vacancy/risk-management-staff/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/vacancy/surveyor/
+Link manipulation (DOM-based),Low,https://www.asuransiastra.com,/vacancy/surveyor/
+Client-side HTTP parameter pollution (reflected),Low,http://www.asuransiastra.com,/career/karir
+Client-side HTTP parameter pollution (reflected),Low,https://www.asuransiastra.com,/author/administrator/
+Client-side HTTP parameter pollution (reflected),Low,https://www.asuransiastra.com,/author/administrator/page/3/
+Client-side HTTP parameter pollution (reflected),Low,https://www.asuransiastra.com,/career/apply
+Client-side HTTP parameter pollution (reflected),Low,https://www.asuransiastra.com,/career/job-openings
+Client-side HTTP parameter pollution (reflected),Low,https://www.asuransiastra.com,/news/award/
+Client-side HTTP parameter pollution (reflected),Low,https://www.asuransiastra.com,/news/blog/page/2/
+Client-side HTTP parameter pollution (reflected),Low,https://www.asuransiastra.com,/news/event/page/2/
+Client-side HTTP parameter pollution (reflected),Low,https://www.asuransiastra.com,/news/knowledge-post/
+Client-side HTTP parameter pollution (reflected),Low,https://www.asuransiastra.com,/news/knowledge-post/page/2/
+Ajax request header manipulation (DOM-based),Low,https://a2-deskcentral.asuransiastra.com:8383,/client
+Ajax request header manipulation (DOM-based),Low,https://a2-deskcentral.asuransiastra.com:8383,/client
+Ajax request header manipulation (DOM-based),Low,https://a2-deskcentral.asuransiastra.com:8383,/client
+Cookie without HttpOnly flag set,Low,https://a2is-vms.asuransiastra.com,/
+Cookie without HttpOnly flag set,Low,https://a2is-vms.asuransiastra.com,/login
+Open redirection (DOM-based),Low,https://gen5.asuransiastra.com,/Retail/UI/Root/home.cshtml
+Vulnerable JavaScript dependency,Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/js/bootstrap.min.js
+Vulnerable JavaScript dependency,Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/js/jquery.min.js
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop.asuransiastra.com,/ClaimProcess/WebResource.axd
+Vulnerable JavaScript dependency,Low,https://salvage.asuransiastra.com,/
+Open redirection (DOM-based),Low,https://gen5.asuransiastra.com,/Health/UI/Root/home.cshtml
+Vulnerable JavaScript dependency,Low,https://gardamedikaakses.asuransiastra.com,/GardaAkses/Scripts/a2is-1.16.1.6.min.js
+Vulnerable JavaScript dependency,Low,https://gen5.asuransiastra.com,/financeapp/js/bootstrap.min.js
+Vulnerable JavaScript dependency,Low,https://gen5.asuransiastra.com,/financeapp/js/jquery.min.js
+Vulnerable JavaScript dependency,Low,https://gen5.asuransiastra.com,/financeapp/static/js/2.9997491b.chunk.js
+Vulnerable JavaScript dependency,Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/js/bootstrap.min.js
+Vulnerable JavaScript dependency,Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/js/jquery.min.js
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/WebResource.axd
+Open redirection (DOM-based),Low,https://a2isworkshop-qc.asuransiastra.com,/ClaimProcess/WebResource.axd
+Vulnerable JavaScript dependency,Low,https://salvage-qc.asuransiastra.com,/
+Vulnerable JavaScript dependency,Low,https://gardamedikaakses-qc1.asuransiastra.com,/GardaAkses/Scripts/a2is-1.16.1.6.min.js
+Vulnerable JavaScript dependency,Low,https://askdoctor.asuransiastra.com,/js/vendor/bootstrap.js
+Vulnerable JavaScript dependency,Low,https://askdoctor.asuransiastra.com,/lib/jquery/dist/jquery.js
+Vulnerable JavaScript dependency,Low,https://askdoctorcms.asuransiastra.com,/lib/bootstrap/dist/js/bootstrap.min.js
+Vulnerable JavaScript dependency,Low,https://askdoctorcms.asuransiastra.com,/lib/jquery/dist/jquery.js
+Vulnerable JavaScript dependency,Low,https://econsul.asuransiastra.com,/js/vendor/bootstrap.js
+Vulnerable JavaScript dependency,Low,https://econsul.asuransiastra.com,/lib/jquery/dist/jquery.js
+Vulnerable JavaScript dependency,Low,https://giias.asuransiastra.com,/assets/vendors/bootstrap/dist/js/bootstrap.min.js
+Vulnerable JavaScript dependency,Low,https://giias.asuransiastra.com,/assets/vendors/jquery/dist/jquery.min.js
+Vulnerable JavaScript dependency,Low,https://gomitra.asuransiastra.com,/GomitraMVC
+Vulnerable JavaScript dependency,Low,https://gomitra.asuransiastra.com,/GomitraMVC/Scripts/additional-methods.js
+Vulnerable JavaScript dependency,Low,https://gomitra.asuransiastra.com,/GomitraMVC/Scripts/bootstrap.js
+Vulnerable JavaScript dependency,Low,https://gomitra.asuransiastra.com,/GomitraMVC/Scripts/jquery-1.10.2.js
+Vulnerable JavaScript dependency,Low,https://gomitra.asuransiastra.com,/GomitraMVC/Scripts/jquery-ui-1.10.3.js
+Vulnerable JavaScript dependency,Low,https://gomitra.asuransiastra.com,/GomitraMVC/Scripts/jquery-ui-1.8.24.js
+Vulnerable JavaScript dependency,Low,https://gomitra.asuransiastra.com,/GomitraMVC/ruangmitra/Login
+Vulnerable JavaScript dependency,Low,https://gomitra.asuransiastra.com,/GomitraMVC/ruangmitra/infomitra/
+Open redirection (DOM-based),Low,https://meddoctor.asuransiastra.com,/
+Vulnerable JavaScript dependency,Low,https://salvage.asuransiastra.com,/
+Open redirection (DOM-based),Low,http://gardamobile.asuransiastra.com,/
+Open redirection (DOM-based),Low,http://gardamobile.asuransiastra.com,/robots.txt
+Open redirection (DOM-based),Low,http://gardamobileotosales.asuransiastra.com,/
+Open redirection (DOM-based),Low,http://gardamobileotosales.asuransiastra.com,/robots.txt
+Open redirection (DOM-based),Low,https://medcarereactapp.asuransiastra.com,/
+Vulnerable JavaScript dependency,Low,https://askdoctorcms-qc.asuransiastra.com,/lib/bootstrap/dist/js/bootstrap.min.js
+Vulnerable JavaScript dependency,Low,https://askdoctorcms-qc.asuransiastra.com,/lib/jquery/dist/jquery.js
+Vulnerable JavaScript dependency,Low,https://askdoctor-qc.asuransiastra.com,/js/vendor/bootstrap.js
+Vulnerable JavaScript dependency,Low,https://askdoctor-qc.asuransiastra.com,/lib/jquery/dist/jquery.js
+Open redirection (DOM-based),Low,https://medcarereactapp-dev.asuransiastra.com,/
+Vulnerable JavaScript dependency,Low,https://medcarereactapp-qc.asuransiastra.com,/static/js/4.2b52ad3b.chunk.js
+Open redirection (DOM-based),Low,https://medcarereactapp-qc.asuransiastra.com,/
+Vulnerable JavaScript dependency,Low,https://a2issd.asuransiastra.com,/env-production/itop-portal-base/portal/web/lib/bootstrap/js/bootstrap.min.js
+Vulnerable JavaScript dependency,Low,https://a2issd.asuransiastra.com,/env-production/itop-portal/
+Vulnerable JavaScript dependency,Low,https://a2issd.asuransiastra.com,/js/jquery-3.3.1.min.js
+Vulnerable JavaScript dependency,Low,https://a2issd.asuransiastra.com,/js/jquery-ui-1.11.4.custom.min.js
+Vulnerable JavaScript dependency,Low,https://a2issd.asuransiastra.com,/pages/UI.php
+Open redirection (DOM-based),Low,http://mail.asuransiastra.com,/
+Open redirection (DOM-based),Low,http://mail.asuransiastra.com,/robots.txt
+Open redirection (DOM-based),Low,https://www-qc.gardaoto.com,/
+Open redirection (DOM-based),Low,https://garda-healthtech.gardaoto.com,/
+Vulnerable JavaScript dependency,Low,https://chat.gardaoto.com,/js/vendor/bootstrap.js
+Vulnerable JavaScript dependency,Low,https://chat.gardaoto.com,/lib/jquery/dist/jquery.js
+Vulnerable JavaScript dependency,Low,https://www.gardaoto.com,/garda-healthtech/product-info/
+Vulnerable JavaScript dependency,Low,https://www.gardaoto.com,/garda-healthtech/quotation/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/author/digital-channel-administrator/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/author/digital-channel-administrator/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/10-hal-yang-harus-disiapkan-sebelum-bepergian-ke-luar-negeri/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/10-hal-yang-harus-disiapkan-sebelum-bepergian-ke-luar-negeri/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/3-alasan-mengapa-tidak-boleh-menyepelekan-sabuk-pengaman-2/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/3-alasan-mengapa-tidak-boleh-menyepelekan-sabuk-pengaman-2/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/3-alasan-mengapa-tidak-boleh-menyepelekan-sabuk-pengaman/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/3-alasan-mengapa-tidak-boleh-menyepelekan-sabuk-pengaman/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/3-kesalahan-yang-harus-dihindari-dalam-berkendara/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/3-kesalahan-yang-harus-dihindari-dalam-berkendara/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/3-pertimbangan-dalam-memilih-asuransi-kendaraan-yang-tepat/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/3-pertimbangan-dalam-memilih-asuransi-kendaraan-yang-tepat/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/3-strategi-jitu-dalam-menghemat-biaya-perawatan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/3-strategi-jitu-dalam-menghemat-biaya-perawatan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/3-teknik-menyetir-aman-agar-terhindar-dari-risiko-kecelakaan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/3-teknik-menyetir-aman-agar-terhindar-dari-risiko-kecelakaan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/4-alasan-harus-menggunakan-asuransi-kebakaran-rumah/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/4-alasan-harus-menggunakan-asuransi-kebakaran-rumah/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/4-alasan-pentingnya-mempunyai-asuransi-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/4-alasan-pentingnya-mempunyai-asuransi-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/4-benda-kecil-yang-punya-dampak-besar-kala-berkendara-saat-mudik/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/4-benda-kecil-yang-punya-dampak-besar-kala-berkendara-saat-mudik/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/4-hal-ini-dapat-menyebabkan-mobil-matic-tidak-bisa-menyala/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/4-hal-ini-dapat-menyebabkan-mobil-matic-tidak-bisa-menyala/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/4-hal-sederhana-yang-bisa-buat-perjalanan-mudik-anda-lebih-nyaman/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/4-hal-sederhana-yang-bisa-buat-perjalanan-mudik-anda-lebih-nyaman/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/4-masalah-yang-sering-terjadi-pada-mobil-saat-musim-hujan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/4-masalah-yang-sering-terjadi-pada-mobil-saat-musim-hujan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/4-tips-membeli-rumah-pertama/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/4-tips-membeli-rumah-pertama/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/4-tips-mencegah-kebakaran-di-rumah/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/4-tips-mencegah-kebakaran-di-rumah/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-alasan-asuransi-kendaraan-bisa-menyelamatkan-anda/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-alasan-asuransi-kendaraan-bisa-menyelamatkan-anda/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-ciri-mobil-yang-harus-turun-mesin/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-ciri-mobil-yang-harus-turun-mesin/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-contoh-bahaya-di-tempat-kerja-yang-sering-terjadi/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-contoh-bahaya-di-tempat-kerja-yang-sering-terjadi/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-hal-yang-harus-anda-perhatikan-sebelum-membeli-asuransi-untuk-mobil-bekas/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-hal-yang-harus-anda-perhatikan-sebelum-membeli-asuransi-untuk-mobil-bekas/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-kegiatan-olahraga-yang-dapat-dilakukan-di-rumah/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-kegiatan-olahraga-yang-dapat-dilakukan-di-rumah/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-kegiatan-produktif-di-rumah-yang-patut-dicoba/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-kegiatan-produktif-di-rumah-yang-patut-dicoba/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-teknik-parkir-mobil-yang-perlu-dipelajari-pemula/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-teknik-parkir-mobil-yang-perlu-dipelajari-pemula/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-tips-supaya-ular-tidak-masuk-rumah/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-tips-supaya-ular-tidak-masuk-rumah/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-tips-traveling-sendirian-yang-wajib-anda-tahu/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-tips-traveling-sendirian-yang-wajib-anda-tahu/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-ucapan-orang-tua-yang-mengganggu-psikologis-anak/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/5-ucapan-orang-tua-yang-mengganggu-psikologis-anak/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/6-hal-yang-bisa-membuat-mesin-mobil-mengalami-overheat/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/6-hal-yang-bisa-membuat-mesin-mobil-mengalami-overheat/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/6-penyebab-rem-mobil-blong/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/6-penyebab-rem-mobil-blong/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/7-bagian-mobil-yang-harus-diperiksa-sebelum-mudik/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/7-bagian-mobil-yang-harus-diperiksa-sebelum-mudik/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/7-penyebab-rumah-terbakar-dan-cara-pencegahannya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/7-penyebab-rumah-terbakar-dan-cara-pencegahannya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/7-tips-mudik-aman-dan-nyaman-dengan-mobil-pribadi/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/7-tips-mudik-aman-dan-nyaman-dengan-mobil-pribadi/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/9-tips-yang-harus-diperhatikan-saat-berkendara-oleh-pemula/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/9-tips-yang-harus-diperhatikan-saat-berkendara-oleh-pemula/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/agar-kaca-mobil-bening-saat-hujan-simak-tips-ampuh-ini/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/agar-kaca-mobil-bening-saat-hujan-simak-tips-ampuh-ini/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/agar-selalu-bisa-diandalkan-begini-tips-merawat-rem-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/agar-selalu-bisa-diandalkan-begini-tips-merawat-rem-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/agar-selamat-sampai-tujuan-yuk-kenali-bahaya-berkendara-saat-hujan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/agar-selamat-sampai-tujuan-yuk-kenali-bahaya-berkendara-saat-hujan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/aktivitas-yang-bisa-dilakukan-dirumah-selama-social-distancing/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/aktivitas-yang-bisa-dilakukan-dirumah-selama-social-distancing/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/alasan-anda-harus-punya-asuransi-mobil-saat-mudik/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/alasan-anda-harus-punya-asuransi-mobil-saat-mudik/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/alasan-kenapa-tidak-boleh-memanaskan-mesin-kendaraan-terlalu-lama/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/alasan-kenapa-tidak-boleh-memanaskan-mesin-kendaraan-terlalu-lama/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/alasan-mengapa-harus-memiliki-asuransi-garda-home/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/alasan-mengapa-harus-memiliki-asuransi-garda-home/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/alasan-pentingnya-memiliki-perlindungan-pendidikan-garda-edu/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/alasan-pentingnya-memiliki-perlindungan-pendidikan-garda-edu/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/alasan-pentingnya-menggunakan-asuransi-jenis-comprehensive-untuk-mobil-anda/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/alasan-pentingnya-menggunakan-asuransi-jenis-comprehensive-untuk-mobil-anda/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/alasan-umum-yang-membuat-klaim-asuransi-mobil-anda-ditolak/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/alasan-umum-yang-membuat-klaim-asuransi-mobil-anda-ditolak/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/aman-berkendara-mobil-bersama-si-buah-hati/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/aman-berkendara-mobil-bersama-si-buah-hati/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/anti-rugi-lindungi-rumah-anda-dengan-asuransi/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/anti-rugi-lindungi-rumah-anda-dengan-asuransi/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/apa-itu-aquaplaning-mobil-ini-penyebab-dan-cara-mengatasinya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/apa-itu-aquaplaning-mobil-ini-penyebab-dan-cara-mengatasinya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/apa-itu-visa-schengen/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/apa-itu-visa-schengen/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/apa-penyebab-rem-mobil-terasa-keras/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/apa-penyebab-rem-mobil-terasa-keras/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/apa-saja-keuntungan-mengasuransikan-kendaraan-di-garda-oto-digital/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/apa-saja-keuntungan-mengasuransikan-kendaraan-di-garda-oto-digital/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/apa-saja-penyebab-mobil-mogok-dan-bagaimana-cara-mengatasinya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/apa-saja-penyebab-mobil-mogok-dan-bagaimana-cara-mengatasinya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/apa-saja-yang-harus-anda-lakukan-saat-proses-klaim-asuransi/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/apa-saja-yang-harus-anda-lakukan-saat-proses-klaim-asuransi/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/apa-yang-harus-diperhatikan-saat-memasang-aksesoris-untuk-mobil-baru/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/apa-yang-harus-diperhatikan-saat-memasang-aksesoris-untuk-mobil-baru/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/apakah-garansi-pengecetan-masuk-dalam-perlindungan-asuransi-kendaraan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/apakah-garansi-pengecetan-masuk-dalam-perlindungan-asuransi-kendaraan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/asuransi-digital-online-pengertian-asuransi-digital-pada-kendaraan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/asuransi-digital-online-pengertian-asuransi-digital-pada-kendaraan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/asuransi-jiwa-murni-di-tahun-2021-seribet-apa-sih/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/asuransi-jiwa-murni-di-tahun-2021-seribet-apa-sih/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/asuransi-kebakaran-jenis-faktor-syarat-cara-klaim-dan-tips-memilihnya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/asuransi-kebakaran-jenis-faktor-syarat-cara-klaim-dan-tips-memilihnya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/asuransi-kecelakaan-diri-itu-penting-buat-anda/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/asuransi-kecelakaan-diri-itu-penting-buat-anda/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/asuransi-mobil-comprehensive-2/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/asuransi-mobil-comprehensive-2/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/asuransi-mobil-comprehensive/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/asuransi-mobil-comprehensive/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/asuransi-mobil-lama-ada-batas-usianya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/asuransi-mobil-lama-ada-batas-usianya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/asuransi-perjalanan-schengen-dan-tips-memilihnya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/asuransi-perjalanan-schengen-dan-tips-memilihnya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/awas-ini-5-penyebab-utama-mobil-bisa-terbakar/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/awas-ini-5-penyebab-utama-mobil-bisa-terbakar/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bagaimana-cara-kerja-mesin-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bagaimana-cara-kerja-mesin-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bagaimana-cara-kerja-rem-abs-pada-mobil-berikut-penjelasannya-2/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bagaimana-cara-kerja-rem-abs-pada-mobil-berikut-penjelasannya-2/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bagaimana-cara-mengatasi-mobil-yang-overheat/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bagaimana-cara-mengatasi-mobil-yang-overheat/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bagaimana-cara-mengendarai-mobil-matic-dengan-baik-benar/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bagaimana-cara-mengendarai-mobil-matic-dengan-baik-benar/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bagaimana-cara-mengurus-stnk-yang-hilang-begini-prosedur-syaratnya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bagaimana-cara-mengurus-stnk-yang-hilang-begini-prosedur-syaratnya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bagaimana-memilih-perusahaan-asuransi-kendaraan-yang-tepat-berikut-4-tips-yang-bisa-anda-lakukan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bagaimana-memilih-perusahaan-asuransi-kendaraan-yang-tepat-berikut-4-tips-yang-bisa-anda-lakukan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bagaimana-uji-tabrak-mobil-dilakukan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bagaimana-uji-tabrak-mobil-dilakukan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bahaya-kelebihan-muatan-pada-mobil-yang-harus-diketahui/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bahaya-kelebihan-muatan-pada-mobil-yang-harus-diketahui/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/banyak-yang-belum-tahu-simak-arti-kode-transmisi-matic-beserta-fungsinya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/banyak-yang-belum-tahu-simak-arti-kode-transmisi-matic-beserta-fungsinya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/banyaknya-armada-garda-siaga-menjadi-salah-satu-keunggulan-garda-oto/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/banyaknya-armada-garda-siaga-menjadi-salah-satu-keunggulan-garda-oto/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/baru-beli-rumah-yuk-intip-biaya-balik-nama-rumah-serta-persyaratannya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/baru-beli-rumah-yuk-intip-biaya-balik-nama-rumah-serta-persyaratannya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/begini-cara-menghilangkan-jamur-di-kaca-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/begini-cara-menghilangkan-jamur-di-kaca-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/begini-cara-mudah-buka-pintu-mobil-yang-terkunci-dari-dalam/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/begini-cara-mudah-buka-pintu-mobil-yang-terkunci-dari-dalam/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/begini-caranya-melewati-perlintasan-kereta-api-dengan-aman/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/begini-caranya-melewati-perlintasan-kereta-api-dengan-aman/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/begini-caranya-menghemat-biaya-perawatan-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/begini-caranya-menghemat-biaya-perawatan-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/begini-prosedur-pengaduan-pelanggan-garda-oto-yang-perlu-anda-ketahui/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/begini-prosedur-pengaduan-pelanggan-garda-oto-yang-perlu-anda-ketahui/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/begini-tips-belajar-berkendara-dengan-mobil-transmisi-manual/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/begini-tips-belajar-berkendara-dengan-mobil-transmisi-manual/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/begini-tips-ketika-berkendara-di-jalan-berlubang/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/begini-tips-ketika-berkendara-di-jalan-berlubang/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/begini-tips-mengklaim-asuransi-untuk-mobil-yang-masih-berstatus-kredit/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/begini-tips-mengklaim-asuransi-untuk-mobil-yang-masih-berstatus-kredit/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/beginilah-cara-membeli-polis-garda-oto-secara-online/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/beginilah-cara-membeli-polis-garda-oto-secara-online/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/benarkah-kualitas-mobil-keluaran-terbaru-lebih-mudah-rusak/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/benarkah-kualitas-mobil-keluaran-terbaru-lebih-mudah-rusak/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/berapa-lama-mengurus-visa-schengen/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/berapa-lama-mengurus-visa-schengen/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/berapakah-batas-waktu-maksimal-berkendara-di-jalur-tol/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/berapakah-batas-waktu-maksimal-berkendara-di-jalur-tol/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/berencana-liburan-di-akhir-tahun-dengan-kendaraan-pribadi-ikuti-tips-berikut-ini-agar-liburanmu-lebih-nyaman/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/berencana-liburan-di-akhir-tahun-dengan-kendaraan-pribadi-ikuti-tips-berikut-ini-agar-liburanmu-lebih-nyaman/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/berhati-hatilah-saat-berkendara-di-jalan-layang/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/berhati-hatilah-saat-berkendara-di-jalan-layang/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/berikut-4-cara-mudah-menghilangkan-goresan-pada-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/berikut-4-cara-mudah-menghilangkan-goresan-pada-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/berikut-cara-klaim-asuransi-untuk-mobil-anda/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/berikut-cara-klaim-asuransi-untuk-mobil-anda/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/berkendara-cerdas-saat-musim-hujan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/berkendara-cerdas-saat-musim-hujan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/biar-aman-inilah-5-tips-pakai-gps-dalam-berkendara/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/biar-aman-inilah-5-tips-pakai-gps-dalam-berkendara/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/biar-aman-yuk-simak-tips-bepergian-ke-luar-negeri-selama-pandemi/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/biar-aman-yuk-simak-tips-bepergian-ke-luar-negeri-selama-pandemi/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bingung-mau-beli-mobil-matic-atau-manual-pertimbangkan-dulu-hal-hal-berikut-ini/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bingung-mau-beli-mobil-matic-atau-manual-pertimbangkan-dulu-hal-hal-berikut-ini/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bukan-hanya-untuk-main-ini-4-manfaat-menggambar-bagi-anak-usia-dini/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/bukan-hanya-untuk-main-ini-4-manfaat-menggambar-bagi-anak-usia-dini/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/car-seat-bukan-sekedar-gaya-ini-dia-tips-memilihnya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/car-seat-bukan-sekedar-gaya-ini-dia-tips-memilihnya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-aman-bersihkan-kabin-mobil-saat-pandemi-virus-corona/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-aman-bersihkan-kabin-mobil-saat-pandemi-virus-corona/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-aman-puasa-untuk-ibu-hamil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-aman-puasa-untuk-ibu-hamil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-belajar-efektif-dan-menyenangkan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-belajar-efektif-dan-menyenangkan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-memperbaiki-dinamo-starter-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-memperbaiki-dinamo-starter-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-mempersiapkan-anak-hadapi-normal-baru/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-mempersiapkan-anak-hadapi-normal-baru/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-mempersiapkan-dana-pensiun-bagi-freelancer/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-mempersiapkan-dana-pensiun-bagi-freelancer/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-mengajukan-klaim-asuransi-mobil-kredit/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-mengajukan-klaim-asuransi-mobil-kredit/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-mengantisipasi-kecelakaan-kerja/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-mengantisipasi-kecelakaan-kerja/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-mengatasi-kantuk-saat-berkendara-di-bulan-puasa/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-mengatasi-kantuk-saat-berkendara-di-bulan-puasa/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-menghilangkan-lumut-di-tembok-rumah/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/cara-menghilangkan-lumut-di-tembok-rumah/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/empat-kesalahan-dalam-merawat-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/empat-kesalahan-dalam-merawat-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/mau-mudik-aman-pahami-dulu-pentingnya-asuransi-untuk-mobil-anda/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/mau-mudik-aman-pahami-dulu-pentingnya-asuransi-untuk-mobil-anda/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/sekarang-beli-asuransi-kendaraan-makingampang-di-garda-oto/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/sekarang-beli-asuransi-kendaraan-makingampang-di-garda-oto/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/selain-jasmani-yuk-intip-ciri-ciri-hidup-sehat-yang-harus-diketahui/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/selain-jasmani-yuk-intip-ciri-ciri-hidup-sehat-yang-harus-diketahui/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/selalu-waspada-ini-4-faktor-penyebab-kecelakaan-lalu-lintas/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/selalu-waspada-ini-4-faktor-penyebab-kecelakaan-lalu-lintas/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/sudah-tahu-manfaat-asuransi-kebakaran-rumah-yuk-simak-ulasannya-berikut-ini/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/sudah-tahu-manfaat-asuransi-kebakaran-rumah-yuk-simak-ulasannya-berikut-ini/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tim-manakah-kamu-wfh-atau-wfo/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tim-manakah-kamu-wfh-atau-wfo/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-agar-bahan-bakar-mobil-anda-tetap-awet/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-agar-bahan-bakar-mobil-anda-tetap-awet/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-agar-mobil-hemat-bbm/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-agar-mobil-hemat-bbm/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-amankan-mobil-dari-tindak-kejahatan-pencurian/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-amankan-mobil-dari-tindak-kejahatan-pencurian/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-berkendara-sendirian-dengan-aman-di-malam-hari/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-berkendara-sendirian-dengan-aman-di-malam-hari/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-cegah-mobil-kebakaran-karena-korsleting/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-cegah-mobil-kebakaran-karena-korsleting/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-cegah-penyebaran-covid-19-ikuti-psbb-saat-mengendarai-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-cegah-penyebaran-covid-19-ikuti-psbb-saat-mengendarai-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-hemat-untuk-ringankan-pembayaran-premi-asuransi-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-hemat-untuk-ringankan-pembayaran-premi-asuransi-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-jitu-memilih-ban-mobil-yang-tepat-untuk-mobil-anda/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-jitu-memilih-ban-mobil-yang-tepat-untuk-mobil-anda/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-kredit-mobil-yang-benar/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-kredit-mobil-yang-benar/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-liburan-aman-dan-nyaman-saat-masa-pandemi/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-liburan-aman-dan-nyaman-saat-masa-pandemi/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-memanfaatkan-program-cicilan-kartu-kredit-0-dari-garda-oto-digital/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-memanfaatkan-program-cicilan-kartu-kredit-0-dari-garda-oto-digital/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-memarkir-mobil-yang-baik-dan-benar/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-memarkir-mobil-yang-baik-dan-benar/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-memilih-kenalpot-mobil-yang-sesuai/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-memilih-kenalpot-mobil-yang-sesuai/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-memilih-layanan-asuransi-kendaraan-di-indonesia/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-memilih-layanan-asuransi-kendaraan-di-indonesia/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-menabung-untuk-traveling/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-menabung-untuk-traveling/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-menata-dapur-yang-sempit/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-menata-dapur-yang-sempit/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-mendidik-anak-agar-mandiri/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-mendidik-anak-agar-mandiri/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-mengatasi-tembok-rumah-rembes/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-mengatasi-tembok-rumah-rembes/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-mengatur-jadwal-kegiatan-anak-di-rumah-untuk-para-orangtua/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-mengatur-jadwal-kegiatan-anak-di-rumah-untuk-para-orangtua/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-mengatur-keuangan-saat-ramadan-di-tengah-pandemi/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-mengatur-keuangan-saat-ramadan-di-tengah-pandemi/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-menjaga-stamina-untuk-perjalanan-jarak-jauh/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-menjaga-stamina-untuk-perjalanan-jarak-jauh/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-merawat-jok-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-merawat-jok-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-merawat-radiator-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-merawat-radiator-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-merawat-rumah-agar-selalu-nyaman-selama-dirumahaja/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-merawat-rumah-agar-selalu-nyaman-selama-dirumahaja/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-perawatan-kaki-kaki-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-perawatan-kaki-kaki-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-pindah-nama-asuransi-mobil-2/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-pindah-nama-asuransi-mobil-2/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-posisi-duduk-agar-nyaman-dan-aman-berkendara/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-posisi-duduk-agar-nyaman-dan-aman-berkendara/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-saat-mobil-anda-terlibat-kecelakaan-2/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-saat-mobil-anda-terlibat-kecelakaan-2/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-untuk-mengatasi-ac-mobil-bau/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/tips-untuk-mengatasi-ac-mobil-bau/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/trik-memilih-asuransi-kendaraan-digital/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/trik-memilih-asuransi-kendaraan-digital/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/untungnya-mengasuransikan-kendaraan-di-garda-oto-2/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/untungnya-mengasuransikan-kendaraan-di-garda-oto-2/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/untungnya-punya-asuransi-kendaraan-saat-mudik/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/untungnya-punya-asuransi-kendaraan-saat-mudik/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/wajib-diperhatikan-berikut-aturan-bersepeda-di-jalan-raya-yang-benar/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/wajib-diperhatikan-berikut-aturan-bersepeda-di-jalan-raya-yang-benar/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/wajib-diperhatikan-berikut-cara-jumper-aki-mobil-yang-benar/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/wajib-diperhatikan-berikut-cara-jumper-aki-mobil-yang-benar/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/yuk-cari-tahu-cara-menenangkan-diri-dari-stress/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/yuk-cari-tahu-cara-menenangkan-diri-dari-stress/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/yuk-intip-4-cara-berkendara-yang-baik-dan-aman/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/yuk-intip-4-cara-berkendara-yang-baik-dan-aman/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/yuk-kenali-apa-itu-asuransi-perlindungan-pendidikan-anak-dan-cara-memilihnya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/yuk-kenali-apa-itu-asuransi-perlindungan-pendidikan-anak-dan-cara-memilihnya/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/yuk-ketahui-daftar-negara-yang-mewajibkan-asuransi-perjalanan-luar-negeri/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/yuk-ketahui-daftar-negara-yang-mewajibkan-asuransi-perjalanan-luar-negeri/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/yuk-simak-5-inspirasi-membuat-kebun-sayur-di-pekarangan-rumah/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/yuk-simak-5-inspirasi-membuat-kebun-sayur-di-pekarangan-rumah/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/yuk-simak-lima-tips-jitu-meningkatkan-minat-baca-anak/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/yuk-simak-lima-tips-jitu-meningkatkan-minat-baca-anak/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/yuk-simak-tips-menata-rumah-mungil-agar-nyaman-ditinggali/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/blog/yuk-simak-tips-menata-rumah-mungil-agar-nyaman-ditinggali/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-edu/promo/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-edu/promo/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-healthtech/product-info/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-healthtech/product-info/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-home/promo/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-home/promo/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-home/quotation/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-home/quotation/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-me/product-info/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-me/product-info/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-me/promo/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-me/promo/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-me/quotation/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-me/quotation/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-oto/cara-beli/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-oto/cara-beli/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-oto/claim/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-oto/claim/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-oto/promo/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-oto/promo/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-oto/quotation/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-oto/quotation/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-trip/promo/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-trip/promo/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-trip/quotation/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/garda-trip/quotation/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/kebijakan-privasi/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/kebijakan-privasi/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/18524/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/18524/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/asuransi-astra-berikan-literasi-dan-edukasi-keuangan-melalui-car-community-media-battle-di-giias-tangerang-2023/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/asuransi-astra-berikan-literasi-dan-edukasi-keuangan-melalui-car-community-media-battle-di-giias-tangerang-2023/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/cara-mudah-rawat-audio-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/cara-mudah-rawat-audio-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/ini-5-hal-yang-tidak-boleh-dilakukan-oleh-pengemudi-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/ini-5-hal-yang-tidak-boleh-dilakukan-oleh-pengemudi-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/langkah-mudah-melewati-tanjakan-untuk-pengemudi-pemula/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/langkah-mudah-melewati-tanjakan-untuk-pengemudi-pemula/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/little-financial-master-emergency-roadside-assistance-tour-literasi-keuangan-untuk-anak-usia-dini-dari-asuransi-astra-kini-hadir-di-giias-tangerang/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/little-financial-master-emergency-roadside-assistance-tour-literasi-keuangan-untuk-anak-usia-dini-dari-asuransi-astra-kini-hadir-di-giias-tangerang/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/manfaat-dan-pentingnya-menggunakan-asuransi-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/manfaat-dan-pentingnya-menggunakan-asuransi-mobil/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/mengenal-tipe-tipe-mobil-yang-ada-di-pasaran/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/mengenal-tipe-tipe-mobil-yang-ada-di-pasaran/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/pada-saat-membeli-asuransi-mobil-pastikan-proses-klaimnya-mudah/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/pada-saat-membeli-asuransi-mobil-pastikan-proses-klaimnya-mudah/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/perbedaan-asuransi-kecelakaan-diri-garda-me-dan-garda-edu/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/perbedaan-asuransi-kecelakaan-diri-garda-me-dan-garda-edu/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/tak-banyak-yang-tahu-ini-perbedaan-mobil-suv-dan-mpv/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/tak-banyak-yang-tahu-ini-perbedaan-mobil-suv-dan-mpv/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/tips-aman-berkendara-ala-garda-oto-di-era-adaptasi-kebiasaan-baru/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/tips-aman-berkendara-ala-garda-oto-di-era-adaptasi-kebiasaan-baru/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/tips-memilih-oli-yang-tepat-bagi-mobil-kesayangan-anda/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/tips-memilih-oli-yang-tepat-bagi-mobil-kesayangan-anda/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/tips-menjaga-aki-mobil-tetap-awet/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/knowledge-post/tips-menjaga-aki-mobil-tetap-awet/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/live-chat-e-consultation-medcare/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/live-chat-e-consultation-medcare/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/login/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/login/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/promo/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/promo/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/prosedur-pengaduan-pelanggan/
+Open redirection (DOM-based),Low,https://www.gardaoto.com,/prosedur-pengaduan-pelanggan/
+Vulnerable JavaScript dependency,Low,https://otosales-centos-qc.gardaoto.com,/js/bootstrap.min.js
+Vulnerable JavaScript dependency,Low,https://otosales-centos-qc.gardaoto.com,/js/jquery.min.js
+Open redirection (reflected DOM-based),Low,https://db-repositoryscenario-qc.asuransiastra.com,/url.php
+Vulnerable JavaScript dependency,Low,https://repositoryscenario-qc.asuransiastra.com,/login
+Source code disclosure,Low,https://repositoryscenario-qc.asuransiastra.com,/js/app.js
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/begini-cara-menyisihkan-uang-untuk-bayar-asuransi-dari-gajimu/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/begini-cara-menyisihkan-uang-untuk-bayar-asuransi-dari-gajimu/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/ini-dia-asuransi-terbaik-di-indonesia-asuransi-astra/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/ini-dia-asuransi-terbaik-di-indonesia-asuransi-astra/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/inilah-perusahaan-asuransi-terbaik-di-indonesia/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/inilah-perusahaan-asuransi-terbaik-di-indonesia/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/jenis-jenis-asuransi-yang-ditawarkan-oleh-asuransi-astra/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/jenis-jenis-asuransi-yang-ditawarkan-oleh-asuransi-astra/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/mengenal-concrete-vibrator-sebagai-alat-cor-beton/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/mengenal-concrete-vibrator-sebagai-alat-cor-beton/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/mengenal-polis-asuransi-beserta-fungsi-dan-contohnya/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/mengenal-polis-asuransi-beserta-fungsi-dan-contohnya/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/motor-grader-adalah-alat-berat-untuk-meratakan-tanah/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/motor-grader-adalah-alat-berat-untuk-meratakan-tanah/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/pahami-apa-itu-asuransi-fungsi-dan-jenis-jenisnya/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/pahami-apa-itu-asuransi-fungsi-dan-jenis-jenisnya/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/pentingnya-memiliki-asuransi-rangka-kapal/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/pentingnya-memiliki-asuransi-rangka-kapal/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/perbedaan-asuransi-umum-dengan-asuransi-syariah/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/perbedaan-asuransi-umum-dengan-asuransi-syariah/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/punya-sepeda-motor-yuk-ketahui-cara-memilih-asuransi-motor/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/punya-sepeda-motor-yuk-ketahui-cara-memilih-asuransi-motor/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/syarat-dan-biaya-perpanjangan-stnk-motor-secara-lengkap/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/blog/syarat-dan-biaya-perpanjangan-stnk-motor-secara-lengkap/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/career-draft/apply/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/career-draft/apply/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/career-draft/karir/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/career-draft/karir/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/commercial-insurance/fire-property-insurance/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/commercial-insurance/fire-property-insurance/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/commercial/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/commercial/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/commercial/asuransi-alat-berat/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/commercial/asuransi-alat-berat/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/commercial/asuransi-rangka-kapal/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/commercial/asuransi-rangka-kapal/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/corporate/awards/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/corporate/awards/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/corporate/milestone/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/corporate/milestone/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/event/asuransi-astra-bersama-ngelesin-berikan-literasi-keuangan-untuk-perempuan-pelaku-umkm/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/event/asuransi-astra-bersama-ngelesin-berikan-literasi-keuangan-untuk-perempuan-pelaku-umkm/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/event/asuransi-astra-gemakan-semua-perempuanbermakna-dengan-sejuta-keistimewaannya/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/event/asuransi-astra-gemakan-semua-perempuanbermakna-dengan-sejuta-keistimewaannya/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/event/kita-perempuanbermakna-asuransi-astra-bersama-ajinomoto-berikan-literasi-keuangan-dan-kesehatan-bagi-para-ibu/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/event/kita-perempuanbermakna-asuransi-astra-bersama-ajinomoto-berikan-literasi-keuangan-dan-kesehatan-bagi-para-ibu/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/event/perkuat-sinergi-bersama-komunitas-mobil-garda-oto-tingkatkan-kesadaran-aman-berkendara-dan-anugerahkan-garda-oto-car-community-award/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/event/perkuat-sinergi-bersama-komunitas-mobil-garda-oto-tingkatkan-kesadaran-aman-berkendara-dan-anugerahkan-garda-oto-car-community-award/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/feature/asuransi-astra-berhasil-raih-sertifikasi-iso-270012013-terkait-sistem-manajemen-keamanan-informasi/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/feature/asuransi-astra-berhasil-raih-sertifikasi-iso-270012013-terkait-sistem-manajemen-keamanan-informasi/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/feature/banjir-bebas-panik-garda-oto-siap-layani-pelanggan-24-jam/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/feature/banjir-bebas-panik-garda-oto-siap-layani-pelanggan-24-jam/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/feature/garda-oto-siap-melindungi-mobil-anda-dari-huru-hara/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/feature/garda-oto-siap-melindungi-mobil-anda-dari-huru-hara/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/feature/mudik-happy-dan-bebas-khawatir-bersama-happyone-id/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/feature/mudik-happy-dan-bebas-khawatir-bersama-happyone-id/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/form-proposal-online/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/form-proposal-online/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/garda-oto/get-quote/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/garda-oto/get-quote/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/health/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/health/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/health/gardamedika/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/health/gardamedika/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/job-openings/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/job-openings/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/asuransi-astra-berhasil-raih-marcomm-corcomm-dream-team-2023/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/asuransi-astra-berhasil-raih-marcomm-corcomm-dream-team-2023/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/bagaimana-sejarah-asuransi-di-indonesia-hingga-saat-ini/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/bagaimana-sejarah-asuransi-di-indonesia-hingga-saat-ini/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/bangkit-bersama-tinggalkan-tragedi-asuransi-astra-bersama-kemensos-salurkan-dana-pendidikan-kepada-anak-korban-tragedi-kanjuruhan/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/bangkit-bersama-tinggalkan-tragedi-asuransi-astra-bersama-kemensos-salurkan-dana-pendidikan-kepada-anak-korban-tragedi-kanjuruhan/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/berhasil-wujudkan-aspirasi-berkelanjutan-dengan-menyelaraskan-kebutuhan-masyarakat-asuransi-astra-berhasil-raih-penghargaan-di-top-csr-awards-2023/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/berhasil-wujudkan-aspirasi-berkelanjutan-dengan-menyelaraskan-kebutuhan-masyarakat-asuransi-astra-berhasil-raih-penghargaan-di-top-csr-awards-2023/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/kelola-emosi-saat-roadtrip/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/kelola-emosi-saat-roadtrip/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/kendaraan-kelebihan-muatan/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/kendaraan-kelebihan-muatan/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/klaim-kecelakaan-mobil-terbalik/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/klaim-kecelakaan-mobil-terbalik/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/mudik-tenang-hati-senang-tips-bugar-berkendara-saat-mudik-lebaran/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/mudik-tenang-hati-senang-tips-bugar-berkendara-saat-mudik-lebaran/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/otocare-5-0-garda-mallberagam-kebutuhan-otomotif-satu-solusi/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/otocare-5-0-garda-mallberagam-kebutuhan-otomotif-satu-solusi/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/pemeriksaan-kendaraan-pasca-road-trip/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/pemeriksaan-kendaraan-pasca-road-trip/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/pominfo-berkendara-aman-menghadapi-arus-balik-mudik/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/pominfo-berkendara-aman-menghadapi-arus-balik-mudik/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/pominfo-persiapan-mudik-lebaran/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/pominfo-persiapan-mudik-lebaran/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/pominfo-stop-berkendara-apabila-merasakan-3-hal-ini/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/pominfo-stop-berkendara-apabila-merasakan-3-hal-ini/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/prosedur-klaim-asuransi-commercial/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/prosedur-klaim-asuransi-commercial/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/prosedur-klaim-garda-oto/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/prosedur-klaim-garda-oto/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/prosedur-penutupan-polis-asuransi-garda-oto/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/prosedur-penutupan-polis-asuransi-garda-oto/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/teknik-eco-driving/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/teknik-eco-driving/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/tentang-asuransi-syariah/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/tentang-asuransi-syariah/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/tipe-proteksi/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/tipe-proteksi/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/tips-menghindari-mobil-terbakar/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/knowledge-post/tips-menghindari-mobil-terbakar/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/laporankeberlanjutan/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/laporankeberlanjutan/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/award/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/award/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/blog/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/blog/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/blog/page/2/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/blog/page/2/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/event/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/event/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/event/page/2/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/event/page/2/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/feature/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/feature/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/knowledge-post/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/knowledge-post/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/knowledge-post/page/2/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/news/knowledge-post/page/2/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/prosedur-pengaduan-pelanggan/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/prosedur-pengaduan-pelanggan/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/retail/garda-motor/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/retail/garda-motor/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/retail/mikro/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/retail/mikro/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/service/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/service/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/service/garda-mobile/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/service/garda-mobile/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/service/garda-mobile/medcare/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/service/garda-mobile/medcare/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/service/garda-mobile/mygarda/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/service/garda-mobile/mygarda/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/service/garda-siaga/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/service/garda-siaga/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/syariah/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/syariah/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/vacancy/account-manager/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/vacancy/account-manager/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/vacancy/account-officer-balikpapan/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/vacancy/account-officer-balikpapan/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/vacancy/mitra-garda-oto-all-branch/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/vacancy/mitra-garda-oto-all-branch/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/vacancy/risk-management-staff/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/vacancy/risk-management-staff/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/vacancy/surveyor/
+Open redirection (DOM-based),Low,https://www.asuransiastra.com,/vacancy/surveyor/
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/WebResource.axd
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/WebResource.axd
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/WebResource.axd
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/WebResource.axd
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/WebResource.axd
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/WebResource.axd
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/WebResource.axd
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/WebResource.axd
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/WebResource.axd
+Open redirection (DOM-based),Low,https://a2is-opex.aab.asuransi.astra.co.id,/WebResource.axd
+Vulnerable JavaScript dependency,Low,https://a2issd.aab.asuransi.astra.co.id,/pages/UI.php
+Vulnerable JavaScript dependency,Low,https://a2is-wallboard2.asuransiastra.com,/wallboard/js
+Vulnerable JavaScript dependency,Low,https://a2is-wallboard2.asuransiastra.com,/wallboard/view3
+Vulnerable JavaScript dependency,Low,https://otosales.gardaoto.com,/js/bootstrap.min.js
+Vulnerable JavaScript dependency,Low,https://otosales.gardaoto.com,/js/jquery.min.js
+Open redirection (DOM-based),Low,https://otosales.gardaoto.com,/
+Open redirection (DOM-based),Low,https://otosales.gardaoto.com,/forgotpassword
+Vulnerable JavaScript dependency,Low,https://a2-deskcentral.asuransiastra.com:8383,/ember/login-app/dist/assets/vendor-afe80d05e0c61ce6e0c175ffdfb01a29.js
+Open redirection (DOM-based),Low,https://www-qc.gardaoto.com,/publicweb
+Vulnerable JavaScript dependency,Low,https://itrecruitment.asuransiastra.com,/dir/lib/jquery/jquery.min.js

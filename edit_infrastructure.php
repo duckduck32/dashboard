@@ -128,7 +128,7 @@ if (isset($_POST['proses'])) {
         </script>";
     }
     else{
-        mysqli_query($connection, "update infra_vulns set
+        mysqli_query($connection, "UPDATE infra_vulns SET
         status = '$_POST[status]',
         plugin_id = '$_POST[plugin_id]',
         vulnerability = '$_POST[vulnerability]',
@@ -138,8 +138,8 @@ if (isset($_POST['proses'])) {
         count = '$_POST[count]',
         date_found = '$_POST[date_found]',
         date_remediated = '$_POST[date_remediated]',
-        assign_to = '$_POST[assign_to]',
-        where id = '$_GET[id]'");
+        assigned_to = '$_POST[assigned_to]'
+        WHERE id = '$_GET[id]'");
         echo "<script>
         alert('Data berhasil diubah');
         window.location.href='infrastructure.php';

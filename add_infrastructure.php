@@ -59,8 +59,8 @@ require('sidebar.php');
                         </div>
                         <div class="form-group">
                             <tr>
-                                <label for="assign_to" class=" form-control-label">Assigned To</label>
-                                <td><input type="text" name="assign_to" class="form-control" id="" required></td>
+                                <label for="assigned_to" class=" form-control-label">Assigned To</label>
+                                <td><input type="text" name="assigned_to" class="form-control" id=""></td>
                             </tr>
                         </div>
                         <div class="form-group">
@@ -90,6 +90,7 @@ require('sidebar.php');
 if (isset($_POST['proses'])) {
     $current_date = date('Y-m-d');
     $date_found = $_POST['date_found'];
+    echo "<script>alert($current_date)</script>";
     if($date_found > $current_date){
         echo "<script>
         alert('Data tidak berhasil ditambahkan karena tanggal Date found melebihi tanggal hari ini');
@@ -97,7 +98,7 @@ if (isset($_POST['proses'])) {
         </script>";
     }
     else{
-        mysqli_query($connection, "insert into infra_vulns set
+        $query = "INSERT INTO infra_vulns SET
         status = 'Open',
         plugin_id = '$_POST[plugin_id]',
         vulnerability = '$_POST[vulnerability]',
@@ -107,7 +108,10 @@ if (isset($_POST['proses'])) {
         count = '$_POST[count]',
         date_found = '$_POST[date_found]',
         date_remediated = '0000-00-00',
-        assign_to = '$_POST[assign_to]'");  
+        assigned_to = '$_POST[assigned_to]',
+        current_status=''";
+        echo "<script>alert($_POST[ip])</script>";
+        mysqli_query($connection, $query);  
         echo "<script>
         alert('Data berhasil ditambahkan');
         window.location.href='infrastructure.php';

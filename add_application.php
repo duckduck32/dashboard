@@ -26,13 +26,19 @@ require('sidebar.php');
                                     <option value="Low">Low</option>
                                 </select>
                             </tr>
-                        </div>   
+                        </div>    
                         <div class="form-group">
                             <tr>
-                                <label for="hostname" class="form-control-label">Hostname</label>
-                                <td><input type="text" class="form-control" name="hostname" id="" required></td>
+                                <label for="domain" class="form-control-label">Domain</label>
+                                <td><input type="text" class="form-control" name="domain" id="" required></td>
                             </tr>
-                        </div> 
+                        </div>
+                        <div class="form-group">
+                            <tr>
+                                <label for="count" class=" form-control-label">Count</label>
+                                <td><input type="number" name="count" class="form-control" id="" required></td>
+                            </tr>
+                        </div>
                         <div class="form-group">
                             <tr>
                                 <label for="date_found" class=" form-control-label">Date Found</label>
@@ -41,8 +47,8 @@ require('sidebar.php');
                         </div>
                         <div class="form-group">
                             <tr>
-                                <label for="assign_to" class=" form-control-label">Assigned To</label>
-                                <td><input type="text" name="assign_to" class="form-control" id="" required></td>
+                                <label for="assigned_to" class=" form-control-label">Assigned To</label>
+                                <td><input type="text" name="assigned_to" class="form-control" id=""></td>
                             </tr>
                         </div>
                         <div class="form-group">
@@ -54,7 +60,7 @@ require('sidebar.php');
                         <div class="form-group">
                             <tr>
                                 <td></td>
-                                <td><button class="form-control"><a href="application.php">Back</a></button></td>
+                                <td><button class="form-control"><a href="infrastructure.php">Back</a></button></td>
                             </tr>
                         </div>
                             
@@ -66,7 +72,7 @@ require('sidebar.php');
         </div>
     </div>
 </div>
-            
+        
 <?php
 
 if (isset($_POST['proses'])) {
@@ -75,22 +81,25 @@ if (isset($_POST['proses'])) {
     if($date_found > $current_date){
         echo "<script>
         alert('Data tidak berhasil ditambahkan karena tanggal Date found melebihi tanggal hari ini');
-        window.location.href='add_application.php';
+        window.location.href='add_infrastructure.php';
         </script>";
-    }else{
+    }
+    else{
         mysqli_query($connection, "insert into app_vulns set
         status = 'Open',
         vulnerability = '$_POST[vulnerability]',
         severity = '$_POST[severity]',
-        hostname = '$_POST[hostname]',
+        domain = '$_POST[domain]',
+        count = '$_POST[count]',
         date_found = '$_POST[date_found]',
         date_remediated = '0000-00-00',
-        assign_to = '$_POST[assign_to]'");
+        assigned_to = '$_POST[assigned_to]'");  
         echo "<script>
         alert('Data berhasil ditambahkan');
         window.location.href='application.php';
         </script>";
     }
+    
 }
 
 ?>

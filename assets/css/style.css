@@ -10091,3 +10091,16 @@ aside.left-panel {
 .content{
   padding-left:240px;
 }
+
+#container {
+  display: flex;
+  justify-content:space-between;
+  flex-direction:column;
+  background-color: lightgrey;
+}
+
+#id{
+  background-color: cornflowerblue;
+  width: 100px;
+  margin: 10px;
+}

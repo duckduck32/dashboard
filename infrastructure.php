@@ -12,7 +12,7 @@ if(isset($_GET['type']) && $_GET['type']!=''){
 $sql="select * from infra_vulns order by 'ID' desc";
 $res=mysqli_query($connection,$sql);
 
-$columns = array('id','status','vulnerability','severity','hostname','IP','count','date_found','date_remediated');
+$columns = array('date_found');
 
 $column = isset($_GET['column']) && in_array($_GET['column'], $columns) ? $_GET['column'] : $columns[0];
 
@@ -31,23 +31,26 @@ if ($result = $connection->query('SELECT * FROM infra_vulns ORDER BY ' .  $colum
 			 <div class="card">
 				<div class="card-body">
 				   <h4 class="box-title">Infrastructure Vulnerabilities</h4>
+				   <?php if($_SESSION['ADMIN_TEAM']=="sec"){?>
 				   <button><a href="add_infrastructure.php">Add Data</a></button>
+				   <button><a href="ADD_infra_batch.php">Add Batch</a></button>
+				   <?php } ?>
 				</div>
 				<div class="card-body--">
 				   <div class="table-stats order-table ov-h">
 					  <table class="table ">
 						 <thead>
 							<tr>
-							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">ID<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
-							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">Status<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
-							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">Vulnerability<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
-							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">Severity<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
-							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">Hostname<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
-						       <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">IP<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
-							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">Count<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
-							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">Date Found<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
-							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">Date Remediated<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
-							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>">Assigned To<i class="fas fa-sort<?php echo $column == 'name' ? '-' . $up_or_down : ''; ?>"></i></a></th>
+							   <th>ID</th>
+							   <th>Status</th>
+							   <th>Vulnerability</th>
+							   <th>Severity</th>
+							   <th>Hostname</th>
+						       <th>IP</th>
+							   <th>Count</th>
+							   <th><a href="infrastructure.php?column=name&order=<?php echo $asc_or_desc; ?>&date_sort=<?php echo $asc_or_desc; ?>">Date Found<i class="fas fa-sort<?php echo $column == 'date_found' ? '-' . $up_or_down : ''; ?>"></i></a></th>
+							   <th>Date Remediated</th>
+							   <th>Assigned To</th>
 							   <th></th>
 							</tr>
 						 </thead>
@@ -69,9 +72,9 @@ if ($result = $connection->query('SELECT * FROM infra_vulns ORDER BY ' .  $colum
 							   <td>
 								<?php
 								echo "<span class='badge badge-edit'><a href='https://www.tenable.com/plugins/nessus/".$row['plugin_id']."'>Detail</a></span>";
-								echo "<span class='badge badge-edit'><a href='edit_infrastructure.php?id=$row[id]'>Edit</a></span>";
-								echo "<span class='badge badge-edit'><a href='vulnerabilitystatus_infra.php?id=$row[id]'>Status</a></span>";
-								echo "<span class='badge badge-delete'><a href='delete_infrastructure.php?id=$row[id]' onClick=\"return confirm('Apakah anda yakin ingin menghapus data?');\"> Hapus </a></span>";
+								echo "<span class='badge badge-edit'><a href='EDIT_infrastructure.php?id=$row[id]'>Edit</a></span>";
+								echo "<span class='badge badge-edit'><a href='STATUS_infra.php?id=$row[id]'>Status</a></span>";
+								echo "<span class='badge badge-delete'><a href='DELETE_infrastructure.php?id=$row[id]' onClick=\"return confirm('Apakah anda yakin ingin menghapus data?');\"> Hapus </a></span>";
 								?>
 							   </td>
 							</tr>

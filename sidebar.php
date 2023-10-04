@@ -26,11 +26,12 @@ if(isset($_SESSION['ADMIN_LOGIN']) && $_SESSION['ADMIN_LOGIN']!=''){
                 <div class="sidebar-heading border-bottom bg-light">WELCOME [<?php echo $_SESSION['ADMIN_USERNAME']?>]</div>
                 <div class="list-group list-group-flush">
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.php">Dashboard</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="scheduler.php">Schedule</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="infrastructure.php">Infrastructure</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="application.php">Application</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="port.php">Port</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Failed Scans</a>
-                    <?php if($_SESSION['ADMIN_ROLE']!=1){?>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="failed_scans.php">Assets Scanned</a>
+                    <?php if($_SESSION['ADMIN_ROLE']!="user"){?>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="users.php">Users</a>
 				    <?php } ?>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="logout.php">Log Out</a>

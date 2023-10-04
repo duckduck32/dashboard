@@ -1,0 +1,4 @@
+plugin_id,vulnerability,severity,hostname,ip,count,date_found
+12345,vulnerability1,Critical,a2-hostname1,172.16.45.45,4,23-Sep-23
+12346,vulnerability2,High,a2-hostname2,172.16.45.46,4,24-Sep-23
+12347,vulnerability3,Medium,a2-hostname3,172.16.45.47,4,25-Sep-23

@@ -19,15 +19,17 @@ $res=mysqli_query($connection,$sql);
 			 <div class="card">
 				<div class="card-body">
 				   <h4 class="box-title">Port Vulnerabilities</h4>
+				   <?php if($_SESSION['ADMIN_TEAM']=="sec"){?>
 				   <button><a href="add_port.php">Add Data</a></button>
+				   <button><a href="add_port_batch.php">Add Batch</a></button>
+				   <?php } ?>
 				</div>
 				<div class="card-body--">
 				   <div class="table-stats order-table ov-h">
 					  <table class="table ">
 						 <thead>
 							<tr>
-							   <th class="serial">ID</th>
-							   <th>Status</th>
+							   <th class="serial">Status</th>
 							   <th>Open Port</th>
 							   <th>Priority</th>
 							   <th>Hostname</th>
@@ -43,18 +45,18 @@ $res=mysqli_query($connection,$sql);
 							$i=1;
 							while($row=mysqli_fetch_assoc($res)){?>
 							<tr>
-							   <td class="serial"><?php echo $row['id']?></td>
-							   <td><?php echo $row['status']?></td>
+							   <td class="serial"><?php echo $row['status']?></td>
 							   <td><?php echo $row['open_port']?></td>
 							   <td><?php echo $row['priority']?></td>
 							   <td><?php echo $row['hostname']?></td>
 							   <td><?php echo $row['ip']?></td>
 							   <td><?php echo $row['date_found']?></td>
 							   <td><?php echo $row['date_remediated']?></td>
-							   <td><?php echo $row['assign_to']?></td>
+							   <td><?php echo $row['assigned_to']?></td>
 							   <td>
 								<?php
 								echo "<span class='badge badge-edit'><a href='edit_port.php?id=$row[id]'>Edit</a></span>";
+								echo "<span class='badge badge-edit'><a href='STATUS_port.php?id=$row[id]'>Status</a></span>";
 								echo "<span class='badge badge-delete'><a href='delete_port.php?id=$row[id]' onClick=\"return confirm('Apakah anda yakin ingin menghapus data?');\"> Hapus </a></span>";
 								?>
 							   </td>
