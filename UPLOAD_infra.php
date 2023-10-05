@@ -35,7 +35,7 @@ if (isset($_POST["submit"])) {
 
             // Read and process CSV data
             while (($data = fgetcsv($file)) !== false) {
-                $sql = "INSERT INTO infra_vulns (status, plugin_id, vulnerability, severity, hostname, ip, count, date_found) VALUES ('Open', '$data[0]', '$data[1]', '$data[2]', '$data[3]', '$data[4]', '$data[5]', '$currentDate')";
+                $sql = "INSERT INTO infra_vulns (status, plugin_id, vulnerability, severity, hostname, ip, count, date_found, current_status) VALUES ('Open', '$data[0]', '$data[1]', '$data[2]', '$data[3]', '$data[4]', '$data[5]', '$currentDate', '')";
 
                 if ($conn->query($sql) === true) {
                     echo "Record inserted successfully.";

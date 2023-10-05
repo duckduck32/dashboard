@@ -1,6 +1,6 @@
 <?php
 require('sidebar.php');
-require('connection.inc.php');
+// require('connection.inc.php');
 
 $sumCritInfra_result = mysqli_query($connection, "SELECT SUM(count) FROM infra_vulns WHERE severity = 'Critical'");
 $row = $sumCritInfra_result->fetch_assoc();
