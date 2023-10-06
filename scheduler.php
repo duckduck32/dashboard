@@ -19,16 +19,15 @@ require('sidebar.php');
         }
         .container {
             text-align: center;
-            width: 80%;
-            padding-left: 100px;
+            width: 80%; /* Adjust as needed */
         }
         table {
-            margin: 0 auto;
+            margin: 0 auto; /* Center the table horizontally within the container */
             border-collapse: collapse;
             width: 100%;
         }
         table th, table td {
-            padding: 2vh 7vh;
+            padding: 36px 45px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
@@ -56,44 +55,34 @@ require('sidebar.php');
             font-size: 18px;
             background-color: #007bff;
             color: #fff;
-            border: 1px solid #007bff;
+            border: 1px solid #007bff; /* Add border style to the button */
             border-radius: 5px;
             cursor: pointer;
         }
         form input[type="submit"]:hover {
             background-color: #0056b3;
-            border-color: #0056b3;
+            border-color: #0056b3; /* Change border color on hover */
         }
         .success-message {
             color: #008000;
             font-weight: bold;
             margin-top: 10px;
         }
-        ::-webkit-input-placeholder {
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             font-size: 14px;
             color: #999;
         }
-        ::-moz-placeholder {
+        ::-moz-placeholder { /* Firefox 19+ */
             font-size: 14px;
             color: #999;
         }
-        :-ms-input-placeholder {
+        :-ms-input-placeholder { /* IE 10+ */
             font-size: 14px;
             color: #999;
         }
-        :-moz-placeholder {
+        :-moz-placeholder { /* Firefox 18- */
             font-size: 14px;
             color: #999;
-        }
-
-        /* Responsive styles */
-        @media screen and (max-width: 768px) {
-            table {
-                font-size: 14px; /* Reduce font size for smaller screens */
-            }
-            table th, table td {
-                padding: 1vh 2vh; /* Adjust cell padding for smaller screens */
-            }
         }
     </style>
 </head>

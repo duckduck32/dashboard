@@ -93,8 +93,7 @@ if (isset($_POST['proses'])) {
         count = '$_POST[count]',
         date_found = '$_POST[date_found]',
         date_remediated = '0000-00-00',
-        assigned_to = '$_POST[assigned_to]',
-        progress = ''");  
+        assigned_to = '$_POST[assigned_to]'");  
         echo "<script>
         alert('Data berhasil ditambahkan');
         window.location.href='application.php';
