@@ -1,65 +1,120 @@
 <?php
 require('sidebar.php');
+// require('connection.inc.php');
 
-$dataPoints = array(
-	array("y" => 300878, "label" => "Venezuela"),
-	array("y" => 266455, "label" => "Canada"),
-	array("y" => 169709, "label" => "Iran"),
+$sumCritInfra_result = mysqli_query($connection, "SELECT SUM(count) FROM infra_vulns WHERE severity = 'Critical'");
+$row = $sumCritInfra_result->fetch_assoc();
+$sumCritInfra_value = (string)$row['SUM(count)'];
+
+$sumHighInfra_result = mysqli_query($connection, "SELECT SUM(count) FROM infra_vulns WHERE severity = 'High'");
+$row = $sumHighInfra_result->fetch_assoc();
+$sumHighInfra_value = (string)$row['SUM(count)'];
+
+$sumMediInfra_result = mysqli_query($connection, "SELECT SUM(count) FROM infra_vulns WHERE severity = 'Medium'");
+$row = $sumMediInfra_result->fetch_assoc();
+$sumMediInfra_value = (string)$row['SUM(count)'];
+
+$sumLowInfra_result = mysqli_query($connection, "SELECT SUM(count) FROM infra_vulns WHERE severity = 'Low'");
+$row = $sumLowInfra_result->fetch_assoc();
+$sumLowInfra_value = (string)$row['SUM(count)'];
+
+$dataPoints1 = array(
+    array("label"=> "Critical", "y"=> $sumCritInfra_value),
+    array("label"=> "High", "y"=> $sumHighInfra_value),
+    array("label"=> "Medium", "y"=> $sumMediInfra_value),
+    array("label"=> "Low", "y"=> $sumLowInfra_value)
 );
 
-$link=mysqli_connect("localhost","root","","vmdash_users");
-mysqli_select_db($link,"vmdash_users");
+$sumHighApp_result = mysqli_query($connection, "SELECT SUM(count) FROM app_vulns WHERE severity = 'High'");
+$row = $sumHighApp_result->fetch_assoc();
+$sumHighApp_value = (string)$row['SUM(count)'];
+     
+$sumMediApp_result = mysqli_query($connection, "SELECT SUM(count) FROM app_vulns WHERE severity = 'Medium'");
+$row = $sumMediApp_result->fetch_assoc();
+$sumMediApp_value = (string)$row['SUM(count)'];
+     
+$sumLowApp_result = mysqli_query($connection, "SELECT SUM(count) FROM app_vulns WHERE severity = 'Low'");
+$row = $sumLowApp_result->fetch_assoc();
+$sumLowApp_value = (string)$row['SUM(count)'];
 
-$test=array ();
+$dataPoints2 = array(
+    array("label"=> "High", "y"=> $sumHighApp_value),
+    array("label"=> "Medium", "y"=> $sumMediApp_value),
+    array("label"=> "Low", "y"=> $sumLowApp_value)
+);
 
-$count=0;
-$res=mysqli_query($link, "select * from infra_vulns");
-$sum=mysqli_query($link, "SELECT SUM(count) FROM infra_vulns WHERE severity = 'Critical'");
-while($row=mysqli_fetch_array($res)){
+$sumFTPdata_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 20");
+$row = $sumFTPdata_result->fetch_assoc();
+$sumFTP_data = (string)$row['SUM(count)'];
+     
+$sumFTP_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 21");
+$row = $sumFTP_result->fetch_assoc();
+$sumFTP = (string)$row['SUM(count)'];
+     
+$sumSSH_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 22");
+$row = $sumSSH_result->fetch_assoc();
+$sumSSH = (string)$row['SUM(count)'];
 
-	$test[$count]["label"]=$row["severity"];
-	$test[$count]["y"]=$row["count"];
-	$count=$count+1;
-}
+$sumTelnet_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 23");
+$row = $sumTelnet_result->fetch_assoc();
+$sumTelnet = (string)$row['SUM(count)'];
+     
+$sumSMTP_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port IN (25, 426)");
+$row = $sumSMTP_result->fetch_assoc();
+$sumSMTP = (string)$row['SUM(count)'];
+     
+$sumHTTP_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 80");
+$row = $sumHTTP_result->fetch_assoc();
+$sumHTTP = (string)$row['SUM(count)'];
 
-?>
+$sumNTP_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 123");
+$row = $sumNTP_result->fetch_assoc();
+$sumNTP = (string)$row['SUM(count)'];
+     
+$sumNetbiosns_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 137");
+$row = $sumNetbiosns_result->fetch_assoc();
+$sumNetbios_ns = (string)$row['SUM(count)'];
+     
+$sumNetbiosdgm_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 138");
+$row = $sumNetbiosdgm_result->fetch_assoc();
+$sumNetbios_dgm = (string)$row['SUM(count)'];
 
+$sumNetbiosssn_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 139");
+$row = $sumNetbiosssn_result->fetch_assoc();
+$sumNetbios_ssn = (string)$row['SUM(count)'];
+     
+$sumSNMP_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port IN (161, 162)");
+$row = $sumSNMP_result->fetch_assoc();
+$sumSNMP = (string)$row['SUM(count)'];
+     
+$sumSMB_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 445");
+$row = $sumSMB_result->fetch_assoc();
+$sumSMB = (string)$row['SUM(count)'];
 
-<!DOCTYPE HTML>
-<html>
-<head>  
-<script>
-window.onload = function () {
+$sumhttpalt_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port IN (591, 8008, 8080)");
+$row = $sumhttpalt_result->fetch_assoc();
+$sumHttp_alt = (string)$row['SUM(count)'];
+     
+$sumNTPclient_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 1023");
+$row = $sumNTPclient_result->fetch_assoc();
+$sumNTP_client = (string)$row['SUM(count)'];
+     
+$sumMSsqls_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port IN (1433, 1434)");
+$row = $sumMSsqls_result->fetch_assoc();
+$sumMSsqls = (string)$row['SUM(count)'];
 
-var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,
-	theme: "light2", // "light1", "light2", "dark1", "dark2"
-	title:{
-		text: "Top Oil Reserves"
-	},
-	axisY: {
-		title: "Reserves(MMbbl)"
-	},
-	data: [{        
-		type: "column",  
-		showInLegend: true, 
-		legendMarkerColor: "grey",
-		// legendText: "MMbbl = one million barrels",
-		dataPoints: <?php echo json_encode($test, JSON_NUMERIC_CHECK); ?>
-	}]
-});
-chart.render();
+$sumOracle_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port IN (1521, 1832)");
+$row = $sumOracle_result->fetch_assoc();
+$sumOracle = (string)$row['SUM(count)'];
+     
+$sumMysql_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 3306");
+$row = $sumMysql_result->fetch_assoc();
+$sumMysql = (string)$row['SUM(count)'];
+     
+$sumRDP_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 3389");
+$row = $sumRDP_result->fetch_assoc();
+$sumRDP = (string)$row['SUM(count)'];
 
-<<<<<<< Updated upstream
-}
-</script>
-</head>
-<body>
-<div id="chartContainer" style="height: 370px; width: 100%;"></div>
-<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
-</body>
-</html>
-=======
 $sumPostgresql_result = mysqli_query($connection, "SELECT SUM(count) FROM open_ports WHERE open_port = 5432");
 $row = $sumPostgresql_result->fetch_assoc();
 $sumPostgreSQL = (string)$row['SUM(count)'];
@@ -206,4 +261,3 @@ $sumAsetCompleted = (string)$row['SUM(count)'];
      <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
      </body>
      </html>                              
->>>>>>> Stashed changes

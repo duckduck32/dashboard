@@ -17,8 +17,8 @@
                             <tr>
                                 <label for="status" class="form-control-label">Open</label>
                                 <select id="status" name="status" class="form-control">
-                                    <option value="open">Open</option>
-                                    <option value="close">Close</option>
+                                    <option value="Open">Open</option>
+                                    <option value="Close">Close</option>
                                 </select>
                             </tr>
                         </div> 
@@ -38,10 +38,10 @@
                             <tr>
                                 <label for="severity" class="form-control-label">Severity</label>
                                 <select id="severity" name="severity" class="form-control">
-                                    <option value="critical">Critical</option>
-                                    <option value="high">High</option>
-                                    <option value="medium">Medium</option>
-                                    <option value="low">Low</option>
+                                    <option value="Critical">Critical</option>
+                                    <option value="High">High</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Low">Low</option>
                                 </select>
                             </tr>
                         </div>    
@@ -65,14 +65,20 @@
                         </div>
                         <div class="form-group">
                             <tr>
-                                <label for="count" class=" form-control-label">Date Found</label>
+                                <label for="date_found" class=" form-control-label">Date Found</label>
                                 <td><input type="date" name="date_found" class="form-control" value="<?php echo $data['date_found']; ?>"></td>
                             </tr>
                         </div>
                         <div class="form-group">
                             <tr>
-                                <label for="count" class=" form-control-label">Date Remediated</label>
+                                <label for="date_remediated" class=" form-control-label">Date Remediated</label>
                                 <td><input type="date" name="date_remediated" class="form-control" value="<?php echo $data['date_remediated']; ?>"></td>
+                            </tr>
+                        </div>
+                        <div class="form-group">
+                            <tr>
+                                <label for="assign_to" class=" form-control-label">Assigned To</label>
+                                <td><input type="text" name="assign_to" class="form-control" value="<?php echo $data['assigned_to']; ?>"></td>
                             </tr>
                         </div>
                         <div class="form-group">
@@ -106,39 +112,69 @@
 <?php
 
 if (isset($_POST['proses'])) {
-    mysqli_query($connection, "update infra_vulns set
-    status = '$_POST[status]',
-    plugin_id = '$_POST[plugin_id]',
-    vulnerability = '$_POST[vulnerability]',
-    severity = '$_POST[severity]',
-    hostname = '$_POST[hostname]',
-    ip = '$_POST[ip]',
-    count = '$_POST[count]',
-    date_found = '$_POST[date_found]',
-    date_remediated = '$_POST[date_remediated]'
-    where id = '$_GET[id]'");
-
-
-    echo "Data telah berhasil terupdate";
-    echo "<meta http-equiv=refresh content=1;URL='infrastructure.php'>";
+    $current_date = date('Y-m-d');
+    $date_found = $_POST['date_found'];
+    $date_remediated = $_POST['date_remediated'];
+    if($date_found > $current_date){
+        echo "<script>
+        alert('Data tidak berhasil diubah karena tanggal Date found melebihi tanggal hari ini');
+        window.location.href='infrastructure.php';
+        </script>";
+    }
+    if($date_remediated > $current_date){
+        echo "<script>
+        alert('Data tidak berhasil diubah karena tanggal Date Remediated melebihi tanggal hari ini');
+        window.location.href='infrastructure.php';
+        </script>";
+    }
+    else{
+        mysqli_query($connection, "UPDATE infra_vulns SET
+        status = '$_POST[status]',
+        plugin_id = '$_POST[plugin_id]',
+        vulnerability = '$_POST[vulnerability]',
+        severity = '$_POST[severity]',
+        hostname = '$_POST[hostname]',
+        ip = '$_POST[ip]',
+        count = '$_POST[count]',
+        date_found = '$_POST[date_found]',
+        date_remediated = '$_POST[date_remediated]',
+        assigned_to = '$_POST[assigned_to]'
+        WHERE id = '$_GET[id]'");
+        echo "<script>
+        alert('Data berhasil diubah');
+        window.location.href='infrastructure.php';
+        </script>";
+    }
+    
 }
 
 else if (isset($_POST['done'])) {
     $current_date = date('Y-m-d');
-    mysqli_query($connection, "update infra_vulns set
-    status = 'Close',
-    plugin_id = '$_POST[plugin_id]',
-    vulnerability = '$_POST[vulnerability]',
-    severity = '$_POST[severity]',
-    hostname = '$_POST[hostname]',
-    ip = '$_POST[ip]',
-    count = '0',
-    date_found = '$_POST[date_found]',
-    date_remediated = '$current_date'
-    where id = '$_GET[id]'");
-
-
-    echo "Case berhasil diclose";
-    echo "<meta http-equiv=refresh content=1;URL='infrastructure.php'>";
+    $date_found = $_POST['date_found'];
+    if($date_found > $current_date){
+        echo "<script>
+        alert('Data tidak berhasil diubah karena tanggal Date found melebihi tanggal hari ini');
+        window.location.href='infrastructure.php';
+        </script>";
+    }
+    else{
+        mysqli_query($connection, "update infra_vulns set
+        status = 'Close',
+        plugin_id = '$_POST[plugin_id]',
+        vulnerability = '$_POST[vulnerability]',
+        severity = '$_POST[severity]',
+        hostname = '$_POST[hostname]',
+        ip = '$_POST[ip]',
+        count = '0',
+        date_found = '$_POST[date_found]',
+        date_remediated = '$current_date',
+        assign_to = '$_POST[assign_to]'
+        where id = '$_GET[id]'");
+        echo "<script>
+        alert('Data berhasil diclose');
+        window.location.href='infrastructure.php';
+        </script>";
+    }
+   
 }
 ?>

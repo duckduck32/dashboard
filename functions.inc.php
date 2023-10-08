@@ -1,21 +1,4 @@
 <?php
-function pr($arr){
-	echo '<pre>';
-	print_r($arr);
-}
-
-function prx($arr){
-	echo '<pre>';
-	print_r($arr);
-	die();
-}
-
-function get_safe_value($con,$str){
-	if($str!=''){
-		$str=trim($str);
-		return mysqli_real_escape_string($con,$str);
-	}
-}
 function isAdmin(){
 	if(!isset($_SESSION['ADMIN_LOGIN'])){
 	?>
@@ -24,7 +7,7 @@ function isAdmin(){
 		</script>
 		<?php
 	}
-	if($_SESSION['ADMIN_ROLE']==1){
+	if($_SESSION['ADMIN_ROLE']=="user"){
 		?>
 		<script>
 		window.location.href='logout.php';
@@ -32,4 +15,24 @@ function isAdmin(){
 		<?php
 	}
 }
+
+function isSecurity(){
+	if(!isset($_SESSION['ADMIN_LOGIN'])){
+		?>
+			<script>
+			window.location.href='login.php';
+			</script>
+			<?php
+		}
+		if($_SESSION['ADMIN_TEAM']!="sec"){
+			?>
+			<script>
+			window.location.href='logout.php';
+			</script>
+			<?php
+		}
+}
+
+$criticalInfra = mysqli_query($connection, "SELECT SUM(count) FROM infra_vulns WHERE severity = 'Critical'");
+
 ?>

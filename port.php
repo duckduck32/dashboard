@@ -18,8 +18,11 @@ $res=mysqli_query($connection,$sql);
 		  <div class="col-xl-12">
 			 <div class="card">
 				<div class="card-body">
-				   <h4 class="box-title">Vulnerabilities</h4>
-				   <button><a href="add_infrastructure.php">Add Data</a></button>
+				   <h4 class="box-title">Port Vulnerabilities</h4>
+				   <?php if($_SESSION['ADMIN_TEAM']=="sec"){?>
+				   <button><a href="add_port.php">Add Data</a></button>
+				   <button><a href="add_port_batch.php">Add Batch</a></button>
+				   <?php } ?>
 				</div>
 				<div class="card-body--">
 				   <div class="table-stats order-table ov-h">
@@ -33,6 +36,7 @@ $res=mysqli_query($connection,$sql);
 						       <th>IP</th>
 							   <th>Date Found</th>
 							   <th>Date Remediated</th>
+							   <th>Assigned To</th>
 							   <th></th>
 							</tr>
 						 </thead>
@@ -48,16 +52,12 @@ $res=mysqli_query($connection,$sql);
 							   <td><?php echo $row['ip']?></td>
 							   <td><?php echo $row['date_found']?></td>
 							   <td><?php echo $row['date_remediated']?></td>
+							   <td><?php echo $row['assigned_to']?></td>
 							   <td>
 								<?php
-<<<<<<< Updated upstream
-								echo "<span class='badge badge-edit'><a href='edit_infrastructure.php?id=$row[id]'>Edit</a></span>";
-								echo "<span class='badge badge-delete'><a href='?id=$row[id]'> Hapus </a></span>";
-=======
 								echo "<span class='badge badge-edit'><a href='edit_port.php?id=$row[id]'>Edit</a></span>";
 								echo "<span class='badge badge-edit'><a href='STATUS_port.php?id=$row[id]'>Status</a></span>";
 								echo "<span class='badge badge-delete'><a href='delete_port.php?id=$row[id]' onClick=\"return confirm('Apakah anda yakin ingin menghapus data?');\"> Hapus </a></span>";
->>>>>>> Stashed changes
 								?>
 							   </td>
 							</tr>

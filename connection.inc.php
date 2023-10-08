@@ -1,4 +1,4 @@
 <?php
 	session_start();
-	$connection=mysqli_connect("localhost","root","","vmdash_users");
+	$connection=mysqli_connect("localhost","root","","vulnerability_management");
 ?>
